@@ -1,5 +1,9 @@
+<?xml version='1.0' encoding='utf-8' ?><html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-<?xml version='1.0' encoding='utf-8' ?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><base href="file:/C:/Users/B008760/log/test2/spring-boot-security-jwt/"/><title>README</title><style type="text/css">* {
+<title>README</title>
+<style type="text/css">
+* {
 	 font-family:  Arial, Helvetica, sans-serif;
 }
 
