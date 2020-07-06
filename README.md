@@ -6,3 +6,5 @@
 
 I am a good girl, 
 I just started the same files
+
+<img src="r.jpg" width="100" height="100">
