@@ -17,8 +17,7 @@ Wawa, Inc. is an American chain of convenience stores and gas stations located a
    2. [Build Command](#build-command)
    3. [Deploy](#deploy)
 2. [Navigating the repository](#navigating-the-repository)
-3. [Software Development Kit](#software-development-kit)
-4. [Extending OpenMRS with Modules](#extending-openmrs-with-modules)
+4. [List of API's](#extending-openmrs-with-modules)
 5. [Documentation](#documentation)
    1. [Developer guides](#developer-guides)
    2. [Wiki](#wiki)
@@ -27,7 +26,7 @@ Wawa, Inc. is an American chain of convenience stores and gas stations located a
    1. [Code](#code)
    2. [Code Reviews](#code-reviews)
    3. [Translation](#translation)
-7. [Issues](#issues)
+7. [Dependent Services](#DependentService)
 8. [POM Dependencies](#community)
 9. [Reference to SourceCode](#support)
 10. [License](#license)
@@ -38,8 +37,7 @@ Wawa, Inc. is an American chain of convenience stores and gas stations located a
 
 #### Java
 
-OpenMRS is a Java application which is why you need to install a Java JDK.
-
+Install Java8 (https://www.oracle.com/java/technologies/java8.html).
 If you want to build the master branch you will need a Java JDK of minimum version 8.
 
 #### Maven
@@ -58,7 +56,7 @@ which will tell you what version Maven is using. Refer to the [Maven docs](https
 
 #### Git
 
-Install the version control tool [git](https://git-scm.com/) and clone this repository with
+Install the version control tool [git]https://github.com/wawa/) and clone this repository with
 
 ```bash
 git clone https://github.com/openmrs/openmrs-core.git
@@ -101,10 +99,6 @@ The project tree is set up as follows:
   <td>Java and resource files for building the java api jar file.</td>
  </tr>
  <tr>
-  <td>tools/</td>
-  <td>Meta code used during compiling and testing. Does not go into any released binary (like doclets).</td>
- </tr>
- <tr>
   <td>web/</td>
   <td>Java and resource files that are used in the webapp/war file.</td>
  </tr>
@@ -118,12 +112,6 @@ The project tree is set up as follows:
  </tr>  
 </table>
 
-## Software Development Kit
-
-For rapid development of modules and the OpenMRS Platform code check out the
-awesome SDK at
-
-https://wiki.openmrs.org/display/docs/OpenMRS+SDK
 
 ## Extending OpenMRS with Modules
 
@@ -205,7 +193,7 @@ If you would like to know how to help with translations see
 
 http://openmrs.org/join-the-community/translate/
 
-## Issues
+## DependentService
 
 If you want help fix existing issues or you found a bug and want to tell us please go to
 
