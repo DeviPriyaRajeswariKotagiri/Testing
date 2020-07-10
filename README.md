@@ -19,7 +19,7 @@ Wawa, Inc. is an American chain of convenience stores and gas stations located a
 2. [Navigating the repository](#navigating-the-repository)
 3. [Documentation](#documentation)
    1. [Developer guides](#developer-guides)
-   2. [Engineering Training Plan](#Engineering Training Plan)
+   2. [Engineering Training Plan](#Engineering-Training-Plan)
 4. [List of API's and its Dependent services](#List of API's and Dependent Services)
 5. [Deployments](#Deployments)
 6. [Databases](#Databases)
@@ -123,7 +123,7 @@ If you want to contribute please refer to these resources
 * [How To Configure Your IDE](https://wiki.openmrs.org/display/docs/How-To+Setup+And+Use+Your+IDE)
 * [Using GIT](https://docs.github.com/en/github/using-git)
 
-### Engineering Training Plan
+### API Platform
 
 Here is where we will be building out documentation for learning key technologies used in the digital platform.  Key areas include:
 API Platform
@@ -131,74 +131,17 @@ API Platform
 * [API Platform Onboarding](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799337/API+Platform+Onboarding)
 * [Integration Platform Design](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/344495079/Integration+Platform+Design)
 
-* Pulumi (Infrastructure as Code Provisioner)
-   * Primer on Typescript
-      1.https://app.pluralsight.com/paths/skill/typescript-core-language
-      2.https://app.pluralsight.com/library/courses/testing-javascript/table-of-contents
-   * IAC Testing
-      1.https://www.pulumi.com/docs/guides/testing/
-      2.https://www.pulumi.com/blog/infrastructure-testing-got-better/
-      3.https://app.pluralsight.com/library/courses/mocha-javascript-testing-nodejs/table-of-contents
-      4.https://app.pluralsight.com/library/courses/testing-javascript/table-of-contents
-   * Pulumi Videos – (Cool recent video on defining AWS GuardDuty rules using Pulumi)
-      https://www.youtube.com/channel/UC2Dhyn4Ev52YSbcpfnfP0Mw
-   * Pulumi Self-Paced Workshops:
-      https://github.com/pulumi/infrastructure-as-code-workshop - You don't have permissions to view Try another account
-   * Pulumi Examples:
-      https://github.com/pulumi/examples - You don't have permissions to view Try another account
-   * Another helpful Pulumi tutorial and comparison:
-      https://www.pulumi.com/blog/simplify-kubernetes-rbac-in-amazon-eks-with-open-source-pulumi-packages/
-
-* CodeFresh
-
-  * https://codefresh.io/docs/docs/configure-ci-cd-pipeline/introduction-to-codefresh-pipelines/
-
-  * https://codefresh.io/docs/docs/testing/integration-tests/
-
-  * https://codefresh.io/docs/docs/testing/test-reports/
-
-* Docker
-
-  * https://docs.docker.com/get-started/
-
-  * https://www.guru99.com/docker-tutorial.html
-
-* Kubernetes
-
-   * Helm
-
-      1.https://helm.sh/docs/intro/
-
-      2.https://www.youtube.com/watch?v=vQX5nokoqrQ
-
-      3.[Helm](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/330957449/Helm) 
-
-   * Istio
-
-      1.Authorization Policies
-
-* OpenAPI
-
-      https://swagger.io/specification/
-
-* OpenTrace
-
-      https://opentracing.io/docs/overview/
-
-* Kafka
-
-      https://kafka.apache.org/intro
-      
-## List of API's and Dependent Services
-
 ## Deployments
 
 ### Deploy Microservice
 
-[Deploying a Microservice](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/659751676/SBB+-+BE+Deploy+Microservice)
+[Deploying a Microservice Via an automated CI/CD Pipeline](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/659751676/SBB+-+BE+Deploy+Microservice)
 
 ### Deploy UI Web App
 [Deploying UI Web App](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/660046657/SBB+-+FE+Deploy+UI+Web+App)
+
+### Deploying a Microservice to Docker Container
+[Deploying a Microservice to Docker Container](https://www.javainuse.com/devOps/docker/docker-jar)
 
 ## Databases
 [Database Component](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/662143302/Databases)
