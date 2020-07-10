@@ -142,9 +142,7 @@ API Platform
 
 ### Code
 
-Check out our [contributing guidelines](CONTRIBUTING.md), read through the [Developer guides](#developer-guides).
-
-After you've read up :eyeglasses: [grab an introductory issue](https://wiki.openmrs.org/display/docs/Getting+Started+as+a+Developer) that is `Ready For Work`.
+[Best Coding Standards](https://google.github.io/styleguide/javaguide.html)
 
 ### Code Reviews
 
