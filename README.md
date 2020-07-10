@@ -17,10 +17,9 @@ Wawa, Inc. is an American chain of convenience stores and gas stations located a
    2. [Build Command](#build-command)
    3. [Deploy](#deploy)
 2. [Navigating the repository](#navigating-the-repository)
-3. [Documentation](#documentation)
+3. [API Documentation](#API-Documentation)
    1. [Developer guides](#developer-guides)
-   2. [Engineering Training Plan](#Engineering-Training-Plan)
-4. [List of API's and its Dependent services](#List of API's and Dependent Services)
+   2. [API Platform](#API-Platform)
 5. [Deployments](#Deployments)
 6. [Databases](#Databases)
 7. [Contributing](#contributing)
@@ -113,7 +112,7 @@ The project tree is set up as follows:
 </table>
 
 
-## Documentation
+## API Documentation
 
 ### Developer guides
 
