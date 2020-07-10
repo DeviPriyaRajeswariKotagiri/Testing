@@ -51,7 +51,7 @@ which will tell you what version Maven is using. Refer to the [Maven docs](https
 Install the version control tool [git]https://github.com/wawa/) and clone this repository with
 
 ```bash
-git clone https://github.com/openmrs/openmrs-core.git
+git clone  https://github.com/wawa/admin-toolstack-config.git
 ```
 
 ### Build Command
