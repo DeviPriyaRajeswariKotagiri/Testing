@@ -28,8 +28,8 @@ Wawa, Inc. is an American chain of convenience stores and gas stations located a
    2. [Code Reviews](#code-reviews)
    3. [Translation](#translation)
 7. [Issues](#issues)
-8. [Community](#community)
-9. [Support](#support)
+8. [POM Dependencies](#community)
+9. [Reference to SourceCode](#support)
 10. [License](#license)
 
 ## Build
