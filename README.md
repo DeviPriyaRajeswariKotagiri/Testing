@@ -188,11 +188,7 @@ We can do this using the spring.datasource.jndi-name property. e.g.
        To apply default validation, we only need to add relevant annotations in proper places. i.e.
        1.Annotate model class with required validation specific annotations such as @NotEmpty, @Email etc.
        2.Enable validation of request body by @Valid annotation
-  ### Exception model classes
-      Creating seperate classes to denote specific business usecase failure and return them when that usecase fail.
-      e.g. I have created RecordNotFoundException class for all buch scenarios where a resource is requested by it’s ID, and resource is not found in the system.
-      package com.howtodoinjava.demo.exception;
- 
+  ###  Exception model classes
             import org.springframework.http.HttpStatus;
             import org.springframework.web.bind.annotation.ResponseStatus;
 
@@ -203,10 +199,8 @@ We can do this using the spring.datasource.jndi-name property. e.g.
                     super(exception);
                 }
             }
-      <img src="images/exception.JPG" width="400" height="400"/>
+     
   ### Custom ExceptionHandler
-      Now add one class extending ResponseEntityExceptionHandler and annotate it with @ControllerAdvice annotation.
-      ResponseEntityExceptionHandler is a convenient base class for to provide centralized exception handling across all @RequestMapping methods through @ExceptionHandler           methods. @ControllerAdvice is more for enabling auto-scanning and configuration at application startup.
          import org.springframework.web.context.request.WebRequest;
          import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
@@ -240,7 +234,7 @@ We can do this using the spring.datasource.jndi-name property. e.g.
                  return new ResponseEntity(error, HttpStatus.BAD_REQUEST);
              }
          }
-      <img src="images/customexception.JPG" width="400" height="400"/>
+      
 
 
 
