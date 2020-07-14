@@ -168,7 +168,7 @@ mvn clean test -Dtest=SpringApplicationTests
 
 ## DataSource configuration
 1. Maven Dependencies
-<img src="images/pom.JPG" width="400" height="550"/>
+<img src="images/pom.JPG" width="550" height="400"/>
 2. application.properties
 DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
 The properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even configuration provider systems.
@@ -176,7 +176,7 @@ Below given configuration shows sample properties for H2, MySQL, Oracle and SQL 
 <img src="images/maven.JPG" width="400" height="400"/>
 3. DataSource Bean
 Recommended way to create DataSource bean is using DataSourceBuilder class within a class annotated with the @Configuration annotation. The datasource uses the underlying connection pool as well.
-<img src="images/jpa.JPG" width="400" height="550"/>
+<img src="images/jpa.JPG" width="550" height="400"/>
 4. JNDI DataSource
 If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the Application Server’s built-in features and access it by using JNDI.
 We can do this using the spring.datasource.jndi-name property. e.g.
@@ -191,10 +191,55 @@ We can do this using the spring.datasource.jndi-name property. e.g.
   ### Exception model classes
       Creating seperate classes to denote specific business usecase failure and return them when that usecase fail.
       e.g. I have created RecordNotFoundException class for all buch scenarios where a resource is requested by it’s ID, and resource is not found in the system.
+      package com.howtodoinjava.demo.exception;
+ 
+            import org.springframework.http.HttpStatus;
+            import org.springframework.web.bind.annotation.ResponseStatus;
+
+            @ResponseStatus(HttpStatus.NOT_FOUND)
+            public class RecordNotFoundException extends RuntimeException 
+            {
+                public RecordNotFoundException(String exception) {
+                    super(exception);
+                }
+            }
       <img src="images/exception.JPG" width="400" height="400"/>
   ### Custom ExceptionHandler
       Now add one class extending ResponseEntityExceptionHandler and annotate it with @ControllerAdvice annotation.
       ResponseEntityExceptionHandler is a convenient base class for to provide centralized exception handling across all @RequestMapping methods through @ExceptionHandler           methods. @ControllerAdvice is more for enabling auto-scanning and configuration at application startup.
+         import org.springframework.web.context.request.WebRequest;
+         import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+
+         @SuppressWarnings({"unchecked","rawtypes"})
+         @ControllerAdvice
+         public class CustomExceptionHandler extends ResponseEntityExceptionHandler 
+         {
+             @ExceptionHandler(Exception.class)
+             public final ResponseEntity<Object> handleAllExceptions(Exception ex, WebRequest request) {
+                 List<String> details = new ArrayList<>();
+                 details.add(ex.getLocalizedMessage());
+                 ErrorResponse error = new ErrorResponse("Server Error", details);
+                 return new ResponseEntity(error, HttpStatus.INTERNAL_SERVER_ERROR);
+             }
+
+             @ExceptionHandler(RecordNotFoundException.class)
+             public final ResponseEntity<Object> handleUserNotFoundException(RecordNotFoundException ex, WebRequest request) {
+                 List<String> details = new ArrayList<>();
+                 details.add(ex.getLocalizedMessage());
+                 ErrorResponse error = new ErrorResponse("Record Not Found", details);
+                 return new ResponseEntity(error, HttpStatus.NOT_FOUND);
+             }
+
+             @Override
+             protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
+                 List<String> details = new ArrayList<>();
+                 for(ObjectError error : ex.getBindingResult().getAllErrors()) {
+                     details.add(error.getDefaultMessage());
+                 }
+                 ErrorResponse error = new ErrorResponse("Validation Failed", details);
+                 return new ResponseEntity(error, HttpStatus.BAD_REQUEST);
+             }
+         }
       <img src="images/customexception.JPG" width="400" height="400"/>
 
 
