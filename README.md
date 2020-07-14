@@ -15,7 +15,7 @@ POC to demonstrate the knowledge on Spring Security and JWT
 3. [Technology](#technology)
 4. [API Documentation](#API-Documentation)
    1. [UML Diagram](#UML-Diagram)
-   2. [Dependent Downstream Servicesm](#Dependent-Downstream-Services)
+   2. [Dependent Downstream Services](#Dependent-Downstream-Services)
 5. [Deployments](#Deployments)
 6. [Testing](#Testing)
 6. [DataSource configuration](#DataSource-configuration)
