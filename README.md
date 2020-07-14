@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/openmrs/openmrs-core.svg?branch=master)](https://travis-ci.org/openmrs/openmrs-core) [![Coverage Status](https://coveralls.io/repos/github/openmrs/openmrs-core/badge.svg?branch=master)](https://coveralls.io/github/openmrs/openmrs-core?branch=master) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a51303ee46c34775a7c31c8d6016da6b)](https://www.codacy.com/app/openmrs/openmrs-core?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=openmrs/openmrs-core&amp;utm_campaign=Badge_Grade)
 
-Wawa, Inc. is an American chain of convenience stores and gas stations located along the East Coast of the United States, operating in Pennsylvania, New Jersey, Delaware, Maryland, Virginia, Washington, D.C., and Florida.
+## Application on Spring Security JWT 
+POC to demonstrate the knowledge on Spring Security and JWT
 
 #### Table of Contents
 
@@ -11,10 +12,12 @@ Wawa, Inc. is an American chain of convenience stores and gas stations located a
    2. [Build Command](#build-command)
    3. [Deploy](#deploy)
 2. [Navigating the repository](#navigating-the-repository)
-3. [API Documentation](#API-Documentation)
+3. [Technology](#technology)
+4.[API Documentation](#API-Documentation)
    1. [Developer guides](#developer-guides)
    2. [API Platform](#API-Platform)
 5. [Deployments](#Deployments)
+6. [Testing](#Testing)
 6. [Databases](#Databases)
 7. [Coding Standards](#Coding-Standards)
 8. [POM Dependencies](#POM-Dependencies)
@@ -102,24 +105,25 @@ The project tree is set up as follows:
  </tr>  
 </table>
 
+## Technology
+
+- **Spring Boot**     - Server side framework
+- **JPA**             - Entity framework
+- **Lombok**          - Provides automated getter/setters
+- **Actuator**        - Application insights on the fly
+- **Spring Security** - Spring's security layer
+- **Thymeleaf**       - Template Engine
+- **Devtools**        - Support Hot-Code Swapping with live browser reload
+- **JJWT**            - JWT tokens for API authentication
+- **Swagger**         - In-built swagger2 documentation support
+- **Docker**          - Docker containers
+- **Junit**           - Unit testing framework
+- **H2**              - H2 database embedded version
+
+
 
 ## API Documentation
 
-### Developer guides
-
-If you want to contribute please refer to these resources
-
-* [Getting Started as a Developer](https://developer.github.com/v3/guides/getting-started/)
-* [How To Configure Your IDE](https://wiki.openmrs.org/display/docs/How-To+Setup+And+Use+Your+IDE)
-* [Using GIT](https://docs.github.com/en/github/using-git)
-
-### API Platform
-
-Here is where we will be building out documentation for learning key technologies used in the digital platform.  Key areas include:
-API Platform
-* [API Platform Overview](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/212926824/API+Platform+Overview)
-* [API Platform Onboarding](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799337/API+Platform+Onboarding)
-* [Integration Platform Design](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/344495079/Integration+Platform+Design)
 
 ## Deployments
 
@@ -132,6 +136,23 @@ API Platform
 
 ### Deploying a Microservice to Docker Container
 [Deploying a Microservice to Docker Container](https://www.javainuse.com/devOps/docker/docker-jar)
+
+
+## Testing
+## Unit test cases
+There are multiple unit test cases written to cover the different components of the application. However there is a global application test suite file _**UnitTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
+
+````
+mvn clean test -Dtest=ApplicationUnitTests
+````
+
+## Integration test cases
+There are multiple integration test cases written to cover the different components of the application. However there is a global application test suite file _**ApplicationTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
+
+````
+mvn clean test -Dtest=SpringApplicationTests
+````
+
 
 ## Databases
 
