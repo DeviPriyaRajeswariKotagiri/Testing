@@ -128,6 +128,7 @@ JWT (shortened from JSON Web Token) is the missing standardization for using tok
 
 ### UML Diagram
 Detailed UML Diagram for the Application
+<img src="images/uml.jpg" width="500" height="500"/>
 
 ### Dependent API Platform
    [Spring Security](https://spring.io/guides/topicals/spring-security-architecture)
