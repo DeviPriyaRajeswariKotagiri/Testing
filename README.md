@@ -123,6 +123,7 @@ The project tree is set up as follows:
 
 ## API Documentation
 POC to demonstrate the knowledge on Spring Security and JWT
+JWT (shortened from JSON Web Token) is the missing standardization for using tokens to authenticate on the web in general, not only for REST services. Currently, it is in draft status as RFC 7519. It is robust and can carry a lot of information, but is still simple to use even though its size is relatively small. Like any other token, JWT can be used to pass the identity of authenticated users between an identity provider and a service provider (which are not necessarily the same systems). It can also carry all the user’s claim, such as authorization data, so the service provider does not need to go into the database or external systems to verify user roles and permissions for each request; that data is extracted from the token.
 
 ### Dependent API Platform
    [Spring Security](https://spring.io/guides/topicals/spring-security-architecture)
