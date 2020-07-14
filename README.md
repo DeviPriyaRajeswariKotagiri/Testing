@@ -132,9 +132,9 @@ Detailed UML Diagram for the Application
 <img src="images/uml.jpg" width="350" height="350"/>
 
 ### Dependent Downstream Services
-   [Spring Security](https://spring.io/guides/topicals/spring-security-architecture)
+   - **[Spring Security](https://spring.io/guides/topicals/spring-security-architecture)
 
-   [JWT](https://jwt.io/introduction/)
+   - **[JWT](https://jwt.io/introduction/)
 
 
 ## Deployments
@@ -245,7 +245,54 @@ We can do this using the spring.datasource.jndi-name property. e.g.
 [Best practices for effective & efficient agile code reviews](https://queue-it.com/blog/agile-code-review-best-practices/)
 
 ## POM Dependencies
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.9.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>io</groupId>
+	<artifactId>spring-security-jwt</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>spring-security-jwt</name>
+	<description>Demo project for Spring Boot</description>
 
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+ 
 
 ## Collaboration
 
