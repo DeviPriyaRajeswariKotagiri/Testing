@@ -13,7 +13,7 @@ POC to demonstrate the knowledge on Spring Security and JWT
    3. [Deploy](#deploy)
 2. [Navigating the repository](#navigating-the-repository)
 3. [Technology](#technology)
-4.[API Documentation](#API-Documentation)
+4. [API Documentation](#API-Documentation)
    1. [Developer guides](#developer-guides)
    2. [API Platform](#API-Platform)
 5. [Deployments](#Deployments)
@@ -123,6 +123,12 @@ The project tree is set up as follows:
 
 
 ## API Documentation
+POC to demonstrate the knowledge on Spring Security and JWT
+
+### Dependent Services and Resources
+   [Spring Security](https://spring.io/guides/topicals/spring-security-architecture)
+
+   [JWT](https://jwt.io/introduction/)
 
 
 ## Deployments
