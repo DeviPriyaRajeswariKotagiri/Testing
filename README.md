@@ -15,7 +15,7 @@ POC to demonstrate the knowledge on Spring Security and JWT
 3. [Technology](#technology)
 4. [API Documentation](#API-Documentation)
    1. [UML Diagram](#UML-Diagram)
-   2. [Dependent API Platform](#Dependent-API-Platform)
+   2. [Dependent Downstream Servicesm](#Dependent-Downstream-Services)
 5. [Deployments](#Deployments)
 6. [Testing](#Testing)
 6. [Databases](#Databases)
@@ -131,7 +131,7 @@ Detailed UML Diagram for the Application
 
 <img src="images/uml.jpg" width="250" height="250"/>
 
-### Dependent API Platform
+### Dependent Downstream Services
    [Spring Security](https://spring.io/guides/topicals/spring-security-architecture)
 
    [JWT](https://jwt.io/introduction/)
