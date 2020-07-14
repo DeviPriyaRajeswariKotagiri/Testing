@@ -180,7 +180,7 @@ Recommended way to create DataSource bean is using DataSourceBuilder class withi
 4. JNDI DataSource
 If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the Application Server’s built-in features and access it by using JNDI.
 We can do this using the spring.datasource.jndi-name property. e.g.
-<img src="images/jndi.JPG" width="150" height="70"/>
+<img src="images/jndi.JPG" width="800" height="90"/>
 
 
 ## Exception handling
