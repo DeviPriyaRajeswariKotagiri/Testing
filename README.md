@@ -19,7 +19,7 @@ POC to demonstrate the knowledge on Spring Security and JWT
 5. [Deployments](#Deployments)
 6. [Testing](#Testing)
 6. [DataSource configuration](#DataSource-configuration)
-7. [Exception handling](exception-handling)
+7. [Exception handling](Exception-handling)
 7. [Coding Standards](#Coding-Standards)
 8. [POM Dependencies](#POM-Dependencies)
 9. [Collaboration](#Collaboration)
@@ -168,14 +168,19 @@ mvn clean test -Dtest=SpringApplicationTests
 
 ## DataSource configuration
 1. Maven Dependencies
-2. DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
+<img src="images/pom.jpg" width="200" height="200"/>
+2. application.properties
+DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
 The properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even configuration provider systems.
 Below given configuration shows sample properties for H2, MySQL, Oracle and SQL server databases.
+<img src="images/maven.jpg" width="200" height="200"/>
 3. DataSource Bean
 Recommended way to create DataSource bean is using DataSourceBuilder class within a class annotated with the @Configuration annotation. The datasource uses the underlying connection pool as well.
+<img src="images/jpa.jpg" width="200" height="200"/>
 4. JNDI DataSource
 If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the Application Server’s built-in features and access it by using JNDI.
 We can do this using the spring.datasource.jndi-name property. e.g.
+<img src="images/jndi.jpg" width="200" height="200"/>
 
 
 ## Exception handling
@@ -186,9 +191,11 @@ We can do this using the spring.datasource.jndi-name property. e.g.
   ### Exception model classes
       Creating seperate classes to denote specific business usecase failure and return them when that usecase fail.
       e.g. I have created RecordNotFoundException class for all buch scenarios where a resource is requested by it’s ID, and resource is not found in the system.
+      <img src="images/exception.jpg" width="200" height="200"/>
   ### Custom ExceptionHandler
       Now add one class extending ResponseEntityExceptionHandler and annotate it with @ControllerAdvice annotation.
       ResponseEntityExceptionHandler is a convenient base class for to provide centralized exception handling across all @RequestMapping methods through @ExceptionHandler           methods. @ControllerAdvice is more for enabling auto-scanning and configuration at application startup.
+      <img src="images/customexception.jpg" width="200" height="200"/>
 
 
 
