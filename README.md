@@ -18,7 +18,8 @@ POC to demonstrate the knowledge on Spring Security and JWT
    2. [Dependent Downstream Servicesm](#Dependent-Downstream-Services)
 5. [Deployments](#Deployments)
 6. [Testing](#Testing)
-6. [Databases](#Databases)
+6. [DataSource configuration](#DataSource-configuration)
+7. [Exception handling](exception-handling)
 7. [Coding Standards](#Coding-Standards)
 8. [POM Dependencies](#POM-Dependencies)
 9. [Collaboration](#Collaboration)
@@ -66,7 +67,6 @@ cd openmrs-core
 mvn clean package
 ```
 
-This will generate the OpenMRS application in `webapp/target/openmrs.war` which you will have to deploy into an application server like for example [tomcat](https://tomcat.apache.org/) or [jetty](http://www.eclipse.org/jetty/).
 
 ### Deploy
 
@@ -129,7 +129,7 @@ JWT (shortened from JSON Web Token) is the missing standardization for using tok
 ### UML Diagram
 Detailed UML Diagram for the Application
 
-<img src="images/uml.jpg" width="250" height="250"/>
+<img src="images/uml.jpg" width="350" height="350"/>
 
 ### Dependent Downstream Services
    [Spring Security](https://spring.io/guides/topicals/spring-security-architecture)
@@ -166,9 +166,31 @@ mvn clean test -Dtest=SpringApplicationTests
 ````
 
 
-## Databases
+## DataSource configuration
+1. Maven Dependencies
+2. DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
+The properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even configuration provider systems.
+Below given configuration shows sample properties for H2, MySQL, Oracle and SQL server databases.
+3. DataSource Bean
+Recommended way to create DataSource bean is using DataSourceBuilder class within a class annotated with the @Configuration annotation. The datasource uses the underlying connection pool as well.
+4. JNDI DataSource
+If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the Application Server’s built-in features and access it by using JNDI.
+We can do this using the spring.datasource.jndi-name property. e.g.
 
-[Database Component](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/662143302/Databases)
+
+## Exception handling
+  ### Default spring validation support
+  * To apply default validation, we only need to add relevant annotations in proper places. i.e.
+       1.Annotate model class with required validation specific annotations such as @NotEmpty, @Email etc.
+       2.Enable validation of request body by @Valid annotation
+  ### Exception model classes
+      Creating seperate classes to denote specific business usecase failure and return them when that usecase fail.
+      e.g. I have created RecordNotFoundException class for all buch scenarios where a resource is requested by it’s ID, and resource is not found in the system.
+  ### Custom ExceptionHandler
+      Now add one class extending ResponseEntityExceptionHandler and annotate it with @ControllerAdvice annotation.
+      ResponseEntityExceptionHandler is a convenient base class for to provide centralized exception handling across all @RequestMapping methods through @ExceptionHandler           methods. @ControllerAdvice is more for enabling auto-scanning and configuration at application startup.
+
+
 
 ## Coding Standards
 
