@@ -13,7 +13,7 @@ POC to demonstrate the knowledge on Spring Security and JWT
    2. [Infrastructure](#Infrastructure)
      1. [Local](#Local)
      2. [Cloud](#Cloud)
-2. [Build & Deployment](#Build & Deployment)
+2. [Build & Deployment](#Build-&-Deployment)
    1. [Local Machine](#Local-Machine)
 		1. [Dependencies](#Dependencies)
 		2. [Configuration (Build & Runtime)](#Configuration-(Build & Runtime))
