@@ -9,7 +9,7 @@ POC to demonstrate the knowledge on Spring Security and JWT
 
 1. [Introduction](#Introduction)
 2. [Prerequisites](#prerequisites)
-	1.[Tools (to be installed on developer’s machine)](#Tools-(to be installed on developer’s machine))
+	1.[Tools (to be installed on developer’s machine)](#Tools)
 	2.[Infrastructure](#Infrastructure)
 		1.[Local](#Local)
 		2.[Cloud](#Cloud)
