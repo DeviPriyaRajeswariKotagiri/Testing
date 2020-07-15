@@ -100,20 +100,23 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
      A key component of the integration platform (IP) is the Amazon cloud (AWS).  Along with infrastructure as a service (IIS) the cloud platform maintains identity and access management (IAM) for their platform to ensure the services used are used in a secure fashion.
    [ Cloud Configuration ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/325943364/Cloud+Configuration)
 ## Build & Deployment
+
    ### Local Machine
    - **Dependencies** 
+   ```
 		<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.9.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 		</parent>
+```
 		
  - **Configuration**
-			1. Environment Variables
+  1. Environment Variables
 			
-			2. Data Source
-				1. Maven Dependencies
+  2. Data Source
+ 				1. Maven Dependencies
 				<img src="images/pom.JPG" width="550" height="400"/>
 				2. application.properties
 				DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
@@ -126,10 +129,10 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 				4. JNDI DataSource
 				If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.
 				We can do this using the spring.datasource.jndi-name property. e.g.
-				<img src="images/jndi.JPG" width="800" height="90"/>
-			3. Logging
+				<img src="images/jndi.JPG" width="800" height="90"/>				
+  3. Logging
 			[Logging](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
-			4. Message Bus
+  4. Message Bus
 			[Local Machine :Message Bus (https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/334302909/Decision+What+should+Wawa+s+message+bus+architecture+look+like)
 - **Build Instructions**
 		After you have taken care of the [Prerequisites](#prerequisites)
