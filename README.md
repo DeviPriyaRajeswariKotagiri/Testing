@@ -114,8 +114,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 		
  - **Configuration**
   1. Environment Variables
-  
-   [Local Machine Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
+   - **[Local Machine Environment Variables ]**(https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
   
   
   
@@ -124,15 +123,16 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
   
 			
   2. Data Source
-  - **1.** Maven Dependencies
+  - **1.Maven Dependencies
   
   
  <img src="images/pom.JPG" width="550" height="400"/>
   - **2.** application.properties
-				DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
-				The properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even 				       configuration provider systems.
-				Below given configuration shows sample properties for H2, MySQL, Oracle and SQL server databases.
-				<img src="images/maven.JPG" width="400" height="400"/>
+DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
+the properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even 				       configuration provider systems.
+Below given configuration shows sample properties for H2, MySQL, Oracle and SQL server databases.
+<img src="images/maven.JPG" width="400" height="400"/>
+				
   - **3.**  DataSource Bean
 				Recommended way to create DataSource bean is using DataSourceBuilder class within a class annotated with the @Configuration annotation. The 				    datasource uses the underlying connection pool as well.
 				<img src="images/jpa.JPG" width="550" height="400"/>
