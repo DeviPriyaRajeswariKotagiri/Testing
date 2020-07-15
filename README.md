@@ -34,7 +34,7 @@ POC to demonstrate the knowledge on Spring Security and JWT
 		3. [Build Instructions](#Build-Instructions)
 		4. [Testing Instructions](#Testing-Instructions)
 		5. [Deployment Instructions](#Deployment-Instructions)
-	3. [Integration Platform](Integration Platform)
+	3. [Integration Platform](Integration-Platform)
 		1. [Dependencies](#Dependencies)
 		2. [Configuration (Build & Runtime)](#Configuration-Build&Runtime)
 			1. [Environment Variables](#Environment-Variables) 
@@ -61,11 +61,12 @@ POC to demonstrate the knowledge on Spring Security and JWT
  5. [Link(s) to On-boarding document](#Link-to-On-boarding-document)
 6. [License](#license)
 
+
 ## Introduction
-
-### Prerequisites
-
-#### Java
+Anonymous Token Generator using Spring Security-To produce detailed design for creating, signing, validating and consuming JWT Tokens, so that Anonymous Customers can Order Online and/or Managing Orders, using web/mobile applications.
+## Prerequisites
+   #### Tools (to be installed on developer’s machine)
+   #### Java
 
 Install Java8 (https://www.oracle.com/java/technologies/java8.html).
 If you want to build the master branch you will need a Java JDK of minimum version 8.
@@ -92,20 +93,66 @@ Install the version control tool [git]https://github.com/wawa/) and clone this r
 git clone  https://github.com/wawa/admin-toolstack-config.git
 ```
 
-### Build Command
+#### Infrastructure
+     - **Local**
+    [ Appliation Infrastructure ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/350554432/Application+Infrastructure)
+     - **Cloud**
+     A key component of the integration platform (IP) is the Amazon cloud (AWS).  Along with infrastructure as a service (IIS) the cloud platform maintains identity and access management (IAM) for their platform to ensure the services used are used in a secure fashion.
+   [ Cloud Configuration ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/325943364/Cloud+Configuration)
+## Build & Deployment
+   #### Local Machine
+   -1. Dependencies
+		<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.9.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+		</parent>
+		
+ -2. Configuration
+			1. Environment Variables
+			
+			2. Data Source
+				1. Maven Dependencies
+				<img src="images/pom.JPG" width="550" height="400"/>
+				2. application.properties
+				DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
+				The properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even 				       configuration provider systems.
+				Below given configuration shows sample properties for H2, MySQL, Oracle and SQL server databases.
+				<img src="images/maven.JPG" width="400" height="400"/>
+				3. DataSource Bean
+				Recommended way to create DataSource bean is using DataSourceBuilder class within a class annotated with the @Configuration annotation. The 				    datasource uses the underlying connection pool as well.
+				<img src="images/jpa.JPG" width="550" height="400"/>
+				4. JNDI DataSource
+				If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.
+				We can do this using the spring.datasource.jndi-name property. e.g.
+				<img src="images/jndi.JPG" width="800" height="90"/>
+			3. Logging
+			[Logging](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
+			4. Message Bus
+			[Local Machine :Message Bus (https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/334302909/Decision+What+should+Wawa+s+message+bus+architecture+look+like)
+-3. Build Instructions
+		After you have taken care of the [Prerequisites](#prerequisites)
 
-After you have taken care of the [Prerequisites](#prerequisites)
+		Execute the following
 
-Execute the following
+			```bash
+			cd openmrs-core
+			mvn clean package
+			```
 
-```bash
-cd openmrs-core
-mvn clean package
-```
+-4. Testing Instructions
+		
+## Unit test cases
+There are multiple unit test cases written to cover the different components of the application. However there is a global application test suite file _**UnitTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
+
+````
+mvn clean test -Dtest=ApplicationUnitTests
+````
 
 
-### Deploy
-
+-5. Deployment Instructions
+		
 For development purposes you can simply deploy the `openmrs.war` into the application server jetty via
 
 ```bash
@@ -118,63 +165,50 @@ If all goes well (check the console output) you can access the OpenMRS applicati
 Refer to [Getting Started as a Developer - Maven](https://wiki.openmrs.org/display/docs/Maven) for some more information
 on useful Maven commands and build options.
 
-## Navigating the repository
 
-The project tree is set up as follows:
+ #### Local Integration Environment (LIE)
+-1. Dependencies
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.9.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+			
+		
+		2. Configuration
+			1. Environment Variables
+			
+			2. Data Source
+				1. Maven Dependencies
+				<img src="images/pom.JPG" width="550" height="400"/>
+				2. application.properties
+				DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
+				The properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even 				       configuration provider systems.
+				Below given configuration shows sample properties for H2, MySQL, Oracle and SQL server databases.
+				<img src="images/maven.JPG" width="400" height="400"/>
+				3. DataSource Bean
+				Recommended way to create DataSource bean is using DataSourceBuilder class within a class annotated with the @Configuration annotation. The 				    datasource uses the underlying connection pool as well.
+				<img src="images/jpa.JPG" width="550" height="400"/>
+				4. JNDI DataSource
+				If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.
+				We can do this using the spring.datasource.jndi-name property. e.g.
+				<img src="images/jndi.JPG" width="800" height="90"/>
+			3. Logging
+			[Logging](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
+			4. Message Bus
+				[Local Machine :Message Bus (https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/334302909/Decision+What+should+Wawa+s+message+bus+architecture+look+like)
+		3. Build Instructions
+		
+		4. Testing Instructions
+## Integration test cases
+There are multiple integration test cases written to cover the different components of the application. However there is a global application test suite file _**ApplicationTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
 
-<table>
- <tr>
-  <td>api/</td>
-  <td>Java and resource files for building the java api jar file.</td>
- </tr>
- <tr>
-  <td>web/</td>
-  <td>Java and resource files that are used in the webapp/war file.</td>
- </tr>
- <tr>
-  <td>webapp/</td>
-  <td>files used in building the war file (contains JSP files on older versions).</td>
- </tr>
- <tr>
-  <td>pom.xml</td>
-  <td>The main maven file used to build and package OpenMRS.</td>
- </tr>  
-</table>
-
-## Technology
-
-- **Spring Boot**     - Server side framework
-- **JPA**             - Entity framework
-- **Lombok**          - Provides automated getter/setters
-- **Actuator**        - Application insights on the fly
-- **Spring Security** - Spring's security layer
-- **Thymeleaf**       - Template Engine
-- **Devtools**        - Support Hot-Code Swapping with live browser reload
-- **JJWT**            - JWT tokens for API authentication
-- **Swagger**         - In-built swagger2 documentation support
-- **Docker**          - Docker containers
-- **Junit**           - Unit testing framework
-- **H2**              - H2 database embedded version
-
-
-
-## API Documentation
-POC to demonstrate the knowledge on Spring Security and JWT
-JWT (shortened from JSON Web Token) is the missing standardization for using tokens to authenticate on the web in general, not only for REST services. Currently, it is in draft status as RFC 7519. It is robust and can carry a lot of information, but is still simple to use even though its size is relatively small. Like any other token, JWT can be used to pass the identity of authenticated users between an identity provider and a service provider (which are not necessarily the same systems). It can also carry all the user’s claim, such as authorization data, so the service provider does not need to go into the database or external systems to verify user roles and permissions for each request; that data is extracted from the token.
-
-### UML Diagram
-Detailed UML Diagram for the Application
-
-<img src="images/uml.jpg" width="350" height="350"/>
-
-### Dependent Downstream Services
-   - [Spring Security](https://spring.io/guides/topicals/spring-security-architecture)
-
-   - [JWT](https://jwt.io/introduction/)
-
-
-## Deployments
-
+````
+mvn clean test -Dtest=SpringApplicationTests
+````
+		5. Deployment Instructions
+		
 ### Deploy Microservice
 
 [Deploying a Microservice Via an automated CI/CD Pipeline](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/659751676/SBB+-+BE+Deploy+Microservice)
@@ -185,157 +219,71 @@ Detailed UML Diagram for the Application
 ### Deploying a Microservice to Docker Container
 [Deploying a Microservice to Docker Container](https://www.javainuse.com/devOps/docker/docker-jar)
 
-
-## Testing
-## Unit test cases
-There are multiple unit test cases written to cover the different components of the application. However there is a global application test suite file _**UnitTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
-
-````
-mvn clean test -Dtest=ApplicationUnitTests
-````
-
+#### Integration Platform
+		1. Dependencies
+		
+		2. Configuration
+			1. Environment Variables
+			
+			2. Data Source
+			3. Logging
+			4. Message Bus
+		3. Build Instructions
+		
+		4. Testing Instructions
 ## Integration test cases
 There are multiple integration test cases written to cover the different components of the application. However there is a global application test suite file _**ApplicationTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
 
 ````
 mvn clean test -Dtest=SpringApplicationTests
 ````
+		5. Deployment Instructions
+### Deploy Microservice
 
+[Deploying a Microservice Via an automated CI/CD Pipeline](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/659751676/SBB+-+BE+Deploy+Microservice)
 
-## DataSource configuration
-1. Maven Dependencies
-<img src="images/pom.JPG" width="550" height="400"/>
-2. application.properties
-DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
-The properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even configuration provider systems.
-Below given configuration shows sample properties for H2, MySQL, Oracle and SQL server databases.
-<img src="images/maven.JPG" width="400" height="400"/>
-3. DataSource Bean
-Recommended way to create DataSource bean is using DataSourceBuilder class within a class annotated with the @Configuration annotation. The datasource uses the underlying connection pool as well.
-<img src="images/jpa.JPG" width="550" height="400"/>
-4. JNDI DataSource
-If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the Application Server’s built-in features and access it by using JNDI.
-We can do this using the spring.datasource.jndi-name property. e.g.
-<img src="images/jndi.JPG" width="800" height="90"/>
+### Deploy UI Web App
+[Deploying UI Web App](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/660046657/SBB+-+FE+Deploy+UI+Web+App)
 
+### Deploying a Microservice to Docker Container
+[Deploying a Microservice to Docker Container](https://www.javainuse.com/devOps/docker/docker-jar)
+		
+## Design Details
+#### UML Diagrams
+<img src="images/uml.jpg" width="100" height="100"/>
+#### Events Produced & Events Consumed
 
-## Exception handling
-  ### Default spring validation support
-       To apply default validation, we only need to add relevant annotations in proper places. i.e.
-       1.Annotate model class with required validation specific annotations such as @NotEmpty, @Email etc.
-       2.Enable validation of request body by @Valid annotation
-  ###  Exception model classes
-            import org.springframework.http.HttpStatus;
-            import org.springframework.web.bind.annotation.ResponseStatus;
+[Event Publisher](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/593334289/Solution+Building+Block+-+Event+Publication)
 
-            @ResponseStatus(HttpStatus.NOT_FOUND)
-            public class RecordNotFoundException extends RuntimeException 
-            {
-                public RecordNotFoundException(String exception) {
-                    super(exception);
-                }
-            }
-     
-  ### Custom ExceptionHandler
-         import org.springframework.web.context.request.WebRequest;
-         import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+[Event Subscriber](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/579338621/Solution+Building+Block+-+Event+Subscriber)
+#### Dependent Downstream Services
+[Dependencies](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/762448353/Dependencies+on+EE+Team+s)
 
-         @SuppressWarnings({"unchecked","rawtypes"})
-         @ControllerAdvice
-         public class CustomExceptionHandler extends ResponseEntityExceptionHandler 
-         {
-             @ExceptionHandler(Exception.class)
-             public final ResponseEntity<Object> handleAllExceptions(Exception ex, WebRequest request) {
-                 List<String> details = new ArrayList<>();
-                 details.add(ex.getLocalizedMessage());
-                 ErrorResponse error = new ErrorResponse("Server Error", details);
-                 return new ResponseEntity(error, HttpStatus.INTERNAL_SERVER_ERROR);
-             }
+## Support
 
-             @ExceptionHandler(RecordNotFoundException.class)
-             public final ResponseEntity<Object> handleUserNotFoundException(RecordNotFoundException ex, WebRequest request) {
-                 List<String> details = new ArrayList<>();
-                 details.add(ex.getLocalizedMessage());
-                 ErrorResponse error = new ErrorResponse("Record Not Found", details);
-                 return new ResponseEntity(error, HttpStatus.NOT_FOUND);
-             }
-
-             @Override
-             protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
-                 List<String> details = new ArrayList<>();
-                 for(ObjectError error : ex.getBindingResult().getAllErrors()) {
-                     details.add(error.getDefaultMessage());
-                 }
-                 ErrorResponse error = new ErrorResponse("Validation Failed", details);
-                 return new ResponseEntity(error, HttpStatus.BAD_REQUEST);
-             }
-         }
-      
-
-
-
-## Coding Standards
-
-[Best Coding Standards](https://google.github.io/styleguide/javaguide.html)
-
-[Best practices for effective & efficient agile code reviews](https://queue-it.com/blog/agile-code-review-best-practices/)
-
-## POM Dependencies
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.9.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
-	<groupId>io</groupId>
-	<artifactId>spring-security-jwt</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-security-jwt</name>
-	<description>Demo project for Spring Boot</description>
-
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
-
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>io.jsonwebtoken</groupId>
-			<artifactId>jjwt</artifactId>
-			<version>0.9.1</version>
-		</dependency>
-		<dependency>
-			<groupId>javax.xml.bind</groupId>
-			<artifactId>jaxb-api</artifactId>
-			<version>2.3.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
- 
-
-## Collaboration
-
-Confluence(https://wawaappdev.atlassian.net/secure/Dashboard.jspa)
+   #### Deployment status
+   [Deployment status](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/857768982/Component+Onboarding+and+Deployment+Status)
+   #### How to view Health statistics
+   [Health Checks](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/252937977/Application+Health+Checks)
+   #### How to view Logs
+   [Amazon S3 Logs](https://docs.datadoghq.com/integrations/amazon_s3/#enable-s3-access-logs)
+   
+   #### Owned by which Team?
+   [Team Name](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/696322608/EE+Agile+Teams)
+## References
+Includes documents which are linked with JIRA stories
+[Links] (https://wawaappdev.atlassian.net/secure/RapidBoard.jspa?rapidView=280)
+#### Link(s) to Detailed Design
+[Detailed Design]()
+#### Link(s) to SBBs used
+[Link(s) to SBBs](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/586613993/P3%2B-%2BSolution%2BBuild%2BBlock%2BRegistry)
+#### Link(s) to ABBs used
+[Link(s) to ABBs](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/508428401/Foundational+Architecture+Building+Blocks)
+#### Link to OAS on Developer Portal
+[Link to OAS on Developer Portal](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/590742573/System+Developer+Portal+Design)
+#### Link(s) to On-boarding document
+[Developer On-boarding](https://wawaappdev.atlassian.net/wiki/spaces/MEET/pages/131137606/Developer+onboarding)
 
 ## License
 
 [Engineering Team3](https://wawaappdev.atlassian.net/secure/RapidBoard.jspa?rapidView=280&projectKey=EN3) © [WAWA](https://www.wawa.com/)
-
-
