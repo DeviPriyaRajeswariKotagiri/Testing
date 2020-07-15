@@ -114,7 +114,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 		
  - **Configuration**
   1. Environment Variables
-   - **[Local Machine Environment Variables ]**(https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
+  #### [Local Machine Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
   
   
   
