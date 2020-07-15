@@ -114,36 +114,41 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 		
  - **Configuration**
   1. Environment Variables
-  #### [Local Machine Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
+     #### [Local Machine Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
   
   
   
   
   
-  
-			
-  2. Data Source
- #### Maven Dependencies
+ 2. Data Source
+  #### Maven Dependencies
   
   
  <img src="images/pom.JPG" width="550" height="400"/>
- #### application.properties
+ 
+  #### application.properties
+  
 DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
 the properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even 				       configuration provider systems.
 Below given configuration shows sample properties for H2, MySQL, Oracle and SQL server databases.
 <img src="images/maven.JPG" width="400" height="400"/>
 				
-#### DataSource Bean
-				Recommended way to create DataSource bean is using DataSourceBuilder class within a class annotated with the @Configuration annotation. The 				    datasource uses the underlying connection pool as well.
-				<img src="images/jpa.JPG" width="550" height="400"/>
+ #### DataSource Bean
+ 
+Recommended way to create DataSource bean is using DataSourceBuilder class within a class annotated with the @Configuration annotation. The 				    datasource uses the underlying connection pool as well.
+ 
+<img src="images/jpa.JPG" width="550" height="400"/>
+				
 #### JNDI DataSource
-				If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.
-				We can do this using the spring.datasource.jndi-name property. e.g.
-				<img src="images/jndi.JPG" width="800" height="90"/>				
+If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.
+We can do this using the spring.datasource.jndi-name property. e.g.
+
+<img src="images/jndi.JPG" width="800" height="90"/>
+								
   3. Logging
-			[Logging](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
+[Logging] (https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
   4. Message Bus
-			[Local Machine :Message Bus (https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/334302909/Decision+What+should+Wawa+s+message+bus+architecture+look+like)
+[Local Machine :Message Bus] (https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/334302909/Decision+What+should+Wawa+s+message+bus+architecture+look+like)
 - **Build Instructions**
 		After you have taken care of the [Prerequisites](#prerequisites)
 
@@ -156,8 +161,8 @@ Below given configuration shows sample properties for H2, MySQL, Oracle and SQL 
 
 - **Testing Instructions**
 		
-#### Unit test cases
-There are multiple unit test cases written to cover the different components of the application. However there is a global application test suite file _**UnitTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
+    #### Unit test cases
+     There are multiple unit test cases written to cover the different components of the application. However there is a global application test suite file _**UnitTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
 
 ````
 mvn clean test -Dtest=ApplicationUnitTests
