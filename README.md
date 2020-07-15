@@ -65,7 +65,7 @@ POC to demonstrate the knowledge on Spring Security and JWT
 ## Introduction
 Anonymous Token Generator using Spring Security-To produce detailed design for creating, signing, validating and consuming JWT Tokens, so that Anonymous Customers can Order Online and/or Managing Orders, using web/mobile applications.
 ## Prerequisites
-   #### Tools (to be installed on developer’s machine)
+   ### Tools (to be installed on developer’s machine)
    #### Java
 
 Install Java8 (https://www.oracle.com/java/technologies/java8.html).
@@ -87,16 +87,16 @@ which will tell you what version Maven is using. Refer to the [Maven docs](https
 
 #### Git
 
-Install the version control tool [git]https://github.com/wawa/) and clone this repository with
+Install the version control tool [git](https://github.com/wawa/) and clone this repository with
 
 ```bash
 git clone  https://github.com/wawa/admin-toolstack-config.git
 ```
 
-#### Infrastructure
-     - **Local**
-    [ Appliation Infrastructure ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/350554432/Application+Infrastructure)
-     - **Cloud**
+### Infrastructure
+ -**Local**
+      [ Appliation Infrastructure ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/350554432/Application+Infrastructure)
+ - **Cloud**
      A key component of the integration platform (IP) is the Amazon cloud (AWS).  Along with infrastructure as a service (IIS) the cloud platform maintains identity and access management (IAM) for their platform to ensure the services used are used in a secure fashion.
    [ Cloud Configuration ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/325943364/Cloud+Configuration)
 ## Build & Deployment
