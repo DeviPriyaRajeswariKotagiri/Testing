@@ -101,7 +101,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
    [ Cloud Configuration ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/325943364/Cloud+Configuration)
 ## Build & Deployment
 
-   ### Local Machine
+### Local Machine
    - **Dependencies** 
    ```
 		<parent>
@@ -115,7 +115,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
  - **Configuration**
   1. Environment Variables
   
-  
+  [Local Machine Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
   
   
   
@@ -124,6 +124,13 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
   
 			
   2. Data Source
+  
+  
+  
+  
+  
+  
+  
   - **1.** Maven Dependencies
 				<img src="images/pom.JPG" width="550" height="400"/>
   - **2.** application.properties
@@ -178,94 +185,74 @@ on useful Maven commands and build options.
 
 
  #### Local Integration Environment (LIE)
-- **Dependencies**
-	<parent>
+  - **Dependencies** 
+   ```
+		<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.9.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
+		</parent>
+```
+		
+ - **Configuration**
+  1. Environment Variables
+  
+  [Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
+  
+  
+  
+  
+  
+  
 			
-	- **Configuration**
-			1. Environment Variables
-			
-			2. Data Source
-				1. Maven Dependencies
+  2. Data Source
+  
+  
+  
+  
+  
+  
+  
+  - **1.** Maven Dependencies
 				<img src="images/pom.JPG" width="550" height="400"/>
-				2. application.properties
+  - **2.** application.properties
 				DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
 				The properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even 				       configuration provider systems.
 				Below given configuration shows sample properties for H2, MySQL, Oracle and SQL server databases.
 				<img src="images/maven.JPG" width="400" height="400"/>
-				3. DataSource Bean
+  - **3.**  DataSource Bean
 				Recommended way to create DataSource bean is using DataSourceBuilder class within a class annotated with the @Configuration annotation. The 				    datasource uses the underlying connection pool as well.
 				<img src="images/jpa.JPG" width="550" height="400"/>
-				4. JNDI DataSource
+ - **4.** JNDI DataSource
 				If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.
 				We can do this using the spring.datasource.jndi-name property. e.g.
-				<img src="images/jndi.JPG" width="800" height="90"/>
-			3. Logging
+				<img src="images/jndi.JPG" width="800" height="90"/>				
+  3. Logging
 			[Logging](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
-			4. Message Bus
-				[Local Machine :Message Bus (https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/334302909/Decision+What+should+Wawa+s+message+bus+architecture+look+like)
-- **Build Instructions**
-		
- - **Testing Instructions**
-#### Local Integration test cases
-There are multiple integration test cases written to cover the different components of the application. However there is a global application test suite file _**ApplicationTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
-
-````
-mvn clean test -Dtest=SpringApplicationTests
-````
-- **Deployment Instructions**
-		
-#### Deploy Microservice
-
-[Deploying a Microservice Via an automated CI/CD Pipeline](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/659751676/SBB+-+BE+Deploy+Microservice)
-
-#### Deploy UI Web App
-[Deploying UI Web App](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/660046657/SBB+-+FE+Deploy+UI+Web+App)
-
-#### Deploying a Microservice to Docker Container
-[Deploying a Microservice to Docker Container](https://www.javainuse.com/devOps/docker/docker-jar)
-
-### Integration Platform
-- **Dependencies**
-		
-- **Configuration**
-			1. Environment Variables
-			
-			2. Data Source
-				1. Maven Dependencies
-				<img src="images/pom.JPG" width="550" height="400"/>
-				2. application.properties
-				DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
-				The properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even 				       configuration provider systems.
-				Below given configuration shows sample properties for H2, MySQL, Oracle and SQL server databases.
-				<img src="images/maven.JPG" width="400" height="400"/>
-				3. DataSource Bean
-				Recommended way to create DataSource bean is using DataSourceBuilder class within a class annotated with the @Configuration annotation. The 				    datasource uses the underlying connection pool as well.
-				<img src="images/jpa.JPG" width="550" height="400"/>
-				4. JNDI DataSource
-				If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.
-				We can do this using the spring.datasource.jndi-name property. e.g.
-				<img src="images/jndi.JPG" width="800" height="90"/>
-			
-			3. Logging
-			[Logging](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
-			4. Message Bus
+  4. Message Bus
 			[Local Machine :Message Bus (https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/334302909/Decision+What+should+Wawa+s+message+bus+architecture+look+like)
+			
 - **Build Instructions**
 		
+		```Build Instructions for Local Integration environment
+			```
+			
 - **Testing Instructions**
 
-#### Integration test cases
-There are multiple integration test cases written to cover the different components of the application. However there is a global application test suite file _**ApplicationTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
+```Test Instructions for Local Integration environment```
+
+		
+#### Unit test cases
+There are multiple unit test cases written to cover the different components of the application. However there is a global application test suite file _**UnitTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
 
 ````
-mvn clean test -Dtest=SpringApplicationTests
+mvn clean test -Dtest=ApplicationUnitTests
 ````
+
+
 - **Deployment Instructions**
+		
 ### Deploy Microservice
 
 [Deploying a Microservice Via an automated CI/CD Pipeline](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/659751676/SBB+-+BE+Deploy+Microservice)
@@ -276,6 +263,74 @@ mvn clean test -Dtest=SpringApplicationTests
 ### Deploying a Microservice to Docker Container
 [Deploying a Microservice to Docker Container](https://www.javainuse.com/devOps/docker/docker-jar)
 		
+
+### Integration Platform
+  - **Dependencies** 
+   ```
+		<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.9.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+		</parent>
+```
+		
+ - **Configuration**
+  1. Environment Variables
+  
+  [ Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
+  
+  
+  
+  
+  
+  
+			
+  2. Data Source
+  
+  
+  
+  
+  
+  
+  
+  - **1.** Maven Dependencies
+				<img src="images/pom.JPG" width="550" height="400"/>
+  - **2.** application.properties
+				DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
+				The properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even 				       configuration provider systems.
+				Below given configuration shows sample properties for H2, MySQL, Oracle and SQL server databases.
+				<img src="images/maven.JPG" width="400" height="400"/>
+  - **3.**  DataSource Bean
+				Recommended way to create DataSource bean is using DataSourceBuilder class within a class annotated with the @Configuration annotation. The 				    datasource uses the underlying connection pool as well.
+				<img src="images/jpa.JPG" width="550" height="400"/>
+ - **4.** JNDI DataSource
+				If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.
+				We can do this using the spring.datasource.jndi-name property. e.g.
+				<img src="images/jndi.JPG" width="800" height="90"/>				
+  3. Logging
+			[Logging](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
+  4. Message Bus
+			[Local Machine :Message Bus (https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/334302909/Decision+What+should+Wawa+s+message+bus+architecture+look+like)
+- **Build Instructions**
+		
+
+		
+
+			```Build Instructions for  Integration environment
+			```
+
+- **Testing Instructions**
+		
+		```
+		LocaL Test Integration Steps
+			```
+
+
+- **Deployment Instructions**
+		
+Deploying Microservie to AWS Cloud (https://aws.amazon.com/blogs/compute/deploying-java-microservices-on-amazon-ec2-container-service/)
+
 ## Design Details
 #### UML Diagrams
 <img src="images/uml.jpg" width="100" height="100"/>
