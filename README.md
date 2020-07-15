@@ -146,10 +146,10 @@ We can do this using the spring.datasource.jndi-name property. e.g.
 <img src="images/jndi.JPG" width="800" height="90"/>
 								
   3. Logging
-     [Logging](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
+  [Logging](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
     
   4. Message Bus
-     [Local Machine :Message Bus](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/334302909/Decision+What+should+Wawa+s+message+bus+architecture+look+like)
+  [Message Bus](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/334302909/Decision+What+should+Wawa+s+message+bus+architecture+look+like)
 
 - **Build Instructions**
 		After you have taken care of the [Prerequisites](#prerequisites)
