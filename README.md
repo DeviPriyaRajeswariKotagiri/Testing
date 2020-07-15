@@ -65,13 +65,13 @@ POC to demonstrate the knowledge on Spring Security and JWT
 ## Introduction
 Anonymous Token Generator using Spring Security-To produce detailed design for creating, signing, validating and consuming JWT Tokens, so that Anonymous Customers can Order Online and/or Managing Orders, using web/mobile applications.
 ## Prerequisites
-   ### Tools (to be installed on developer’s machine)
+### Tools (to be installed on developer’s machine)
    #### Java
 
 Install Java8 (https://www.oracle.com/java/technologies/java8.html).
 If you want to build the master branch you will need a Java JDK of minimum version 8.
 
-#### Maven
+   #### Maven
 
 Install the build tool [Maven](https://maven.apache.org/).
 
@@ -85,7 +85,7 @@ mvn -version
 
 which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
 
-#### Git
+   #### Git
 
 Install the version control tool [git](https://github.com/wawa/) and clone this repository with
 
@@ -94,14 +94,14 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 ```
 
 ### Infrastructure
- -**Local**
+ - **Local**
       [ Appliation Infrastructure ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/350554432/Application+Infrastructure)
  - **Cloud**
      A key component of the integration platform (IP) is the Amazon cloud (AWS).  Along with infrastructure as a service (IIS) the cloud platform maintains identity and access management (IAM) for their platform to ensure the services used are used in a secure fashion.
    [ Cloud Configuration ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/325943364/Cloud+Configuration)
 ## Build & Deployment
-   #### Local Machine
-   -1. Dependencies
+   ### Local Machine
+   - **Dependencies** 
 		<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -109,7 +109,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 		<relativePath/> <!-- lookup parent from repository -->
 		</parent>
 		
- -2. Configuration
+ - **Configuration**
 			1. Environment Variables
 			
 			2. Data Source
@@ -131,7 +131,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 			[Logging](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
 			4. Message Bus
 			[Local Machine :Message Bus (https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/334302909/Decision+What+should+Wawa+s+message+bus+architecture+look+like)
--3. Build Instructions
+- **Build Instructions**
 		After you have taken care of the [Prerequisites](#prerequisites)
 
 		Execute the following
@@ -141,9 +141,9 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 			mvn clean package
 			```
 
--4. Testing Instructions
+- **Testing Instructions**
 		
-## Unit test cases
+#### Unit test cases
 There are multiple unit test cases written to cover the different components of the application. However there is a global application test suite file _**UnitTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
 
 ````
@@ -151,7 +151,7 @@ mvn clean test -Dtest=ApplicationUnitTests
 ````
 
 
--5. Deployment Instructions
+- **Deployment Instructions**
 		
 For development purposes you can simply deploy the `openmrs.war` into the application server jetty via
 
@@ -167,7 +167,7 @@ on useful Maven commands and build options.
 
 
  #### Local Integration Environment (LIE)
--1. Dependencies
+- **Dependencies**
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -175,8 +175,7 @@ on useful Maven commands and build options.
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 			
-		
-		2. Configuration
+	- **Configuration**
 			1. Environment Variables
 			
 			2. Data Source
@@ -198,46 +197,64 @@ on useful Maven commands and build options.
 			[Logging](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
 			4. Message Bus
 				[Local Machine :Message Bus (https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/334302909/Decision+What+should+Wawa+s+message+bus+architecture+look+like)
-		3. Build Instructions
+- **Build Instructions**
 		
-		4. Testing Instructions
-## Integration test cases
+ - **Testing Instructions**
+#### Local Integration test cases
 There are multiple integration test cases written to cover the different components of the application. However there is a global application test suite file _**ApplicationTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
 
 ````
 mvn clean test -Dtest=SpringApplicationTests
 ````
-		5. Deployment Instructions
+- **Deployment Instructions**
 		
-### Deploy Microservice
+#### Deploy Microservice
 
 [Deploying a Microservice Via an automated CI/CD Pipeline](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/659751676/SBB+-+BE+Deploy+Microservice)
 
-### Deploy UI Web App
+#### Deploy UI Web App
 [Deploying UI Web App](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/660046657/SBB+-+FE+Deploy+UI+Web+App)
 
-### Deploying a Microservice to Docker Container
+#### Deploying a Microservice to Docker Container
 [Deploying a Microservice to Docker Container](https://www.javainuse.com/devOps/docker/docker-jar)
 
-#### Integration Platform
-		1. Dependencies
+### Integration Platform
+- **Dependencies**
 		
-		2. Configuration
+- **Configuration**
 			1. Environment Variables
 			
 			2. Data Source
+				1. Maven Dependencies
+				<img src="images/pom.JPG" width="550" height="400"/>
+				2. application.properties
+				DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
+				The properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even 				       configuration provider systems.
+				Below given configuration shows sample properties for H2, MySQL, Oracle and SQL server databases.
+				<img src="images/maven.JPG" width="400" height="400"/>
+				3. DataSource Bean
+				Recommended way to create DataSource bean is using DataSourceBuilder class within a class annotated with the @Configuration annotation. The 				    datasource uses the underlying connection pool as well.
+				<img src="images/jpa.JPG" width="550" height="400"/>
+				4. JNDI DataSource
+				If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.
+				We can do this using the spring.datasource.jndi-name property. e.g.
+				<img src="images/jndi.JPG" width="800" height="90"/>
+			
 			3. Logging
+			[Logging](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
 			4. Message Bus
-		3. Build Instructions
+			[Local Machine :Message Bus (https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/334302909/Decision+What+should+Wawa+s+message+bus+architecture+look+like)
+- **Build Instructions**
 		
-		4. Testing Instructions
-## Integration test cases
+- **Testing Instructions**
+
+#### Integration test cases
 There are multiple integration test cases written to cover the different components of the application. However there is a global application test suite file _**ApplicationTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
 
 ````
 mvn clean test -Dtest=SpringApplicationTests
 ````
-		5. Deployment Instructions
+- **Deployment Instructions**
 ### Deploy Microservice
 
 [Deploying a Microservice Via an automated CI/CD Pipeline](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/659751676/SBB+-+BE+Deploy+Microservice)
