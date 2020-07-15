@@ -132,9 +132,9 @@ Detailed UML Diagram for the Application
 <img src="images/uml.jpg" width="350" height="350"/>
 
 ### Dependent Downstream Services
-   - **[Spring Security](https://spring.io/guides/topicals/spring-security-architecture)
+   - [Spring Security](https://spring.io/guides/topicals/spring-security-architecture)
 
-   - **[JWT](https://jwt.io/introduction/)
+   - [JWT](https://jwt.io/introduction/)
 
 
 ## Deployments
