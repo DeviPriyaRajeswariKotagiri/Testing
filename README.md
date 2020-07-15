@@ -115,7 +115,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
  - **Configuration**
   1. Environment Variables
   
-  [Local Machine Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
+  		[Local Machine Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
   
   
   
@@ -127,11 +127,16 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
   
   
   
+ 
   
   
   
   
   - **1.** Maven Dependencies
+  
+  
+  
+  
 				<img src="images/pom.JPG" width="550" height="400"/>
   - **2.** application.properties
 				DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
