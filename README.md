@@ -101,7 +101,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 
 ### Local Machine
 
-<details><summary>Build and Deployment</summary>
+<details><summary>Local Machine:Build and Deployment</summary>
 <p>
 
    - **Dependencies** 
@@ -194,7 +194,7 @@ on useful Maven commands and build options.
 
  ### Local Integration Environment
  
-<details><summary>Build and Deployment</summary>
+<details><summary>Local Integration Environment:Build and Deployment</summary>
 <p>
 	
   - **Dependencies** 
@@ -283,7 +283,7 @@ mvn clean test -Dtest=ApplicationUnitTests
 
 ### Integration Platform
 
-<details><summary>Build and Deployment</summary>
+<details><summary>Integration Platform:Build and Deployment</summary>
 <p>
 	
   - **Dependencies** 
