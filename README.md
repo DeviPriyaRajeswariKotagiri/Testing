@@ -14,15 +14,15 @@
      2. [Cloud](#Cloud)
 2. [Build And Deployment](#Build-And-Deployment)
    1. [Local Machine](#Local-Machine)
-		1. [Dependencies](#Dependencies)
-		2. [Configuration](#Configuration)
-			- [Environment Variables](#Environment-Variables) 
-			- [Data Source](#Data-Source)
-			- [Logging](#Logging)
-			- [Message Bus](#Message-Bus)	
-		3. [Build Instructions](#Build-Instructions)
-		4. [Testing Instructions](#Testing-Instructions)
-		5. [Deployment Instructions](#Deployment-Instructions)
+		1. Dependencies
+		2. Configuration
+			- Environment Variables
+			- Data Source
+			- Logging
+			- Message Bus
+		3. Build Instructions
+		4. Testing Instructions
+		5. Deployment Instructions
 	2. [Local Integration Environment](#Local-Integration-Environment)
 		1. Dependencies
 		2. Configuration
@@ -34,15 +34,15 @@
 		4. Testing Instructions
 		5. Deployment Instructions
 	3. [Integration Platform](#Integration-Platform)
-		1. [Dependencies](#Dependencies)
-		2. [Configuration](#Configuration)
-			- [Environment Variables](#Environment-Variables) 
-			- [Data Source](#Data-Source)
-			- [Logging](#Logging)
-			- [Message Bus](#Message-Bus)	
-		3. [Build Instructions](#Build-Instructions)
-		4. [Testing Instructions](#Testing-Instructions)
-		5. [Deployment Instructions](#Deployment-Instructions)
+		1. Dependencies
+		2. Configuration
+			- Environment Variables
+			- Data Source
+			- Logging
+			- Message Bus
+		3. Build Instructions
+		4. Testing Instructions
+		5. Deployment Instructions
 3. [Design Details](#Design-Details)
 	1. [UML Diagrams](#UML-Diagrams)
 	2. [Events Produced And Events Consumed](#Events-Produced-And-Events-Consumed)
