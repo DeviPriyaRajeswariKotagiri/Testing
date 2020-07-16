@@ -104,7 +104,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 <details>
 <summary>
 
-### Local Machine </summary>
+### Local Machine 
 <p align="center">
 
    - **Dependencies** 
@@ -190,7 +190,7 @@ If all goes well (check the console output) you can access the OpenMRS applicati
 
 Refer to [Getting Started as a Developer - Maven](https://wiki.openmrs.org/display/docs/Maven) for some more information
 on useful Maven commands and build options.
-
+</summary>
 </details>
 
  ### Local Integration Environment
