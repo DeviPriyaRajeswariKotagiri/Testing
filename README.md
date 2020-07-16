@@ -4,9 +4,9 @@
 
 # Anonymous Token Generator
 
-
 #### Table of Contents
-
+<details><summary></summary>
+	<p>
 1. [Introduction](#Introduction)
 2. [Prerequisites](#prerequisites)
    1. [Tools](#Tools)
@@ -60,7 +60,9 @@
     4. [Links to OAS on Developer Portal](#Links-to-OAS-on-Developer-Portal)
     5. [Links to On-boarding document](#Links-to-On-boarding-document)
 6. [License](#license)
-
+		
+	</p>
+	</details>
 
 ## Introduction
 Anonymous Token Generator using Spring Security-To produce detailed design for creating, signing, validating and consuming JWT Tokens, so that Anonymous Customers can Order Online and/or Managing Orders, using web/mobile applications.
