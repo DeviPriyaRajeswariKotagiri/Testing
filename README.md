@@ -102,7 +102,9 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 ## Build And Deployment
 
 
-
+<details><summary> Local Machine </summary>
+	<p>
+		
 ### Local Machine 
 <p align="center">
 
@@ -121,8 +123,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
    ##### [Local Machine Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
   
   
-<details><summary>CLICK ME</summary>
-	<p>
+
  #### Data Source
  
   ##### Maven Dependencies
@@ -148,8 +149,8 @@ If we deploy your Spring Boot application to an Application Server, we might wan
 We can do this using the spring.datasource.jndi-name property. e.g.
 
 <img src="images/jndi.JPG" width="800" height="90"/>
-</p>
-			</details>					
+
+			
   #### Logging
   [Logging](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
     
@@ -190,6 +191,9 @@ If all goes well (check the console output) you can access the OpenMRS applicati
 
 Refer to [Getting Started as a Developer - Maven](https://wiki.openmrs.org/display/docs/Maven) for some more information
 on useful Maven commands and build options.
+
+</p>
+</details>
 
 
  ### Local Integration Environment
