@@ -103,7 +103,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 
 ### Local Machine
 
-<details><summary><h3> Local Machine Build and Deployment</h3></summary>
+<details><summary>Build and Deployment</summary>
 <p>
 
    - **Dependencies** 
