@@ -123,8 +123,11 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
   
   
   
-  
+ <details>
+	<summary>
+		
  #### Data Source
+ 
   ##### Maven Dependencies
   
   
@@ -148,6 +151,9 @@ If we deploy your Spring Boot application to an Application Server, we might wan
 We can do this using the spring.datasource.jndi-name property. e.g.
 
 <img src="images/jndi.JPG" width="800" height="90"/>
+
+</summary>
+	</details>
 								
   #### Logging
   [Logging](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
