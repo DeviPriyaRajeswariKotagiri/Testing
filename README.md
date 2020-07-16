@@ -179,7 +179,7 @@ For development purposes you can simply deploy the `openmrs.war` into the applic
 cd openmrs-core/webapp
 mvn jetty:run
 ```
-<img src="images/deploymentlocalintegration.jpg" width="400" height="400"/>
+<img src="images/deploymentlocalintegration.JPG" width="400" height="400"/>
 
 If all goes well (check the console output) you can access the OpenMRS application at `localhost:8080/openmrs`.
 
@@ -302,8 +302,10 @@ mvn clean test -Dtest=ApplicationUnitTests
   
   
  ##### Maven Dependencies
+ 
  <img src="images/pom.JPG" width="550" height="400"/>
-##### application.properties
+ 
+ ##### application.properties
 DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
 The properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even 				       configuration provider systems.Below given configuration shows sample properties for H2, MySQL, Oracle and SQL server databases.
 <img src="images/maven.JPG" width="400" height="400"/>
@@ -349,8 +351,7 @@ We can do this using the spring.datasource.jndi-name property. e.g.
 [Deploying Microservie to AWS Cloud](https://aws.amazon.com/blogs/compute/deploying-java-microservices-on-amazon-ec2-container-service/)
 
 ##### Container deployment overview
-
-<img src="images/awsdeployment.jpg" width="400" height="400"/>
+<img src="images/awsdeployment.JPG" width="400" height="400"/>
 
 
 ## Design Details
