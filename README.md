@@ -54,11 +54,11 @@ POC to demonstrate the knowledge on Spring Security and JWT
    3. [How to view Logs](#How-to-view-Health-statistics)
    4. [Owned by which Team?](#Owned-by-which-Team?)
 5. [References](#References)
-    1. [Link(s) to Detailed Design](#Link(s)-to-Detailed-Design)
-    2. [Link(s) to SBBs used](#Link(s)-to-SBBs-used)
-    3. [Link(s) to ABBs used](#Link(s)-to-ABBs-used)
-    4. [Link(s) to OAS on Developer Portal](#Link(s)-to-OAS-on-Developer-Portal)
-    5. [Link(s) to On-boarding document](#Link(s)-to-On-boarding-document)
+    1. [Links to Detailed Design](#Links-to-Detailed-Design)
+    2. [Links to SBBs used](#Links-to-SBBs-used)
+    3. [Links to ABBs used](#Links-to-ABBs-used)
+    4. [Links to OAS on Developer Portal](#Links-to-OAS-on-Developer-Portal)
+    5. [Links to On-boarding document](#Links-to-On-boarding-document)
 6. [License](#license)
 
 
@@ -380,15 +380,15 @@ We can do this using the spring.datasource.jndi-name property. e.g.
 ## References
 Includes documents which are linked with JIRA stories
 [Links](https://wawaappdev.atlassian.net/secure/RapidBoard.jspa?rapidView=280)
-#### Link(s) to Detailed Design
+#### Links to Detailed Design
 [Detailed Design]()
-#### Link(s) to SBBs used
+#### Links to SBBs used
 [Link(s) to SBBs](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/586613993/P3%2B-%2BSolution%2BBuild%2BBlock%2BRegistry)
-#### Link(s) to ABBs used
+#### Links to ABBs used
 [Link(s) to ABBs](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/508428401/Foundational+Architecture+Building+Blocks)
-#### Link to OAS on Developer Portal
+#### Links to OAS on Developer Portal
 [Link to OAS on Developer Portal](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/590742573/System+Developer+Portal+Design)
-#### Link(s) to On-boarding document
+#### Links to On-boarding document
 [Developer On-boarding](https://wawaappdev.atlassian.net/wiki/spaces/MEET/pages/131137606/Developer+onboarding)
 
 ## License
