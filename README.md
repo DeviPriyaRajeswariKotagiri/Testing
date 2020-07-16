@@ -101,12 +101,13 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
    [ Cloud Configuration ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/325943364/Cloud+Configuration)
 ## Build And Deployment
 
+### Local Machine
 
-<details><summary> Local Machine </summary>
-	<p>
-		
-### Local Machine 
-<p align="center">
+<details><summary>
+	
+### Local Machine Build and Deployment</summary>
+
+<p>
 
    - **Dependencies** 
    ```
