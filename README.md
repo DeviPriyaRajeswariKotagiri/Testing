@@ -287,6 +287,7 @@ mvn clean test -Dtest=ApplicationUnitTests
 
 <details><summary>Build and Deployment</summary>
 <p>
+	
   - **Dependencies** 
    ```
 		<parent>
