@@ -101,8 +101,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
    [ Cloud Configuration ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/325943364/Cloud+Configuration)
 ## Build And Deployment
 
-<details>
-<summary>
+
 
 ### Local Machine 
 <p align="center">
@@ -190,8 +189,7 @@ If all goes well (check the console output) you can access the OpenMRS applicati
 
 Refer to [Getting Started as a Developer - Maven](https://wiki.openmrs.org/display/docs/Maven) for some more information
 on useful Maven commands and build options.
-</summary>
-</details>
+
 
  ### Local Integration Environment
   - **Dependencies** 
