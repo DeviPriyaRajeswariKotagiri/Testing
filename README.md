@@ -16,7 +16,7 @@ POC to demonstrate the knowledge on Spring Security and JWT
 2. [Build And Deployment](#Build-And-Deployment)
    1. [Local Machine](#Local-Machine)
 		1. [Dependencies](#Dependencies)
-		2. [Configuration](#Configuration-Build&Runtime)
+		2. [Configuration](#Configuration)
 			- [Environment Variables](#Environment-Variables) 
 			- [Data Source](#Data-Source)
 			- [Logging](#Logging)
@@ -24,9 +24,9 @@ POC to demonstrate the knowledge on Spring Security and JWT
 		3. [Build Instructions](#Build-Instructions)
 		4. [Testing Instructions](#Testing-Instructions)
 		5. [Deployment Instructions](#Deployment-Instructions)
-	2. [Local Integration Environment (LIE)](Local-Integration-Environment)
+	2. [Local Integration Environment](Local-Integration-Environment)
 		1. [Dependencies](#Dependencies)
-		2. [Configuration (Build & Runtime)](#Configuration-Build&Runtime)
+		2. [Configuration](#Configuration)
 			- [Environment Variables](#Environment-Variables) 
 			- [Data Source](#Data-Source)
 			- [Logging](#Logging)
@@ -36,7 +36,7 @@ POC to demonstrate the knowledge on Spring Security and JWT
 		5. [Deployment Instructions](#Deployment-Instructions)
 	3. [Integration Platform](Integration-Platform)
 		1. [Dependencies](#Dependencies)
-		2. [Configuration (Build & Runtime)](#Configuration-Build&Runtime)
+		2. [Configuration](#Configuration)
 			- [Environment Variables](#Environment-Variables) 
 			- [Data Source](#Data-Source)
 			- [Logging](#Logging)
@@ -46,7 +46,7 @@ POC to demonstrate the knowledge on Spring Security and JWT
 		5. [Deployment Instructions](#Deployment-Instructions)
 3. [Design Details](#Design-Details)
 	1. [UML Diagrams](#UML-Diagrams)
-	2. [Events Produced & Events Consumed](#Events-Produced&Events-Consumed)
+	2. [Events Produced And Events Consumed](#Events-Produced-And-Events-Consumed)
 	3. [Dependent Downstream Services](#Dependent-Downstream-Services)
 4. [Support](#Support)
    1. [Deployment status](#Deployment-status)
@@ -57,7 +57,7 @@ POC to demonstrate the knowledge on Spring Security and JWT
     1. [Link(s) to Detailed Design](#Link-to-Detailed-Design)
     2. [Link(s) to SBBs used](#Link-to-SBBs-used)
     3. [Link(s) to ABBs used](#Link-to-ABBs-used)
-    4. [Link to OAS on Developer Portal](#Link-to-OAS-on-Developer-Portal)
+    4. [Link(s) to OAS on Developer Portal](#Link-to-OAS-on-Developer-Portal)
     5. [Link(s) to On-boarding document](#Link-to-On-boarding-document)
 6. [License](#license)
 
@@ -187,7 +187,7 @@ Refer to [Getting Started as a Developer - Maven](https://wiki.openmrs.org/displ
 on useful Maven commands and build options.
 
 
- ### Local Integration Environment (LIE)
+ ### Local Integration Environment
   - **Dependencies** 
    ```
 		<parent>
@@ -358,7 +358,7 @@ We can do this using the spring.datasource.jndi-name property. e.g.
 #### UML Diagrams
 <img src="images/umldiag.jpg" width="400" height="400"/>
 
-#### Events Produced & Events Consumed
+#### Events Produced And Events Consumed
 [Event Publisher](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/593334289/Solution+Building+Block+-+Event+Publication)
 
 [Event Subscriber](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/579338621/Solution+Building+Block+-+Event+Subscriber)
