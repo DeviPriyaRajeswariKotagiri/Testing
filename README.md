@@ -224,8 +224,12 @@ DataSource configuration is provided by external configuration properties ( spri
 The properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even 				       configuration provider systems.Below given configuration shows sample properties for H2, MySQL, Oracle and SQL server databases.
 <img src="images/maven.JPG" width="400" height="400"/>				
 #####  DataSource Bean
+
 Recommended way to create DataSource bean is using DataSourceBuilder class within a class annotated with the @Configuration annotation. The 				    datasource uses the underlying connection pool as well.
+
+
 <img src="images/jpa.JPG" width="550" height="400"/>
+
 ##### JNDI DataSource
 If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.We can do this using the spring.datasource.jndi-name property. e.g.
 <img src="images/jndi.JPG" width="800" height="90"/>				
@@ -297,23 +301,28 @@ mvn clean test -Dtest=ApplicationUnitTests
   
  ##### Maven Dependencies
  <img src="images/pom.JPG" width="550" height="400"/>
- ##### application.properties
- DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
+##### application.properties
+DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
 The properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even 				       configuration provider systems.Below given configuration shows sample properties for H2, MySQL, Oracle and SQL server databases.
 <img src="images/maven.JPG" width="400" height="400"/>
 				
-  ##### DataSource Bean
+##### DataSource Bean
   
   Recommended way to create DataSource bean is using DataSourceBuilder class within a class annotated with the @Configuration annotation. The 				    datasource uses the underlying connection pool as well.
+  
+  
 <img src="images/jpa.JPG" width="550" height="400"/>
 				
 				
- ##### JNDI DataSource
+##### JNDI DataSource
 If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.
 We can do this using the spring.datasource.jndi-name property. e.g.				
+
 <img src="images/jndi.JPG" width="800" height="90"/>				
- #### Logging
+
+#### Logging
  [Logging](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
+
 #### Message Bus
 [Message Bus](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/334302909/Decision+What+should+Wawa+s+message+bus+architecture+look+like)
 
@@ -334,13 +343,13 @@ We can do this using the spring.datasource.jndi-name property. e.g.
 
 - **Deployment Instructions**
 		
-Deploying Microservie to AWS Cloud (https://aws.amazon.com/blogs/compute/deploying-java-microservices-on-amazon-ec2-container-service/)
+[Deploying Microservie to AWS Cloud](https://aws.amazon.com/blogs/compute/deploying-java-microservices-on-amazon-ec2-container-service/)
 
 ## Design Details
 #### UML Diagrams
-<img src="images/uml.jpg" width="100" height="100"/>
-#### Events Produced & Events Consumed
+<img src="images/umldiag.jpg" width="400" height="400"/>
 
+#### Events Produced & Events Consumed
 [Event Publisher](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/593334289/Solution+Building+Block+-+Event+Publication)
 
 [Event Subscriber](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/579338621/Solution+Building+Block+-+Event+Subscriber)
@@ -357,10 +366,11 @@ Deploying Microservie to AWS Cloud (https://aws.amazon.com/blogs/compute/deployi
    [Amazon S3 Logs](https://docs.datadoghq.com/integrations/amazon_s3/#enable-s3-access-logs)
    
    #### Owned by which Team?
-   [Team Name](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/696322608/EE+Agile+Teams)
+   [Team Details](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/696322608/EE+Agile+Teams)
+   
 ## References
 Includes documents which are linked with JIRA stories
-[Links] (https://wawaappdev.atlassian.net/secure/RapidBoard.jspa?rapidView=280)
+[Links](https://wawaappdev.atlassian.net/secure/RapidBoard.jspa?rapidView=280)
 #### Link(s) to Detailed Design
 [Detailed Design]()
 #### Link(s) to SBBs used
