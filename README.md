@@ -9,11 +9,11 @@ POC to demonstrate the knowledge on Spring Security and JWT
 
 1. [Introduction](#Introduction)
 2. [Prerequisites](#prerequisites)
-   1. [Tools (to be installed on developer’s machine)](#Tools)
+   1. [Tools](#Tools)
    2. [Infrastructure](#Infrastructure)
      1. [Local](#Local)
      2. [Cloud](#Cloud)
-2. [Build & Deployment](#Build-&-Deployment)
+2. [Build And Deployment](#Build-And-Deployment)
    1. [Local Machine](#Local-Machine)
 		1. [Dependencies](#Dependencies)
 		2. [Configuration](#Configuration-Build&Runtime)
@@ -99,7 +99,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
  - **Cloud**
      A key component of the integration platform (IP) is the Amazon cloud (AWS).  Along with infrastructure as a service (IIS) the cloud platform maintains identity and access management (IAM) for their platform to ensure the services used are used in a secure fashion.
    [ Cloud Configuration ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/325943364/Cloud+Configuration)
-## Build & Deployment
+## Build And Deployment
 
 ### Local Machine
    - **Dependencies** 
