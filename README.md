@@ -54,11 +54,11 @@ POC to demonstrate the knowledge on Spring Security and JWT
    3. [How to view Logs](#How-to-view-Health-statistics)
    4. [Owned by which Team?](#Owned-by-which-Team?)
 5. [References](#References)
-    1. [Link(s) to Detailed Design](#Link-to-Detailed-Design)
-    2. [Link(s) to SBBs used](#Link-to-SBBs-used)
-    3. [Link(s) to ABBs used](#Link-to-ABBs-used)
-    4. [Link(s) to OAS on Developer Portal](#Link-to-OAS-on-Developer-Portal)
-    5. [Link(s) to On-boarding document](#Link-to-On-boarding-document)
+    1. [Link(s) to Detailed Design](#Link(s)-to-Detailed-Design)
+    2. [Link(s) to SBBs used](#Link(s)-to-SBBs-used)
+    3. [Link(s) to ABBs used](#Link(s)-to-ABBs-used)
+    4. [Link(s) to OAS on Developer Portal](#Link(s)-to-OAS-on-Developer-Portal)
+    5. [Link(s) to On-boarding document](#Link(s)-to-On-boarding-document)
 6. [License](#license)
 
 
