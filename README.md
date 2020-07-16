@@ -104,8 +104,9 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 <details>
 <summary>
 
-### Local Machine 
-</summary>
+### Local Machine </summary>
+<p align="center">
+
    - **Dependencies** 
    ```
 		<parent>
