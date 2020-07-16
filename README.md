@@ -102,8 +102,10 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 ## Build And Deployment
 
 <details>
-  <summary>Adding Powerwall Sensors to Home Assistant</summary>
-### Local Machine
+<summary>
+
+### Local Machine 
+</summary>
    - **Dependencies** 
    ```
 		<parent>
