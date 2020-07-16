@@ -179,6 +179,7 @@ For development purposes you can simply deploy the `openmrs.war` into the applic
 cd openmrs-core/webapp
 mvn jetty:run
 ```
+<img src="images/deploymentlocalintegration.jpg" width="400" height="400"/>
 
 If all goes well (check the console output) you can access the OpenMRS application at `localhost:8080/openmrs`.
 
@@ -267,7 +268,8 @@ mvn clean test -Dtest=ApplicationUnitTests
 
 #### Deploying a Microservice to Docker Container
 [Deploying a Microservice to Docker Container](https://www.javainuse.com/devOps/docker/docker-jar)
-		
+
+
 
 ### Integration Platform
   - **Dependencies** 
@@ -342,8 +344,14 @@ We can do this using the spring.datasource.jndi-name property. e.g.
 
 
 - **Deployment Instructions**
+
 		
 [Deploying Microservie to AWS Cloud](https://aws.amazon.com/blogs/compute/deploying-java-microservices-on-amazon-ec2-container-service/)
+
+##### Container deployment overview
+
+<img src="images/awsdeployment.jpg" width="400" height="400"/>
+
 
 ## Design Details
 #### UML Diagrams
