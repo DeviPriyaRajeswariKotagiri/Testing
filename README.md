@@ -23,17 +23,17 @@
 		3. [Build Instructions](#Build-Instructions)
 		4. [Testing Instructions](#Testing-Instructions)
 		5. [Deployment Instructions](#Deployment-Instructions)
-	2. [Local Integration Environment](Local-Integration-Environment)
-		1. [Dependencies](#Dependencies)
-		2. [Configuration](#Configuration)
-			- [Environment Variables](#Environment-Variables) 
-			- [Data Source](#Data-Source)
-			- [Logging](#Logging)
-			- [Message Bus](#Message-Bus)	
-		3. [Build Instructions](#Build-Instructions)
-		4. [Testing Instructions](#Testing-Instructions)
-		5. [Deployment Instructions](#Deployment-Instructions)
-	3. [Integration Platform](Integration-Platform)
+	2. [Local Integration Environment](#Local-Integration-Environment)
+		1. Dependencies
+		2. Configuration
+			- Environment Variables
+			- Data Source
+			- Logging
+			- Message Bus
+		3. Build Instructions
+		4. Testing Instructions
+		5. Deployment Instructions
+	3. [Integration Platform](#Integration-Platform)
 		1. [Dependencies](#Dependencies)
 		2. [Configuration](#Configuration)
 			- [Environment Variables](#Environment-Variables) 
