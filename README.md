@@ -103,10 +103,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 
 ### Local Machine
 
-<details><summary>
-	
-### Local Machine Build and Deployment</summary>
-
+<details><summary><h3> Local Machine Build and Deployment</h3></summary>
 <p>
 
    - **Dependencies** 
@@ -198,6 +195,10 @@ on useful Maven commands and build options.
 
 
  ### Local Integration Environment
+ 
+ <details><summary><h3> Local Integration Build and Deployment</h3></summary>
+<p>
+	
   - **Dependencies** 
    ```
 		<parent>
@@ -279,9 +280,12 @@ mvn clean test -Dtest=ApplicationUnitTests
 #### Deploying a Microservice to Docker Container
 [Deploying a Microservice to Docker Container](https://www.javainuse.com/devOps/docker/docker-jar)
 
-
+</p>
+</details>
 
 ### Integration Platform
+<details><summary><h3> Integration Platform Build and Deployment</h3></summary>
+<p>
   - **Dependencies** 
    ```
 		<parent>
@@ -363,6 +367,8 @@ We can do this using the spring.datasource.jndi-name property. e.g.
 ##### Container deployment overview
 <img src="images/awsdeployment.JPG" width="400" height="400"/>
 
+</p>
+</details>
 
 ## Design Details
 #### UML Diagrams
