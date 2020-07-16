@@ -196,7 +196,7 @@ on useful Maven commands and build options.
 
  ### Local Integration Environment
  
- <details><summary><h3> Local Integration Build and Deployment</h3></summary>
+<details><summary>Build and Deployment</summary>
 <p>
 	
   - **Dependencies** 
@@ -284,7 +284,8 @@ mvn clean test -Dtest=ApplicationUnitTests
 </details>
 
 ### Integration Platform
-<details><summary><h3> Integration Platform Build and Deployment</h3></summary>
+
+<details><summary>Build and Deployment</summary>
 <p>
   - **Dependencies** 
    ```
