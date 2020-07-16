@@ -173,10 +173,12 @@ mvn clean test -Dtest=ApplicationUnitTests
 
 - **Deployment Instructions**
 		
-For development purposes you can simply deploy the `* .war` into the application server [More Information](http://webhelp.esri.com/arcgisserver/9.2/java/manager/applications/deploying_to_websphere.htm)
+For development purposes you can simply deploy the `* .war` into the application server
+
+   [More Information](http://webhelp.esri.com/arcgisserver/9.2/java/manager/applications/deploying_to_websphere.htm)
+   
 
 
-```
 <img src="images/deploymentlocalintegration.JPG" width="400" height="400"/>
 
 If all goes well (check the console output) you can access the OpenMRS application at `localhost:8080/openmrs`.
