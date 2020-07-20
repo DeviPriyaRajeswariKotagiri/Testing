@@ -85,7 +85,7 @@ mvn -version
 
 which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
 
-   #### Git
+#### Git
 
 Install the version control tool [git](https://github.com/wawa/) and clone this repository with
 
@@ -100,17 +100,16 @@ e.g: STS/Eclipse/intellij etc.
 
 ### Infrastructure
  - **Local**
-  Local Infrastructure :
+ Local Infrastructure :
 		
-		1. Docker Container: Install Docker Container to create isolated environments through which you can build, maintain, ship and deploy your application.[More 			Information](https://docs.docker.com/docker-for-windows/)
-		2. Kubernetes: Install Kubernetes for automating deployment, scaling, and management of containerized applications.[More Information]				                 (https://kubernetes.io/docs/setup/)
-		3.Databases: Provide details of database used in the component design(SQL DB/No-SQL)
+1. Docker Container: Install Docker Container to create isolated environments through which you can build, maintain, ship and deploy your application.[More 			Information](https://docs.docker.com/docker-for-windows/)
+2. Kubernetes: Install Kubernetes for automating deployment, scaling, and management of containerized applications.[More Information]				                 (https://kubernetes.io/docs/setup/)
+3.Databases: Provide details of database used in the component design(SQL DB/No-SQL)
 		
       
- - **Cloud**
-  Cloud Infrastructure :
-  
-  	If your application relies on cloud infrastructure, Provide information on Compute,Storage & Databases,Networking,Messaging,Logging and Monitoring.
+- **Cloud**
+Cloud Infrastructure :
+If your application relies on cloud infrastructure, Provide information on Compute,Storage & Databases,Networking,Messaging,Logging and Monitoring.
 	
 
 ## Build And Deployment
@@ -130,8 +129,8 @@ e.g: STS/Eclipse/intellij etc.
    
 		
 #### b. **Configuration**
-##### **Environment Variables**
-###### [Local Machine Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
+- **Environment Variables**
+##### [Local Machine Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
   
 |   |   |   |   |   |
 |---|---|---|---|---|
@@ -141,30 +140,30 @@ e.g: STS/Eclipse/intellij etc.
 
 ##### **Data Source**
  
-###### Maven Dependencies
+Maven Dependencies
 In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies are gathered in    the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
   
 To find List of Dependencies,Please refer the POM.xml File
  
-###### application.properties
+application.properties
 In Spring Boot, properties are kept in the application.properties file under the classpath.
 The application.properties file is located in the src/main/resources directory. 
 				
-###### DataSource Bean
+DataSource Bean
  
 Supply a DataSource to the JDBC Template so it can configure itself to get database access.
 You can configure the DataSource in the XML file or in a Configuration class.
 
 				
-###### JNDI DataSource
+JNDI DataSource
 If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					         Application Server’s built-in features and access it by using JNDI.
 We can do this using the spring.datasource.jndi-name property.
 
 			
-##### **Logging**
+- **Logging**
   Not Applicable
    
-##### **Message Bus**
+- **Message Bus**
   Not Applicable
   
 #### c. **Build Instructions**
