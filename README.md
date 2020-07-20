@@ -4,7 +4,7 @@
 
 # Anonymous Token Generator
 
-#### Table of Contents
+## Table of Contents
 
 1. [Introduction](#Introduction)
 2. [Prerequisites](#prerequisites)
