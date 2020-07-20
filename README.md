@@ -120,7 +120,7 @@ e.g: STS/Eclipse/intellij etc.
 <details><summary>Local Machine:Build and Deployment</summary>
 <p>
 
-   #### a. **Dependencies** 
+#### a. **Dependencies** 
  
   
   Details of Parent POM:
@@ -129,9 +129,9 @@ e.g: STS/Eclipse/intellij etc.
   
    
 		
- #### b. **Configuration**
-  - **Environment Variables**
-   ##### [Local Machine Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
+#### b. **Configuration**
+##### **Environment Variables**
+###### [Local Machine Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
   
 |   |   |   |   |   |
 |---|---|---|---|---|
@@ -139,38 +139,38 @@ e.g: STS/Eclipse/intellij etc.
 |   |   |   |   |   |
 |   |   |   |   |   |
 
-- **Data Source**
+##### **Data Source**
  
-  ##### Maven Dependencies
-  In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies are gathered in   the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
+###### Maven Dependencies
+In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies are gathered in    the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
   
-  To find List of Dependencies,Please refer the POM.xml File
+To find List of Dependencies,Please refer the POM.xml File
  
-  ##### application.properties
-  
+###### application.properties
 In Spring Boot, properties are kept in the application.properties file under the classpath.
 The application.properties file is located in the src/main/resources directory. 
 				
- ##### DataSource Bean
+###### DataSource Bean
  
 Supply a DataSource to the JDBC Template so it can configure itself to get database access.
 You can configure the DataSource in the XML file or in a Configuration class.
 
 				
-##### JNDI DataSource
-If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.
+###### JNDI DataSource
+If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					         Application Server’s built-in features and access it by using JNDI.
 We can do this using the spring.datasource.jndi-name property.
 
 			
-  - **Logging**
+##### **Logging**
   Not Applicable
    
-  - **Message Bus**
+##### **Message Bus**
   Not Applicable
   
- #### c. **Build Instructions**
-		After you have taken care of the [Prerequisites](#prerequisites)
-		Execute the following
+#### c. **Build Instructions**
+
+After you have taken care of the [Prerequisites](#prerequisites)
+Execute the following
 
 			```bash
 			cd openmrs-core
@@ -179,12 +179,12 @@ We can do this using the spring.datasource.jndi-name property.
 
 #### d. **Testing Instructions**
 		
-   ##### Unit test cases
-     There are multiple unit test cases written to cover the different components of the application. However there is a global application test suite file _**UnitTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
+##### Unit test cases
+There are multiple unit test cases written to cover the different components of the application. However there is a global application test suite file _**UnitTests.java**_     that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
 
-````
-mvn clean test -Dtest=ApplicationUnitTests
-````
+		````
+		mvn clean test -Dtest=ApplicationUnitTests
+		````
 
 
 #### e. **Deployment Instructions**
