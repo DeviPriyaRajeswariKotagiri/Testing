@@ -104,7 +104,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 <details><summary>Local Machine:Build and Deployment</summary>
 <p>
 
-   - **Dependencies** 
+   - a.**Dependencies** 
    ```
 		<parent>
 		<groupId>org.springframework.boot</groupId>
