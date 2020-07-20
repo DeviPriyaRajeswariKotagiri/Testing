@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/openmrs/openmrs-core.svg?branch=master)](https://travis-ci.org/openmrs/openmrs-core) [![Coverage Status](https://coveralls.io/repos/github/openmrs/openmrs-core/badge.svg?branch=master)](https://coveralls.io/github/openmrs/openmrs-core?branch=master) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a51303ee46c34775a7c31c8d6016da6b)](https://www.codacy.com/app/openmrs/openmrs-core?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=openmrs/openmrs-core&amp;utm_campaign=Badge_Grade)
 
-# Anonymous Token Generator
+# Name of the Component
 
 ## Table of Contents
 
@@ -61,7 +61,9 @@
 6. [License](#license)
 
 ## Introduction
-Anonymous Token Generator using Spring Security-To produce detailed design for creating, signing, validating and consuming JWT Tokens, so that Anonymous Customers can Order Online and/or Managing Orders, using web/mobile applications.
+
+Provide Description of Component
+
 ## Prerequisites
 ### Tools/Software
    #### Java
@@ -91,12 +93,26 @@ Install the version control tool [git](https://github.com/wawa/) and clone this 
 git clone  https://github.com/wawa/admin-toolstack-config.git
 ```
 
+
+#### IDE
+Provide Integrated development environment used to build the application 
+e.g: STS/Eclipse/intellij etc.
+
 ### Infrastructure
  - **Local**
-      [ Application Infrastructure ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/350554432/Application+Infrastructure)
+  Local Infrastructure :
+		
+		1. Docker Container: Install Docker Container to create isolated environments through which you can build, maintain, ship and deploy your application.[More 			Information](https://docs.docker.com/docker-for-windows/)
+		2. Kubernetes: Install Kubernetes for automating deployment, scaling, and management of containerized applications.[More Information]				                 (https://kubernetes.io/docs/setup/)
+		3.Databases: Provide details of database used in the component design(SQL DB/No-SQL)
+		
+      
  - **Cloud**
-     A key component of the integration platform (IP) is the Amazon cloud (AWS).  Along with infrastructure as a service (IIS) the cloud platform maintains identity and access management (IAM) for their platform to ensure the services used are used in a secure fashion.
-   [ Cloud Configuration ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/325943364/Cloud+Configuration)
+  Cloud Infrastructure :
+  
+  	If your application relies on cloud infrastructure, Provide information on Compute,Storage & Databases,Networking,Messaging,Logging and Monitoring.
+	
+
 ## Build And Deployment
 
 ### Local Machine
@@ -106,10 +122,10 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 
    #### a. **Dependencies** 
  
-  Maven reads the parent POM from your local repository (or proxies like nexus) and creates an 'effective POM' by merging the information from parent and module POM.
-   
+  
   Details of Parent POM:
-  org.springframework.boot.spring-boot-starter-parent
+ 
+   e.g: org.springframework.boot.spring-boot-starter-parent
   
    
 		
@@ -163,7 +179,7 @@ We can do this using the spring.datasource.jndi-name property.
 
 #### d. **Testing Instructions**
 		
-    #### Unit test cases
+   ##### Unit test cases
      There are multiple unit test cases written to cover the different components of the application. However there is a global application test suite file _**UnitTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
 
 ````
@@ -179,7 +195,6 @@ For development purposes you can simply deploy the `* .war` into the application
 
    [More Information](http://webhelp.esri.com/arcgisserver/9.2/java/manager/applications/deploying_to_websphere.htm)
    
-
 
 <img src="images/deploymentlocalintegration.JPG" width="400" height="400"/>
 
@@ -253,7 +268,7 @@ We can do this using the spring.datasource.jndi-name property.
 ```Test Instructions for Local Integration environment```
 
 		
-#### Unit test cases
+##### Unit test cases
 There are multiple unit test cases written to cover the different components of the application. However there is a global application test suite file _**UnitTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
 
 ````
@@ -261,16 +276,16 @@ mvn clean test -Dtest=ApplicationUnitTests
 ````
 
 
-- **Deployment Instructions**
+#### e. **Deployment Instructions**
 
-#### Deploy Microservice
+##### Deploy Microservice
 
 [Deploying a Microservice Via an automated CI/CD Pipeline](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/659751676/SBB+-+BE+Deploy+Microservice)
 
-#### Deploy UI Web App
+##### Deploy UI Web App
 [Deploying UI Web App](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/660046657/SBB+-+FE+Deploy+UI+Web+App)
 
-#### Deploying a Microservice to Docker Container
+##### Deploying a Microservice to Docker Container
 [Deploying a Microservice to Docker Container](https://www.javainuse.com/devOps/docker/docker-jar)
 
 </p>
@@ -325,22 +340,21 @@ We can do this using the spring.datasource.jndi-name property.
   Not Applicable
  
 
-- **Build Instructions**
+#### c. **Build Instructions**
 		
 
-		
 
 			```Build Instructions for  Integration environment
 			```
 
-- **Testing Instructions**
+#### d. **Testing Instructions**
 		
 		```
 		LocaL Test Integration Steps
 			```
 
 
-- **Deployment Instructions**
+#### e. **Deployment Instructions**
 To Deploy a Microservice to AWS Cloud ,Refer Below
 		
 [Deploying Microservice to AWS Cloud](https://aws.amazon.com/blogs/compute/deploying-java-microservices-on-amazon-ec2-container-service/)
@@ -353,6 +367,7 @@ To Deploy a Microservice to AWS Cloud ,Refer Below
 
 ## Design Details
 ### i. UML Diagrams
+
 <img src="images/umldiag.jpg" width="400" height="400"/>
 
 ### ii. Events Produced And Events Consumed
@@ -385,15 +400,15 @@ Currently for this API ,there are no dependent services,For more information ple
    Engineering Team3
    
 ## References
-Includes documents which are linked with JIRA stories.
+Includes Reference documents .
+
+### i. Links to Detailed Design
 - [Links](https://wawaappdev.atlassian.net/secure/RapidBoard.jspa?rapidView=280)
 - [Event Publisher](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/593334289/Solution+Building+Block+-+Event+Publication)
-[Event Subscriber](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/579338621/Solution+Building+Block+-+Event+Subscriber)
-[Dependencies](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/762448353/Dependencies+on+EE+Team+s)
-[Check Deployment Status](https://www.namecheap.com/blog/visualize-your-deployment-status-with-jenkins/)
-[How to view Health statistics of a Microservice](https://www.callicoder.com/spring-boot-actuator/)
-### i. Links to Detailed Design
-Not Applicable
+- [Event Subscriber](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/579338621/Solution+Building+Block+-+Event+Subscriber)
+- [Dependencies](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/762448353/Dependencies+on+EE+Team+s)
+- [Check Deployment Status](https://www.namecheap.com/blog/visualize-your-deployment-status-with-jenkins/)
+- [How to view Health statistics of a Microservice](https://www.callicoder.com/spring-boot-actuator/)
 ### ii. Links to SBBs used
 [Link(s) to SBBs](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/586613993/P3%2B-%2BSolution%2BBuild%2BBlock%2BRegistry)
 ### iii. Links to ABBs used
