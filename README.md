@@ -10,8 +10,8 @@
 2. [Prerequisites](#prerequisites)
    1. [Tools](#Tools)
    2. [Infrastructure](#Infrastructure)
-     1. [Local](#Local)
-     2. [Cloud](#Cloud)
+ 	1. [Local](#Local)
+     	2. [Cloud](#Cloud)
 2. [Build And Deployment](#Build-And-Deployment)
    1. [Local Machine](#Local-Machine)
 		1. Dependencies
