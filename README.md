@@ -105,14 +105,13 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 <p>
 
    #### a. **Dependencies** 
-   ```
-		<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.9.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
-		</parent>
-```
+ 
+  Maven reads the parent POM from your local repository (or proxies like nexus) and creates an 'effective POM' by merging the information from parent and module POM.
+   
+  Details of Parent POM:
+  org.springframework.boot.spring-boot-starter-parent
+  
+   
 		
  #### b. **Configuration**
   - **Environment Variables**
@@ -124,42 +123,37 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 |   |   |   |   |   |
 |   |   |   |   |   |
 
- #### Data Source
+- **Data Source**
  
   ##### Maven Dependencies
+  In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies are gathered in   the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
   
-  
- <img src="images/pom.JPG" width="550" height="400"/>
+  To find List of Dependencies,Please refer the POM.xml File
  
   ##### application.properties
   
-DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
-the properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even 				       configuration provider systems.
-Below given configuration shows sample properties for H2, MySQL, Oracle and SQL server databases.
-<img src="images/maven.JPG" width="400" height="400"/>
+In Spring Boot, properties are kept in the application.properties file under the classpath.
+The application.properties file is located in the src/main/resources directory. 
 				
  ##### DataSource Bean
  
-Recommended way to create DataSource bean is using DataSourceBuilder class within a class annotated with the @Configuration annotation. The 				    datasource uses the underlying connection pool as well.
- 
-<img src="images/jpa.JPG" width="550" height="400"/>
+Supply a DataSource to the JDBC Template so it can configure itself to get database access.
+You can configure the DataSource in the XML file or in a Configuration class.
+
 				
 ##### JNDI DataSource
-If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.
-We can do this using the spring.datasource.jndi-name property. e.g.
-
-<img src="images/jndi.JPG" width="800" height="90"/>
+If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.
+We can do this using the spring.datasource.jndi-name property.
 
 			
-  #### Logging
-  [Logging](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
-    
-  #### Message Bus
-  [Message Bus](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/334302909/Decision+What+should+Wawa+s+message+bus+architecture+look+like)
-
-- **Build Instructions**
+  - **Logging**
+  Not Applicable
+   
+  - **Message Bus**
+  Not Applicable
+  
+ #### c. **Build Instructions**
 		After you have taken care of the [Prerequisites](#prerequisites)
-
 		Execute the following
 
 			```bash
@@ -167,7 +161,7 @@ We can do this using the spring.datasource.jndi-name property. e.g.
 			mvn clean package
 			```
 
-- **Testing Instructions**
+#### d. **Testing Instructions**
 		
     #### Unit test cases
      There are multiple unit test cases written to cover the different components of the application. However there is a global application test suite file _**UnitTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
@@ -177,8 +171,10 @@ mvn clean test -Dtest=ApplicationUnitTests
 ````
 
 
-- **Deployment Instructions**
-		
+#### e. **Deployment Instructions**
+
+Instructions to deploy a Microservice to  Application Server.
+
 For development purposes you can simply deploy the `* .war` into the application server
 
    [More Information](http://webhelp.esri.com/arcgisserver/9.2/java/manager/applications/deploying_to_websphere.htm)
@@ -201,63 +197,58 @@ on useful Maven commands and build options.
 <details><summary>Local Integration Environment:Build and Deployment</summary>
 <p>
 	
-  - **Dependencies** 
-   ```
-		<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.9.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
-		</parent>
-```
-		
- - **Configuration**
-  #### Environment Variables
+  #### a. **Dependencies** 
+
+  Maven reads the parent POM from your local repository (or proxies like nexus) and creates an 'effective POM' by merging the information from parent and module POM.
+   
+  Details of Parent POM:
+  org.springframework.boot.spring-boot-starter-parent
+  
+  
+ #### b. **Configuration**
+  - **Environment Variables**
+
   
   [Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
   
   
   
   
-  
-  
-			
-  #### Data Source
-  
-  
-  
-  
-  
-  
-  
- ##### Maven Dependencies
- <img src="images/pom.JPG" width="550" height="400"/>
+- **Data Source**
  
-##### application.properties
-DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
-The properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even 				       configuration provider systems.Below given configuration shows sample properties for H2, MySQL, Oracle and SQL server databases.
-<img src="images/maven.JPG" width="400" height="400"/>				
-#####  DataSource Bean
+  ##### Maven Dependencies
 
-Recommended way to create DataSource bean is using DataSourceBuilder class within a class annotated with the @Configuration annotation. The 				    datasource uses the underlying connection pool as well.
+   In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies are gathered in   the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
+     To find List of Dependencies,Please refer the POM.xml File
+ 
+  ##### application.properties
+  
+In Spring Boot, properties are kept in the application.properties file under the classpath.
+The application.properties file is located in the src/main/resources directory. 
+				
+ ##### DataSource Bean
+ 
+Supply a DataSource to the JDBC Template so it can configure itself to get database access.
+You can configure the DataSource in the XML file or in a Configuration class.
 
-
-<img src="images/jpa.JPG" width="550" height="400"/>
-
+				
 ##### JNDI DataSource
-If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.We can do this using the spring.datasource.jndi-name property. e.g.
-<img src="images/jndi.JPG" width="800" height="90"/>				
-#### Logging
-[Logging](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
-#### Message Bus
-[Message Bus ](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/334302909/Decision+What+should+Wawa+s+message+bus+architecture+look+like)
-			
-- **Build Instructions**
+If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.
+We can do this using the spring.datasource.jndi-name property.
+
+  - **Logging**
+  Not Applicable
+ 
+    
+  - **Message Bus**
+  Not Applicable
+
+ #### c. **Build Instructions**
 		
 		```Build Instructions for Local Integration environment
 			```
 			
-- **Testing Instructions**
+#### d. **Testing Instructions**
 
 ```Test Instructions for Local Integration environment```
 
@@ -290,63 +281,49 @@ mvn clean test -Dtest=ApplicationUnitTests
 <details><summary>Integration Platform:Build and Deployment</summary>
 <p>
 	
-  - **Dependencies** 
-   ```
-		<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.9.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
-		</parent>
-```
+   #### a. **Dependencies** 
+    Maven reads the parent POM from your local repository (or proxies like nexus) and creates an 'effective POM' by merging the information from parent and module POM.
+   
+  Details of Parent POM:
+  org.springframework.boot.spring-boot-starter-parent
+
+
 		
- - **Configuration**
-  #### Environment Variables
+ #### b. **Configuration**
+  - **Environment Variables**
+
   
   [ Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
   
   
-  
-  
-  
-  
-			
-  #### Data Source
-  
-  
-  
-  
-  
-  
-  
- ##### Maven Dependencies
+- **Data Source**
  
- <img src="images/pom.JPG" width="550" height="400"/>
+  ##### Maven Dependencies
+  In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies are gathered in   the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
+  
+  To find List of Dependencies,Please refer the POM.xml File
  
- ##### application.properties
-DataSource configuration is provided by external configuration properties ( spring.datasource.* ) in application.properties file.
-The properties configuration decouple the configuration from application code. This way, we can import the datasource configurations from even 				       configuration provider systems.Below given configuration shows sample properties for H2, MySQL, Oracle and SQL server databases.
-<img src="images/maven.JPG" width="400" height="400"/>
+  ##### application.properties
+  
+In Spring Boot, properties are kept in the application.properties file under the classpath.
+The application.properties file is located in the src/main/resources directory. 
 				
-##### DataSource Bean
-  
-  Recommended way to create DataSource bean is using DataSourceBuilder class within a class annotated with the @Configuration annotation. The 				    datasource uses the underlying connection pool as well.
-  
-  
-<img src="images/jpa.JPG" width="550" height="400"/>
-				
+ ##### DataSource Bean
+ 
+Supply a DataSource to the JDBC Template so it can configure itself to get database access.
+You can configure the DataSource in the XML file or in a Configuration class.
+
 				
 ##### JNDI DataSource
-If we deploy your Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.
-We can do this using the spring.datasource.jndi-name property. e.g.				
+If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.
+We can do this using the spring.datasource.jndi-name property.
 
-<img src="images/jndi.JPG" width="800" height="90"/>				
-
-#### Logging
- [Logging](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337379586/ST9.1.1-+Logging+Standard+-+Java)
-
-#### Message Bus
-[Message Bus](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/334302909/Decision+What+should+Wawa+s+message+bus+architecture+look+like)
+- **Logging**
+  Not Applicable
+    
+-	**Message Bus**
+  Not Applicable
+ 
 
 - **Build Instructions**
 		
@@ -364,9 +341,9 @@ We can do this using the spring.datasource.jndi-name property. e.g.
 
 
 - **Deployment Instructions**
-
+To Deploy a Microservice to AWS Cloud ,Refer Below
 		
-[Deploying Microservie to AWS Cloud](https://aws.amazon.com/blogs/compute/deploying-java-microservices-on-amazon-ec2-container-service/)
+[Deploying Microservice to AWS Cloud](https://aws.amazon.com/blogs/compute/deploying-java-microservices-on-amazon-ec2-container-service/)
 
 ##### Container deployment overview
 <img src="images/awsdeployment.JPG" width="400" height="400"/>
@@ -375,38 +352,53 @@ We can do this using the spring.datasource.jndi-name property. e.g.
 </details>
 
 ## Design Details
-#### UML Diagrams
+### i. UML Diagrams
 <img src="images/umldiag.jpg" width="400" height="400"/>
 
-#### Events Produced And Events Consumed
-[Event Publisher](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/593334289/Solution+Building+Block+-+Event+Publication)
+### ii. Events Produced And Events Consumed
 
-[Event Subscriber](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/579338621/Solution+Building+Block+-+Event+Subscriber)
+Currently there are no Events being Produced or Consumed,For more information please check references.
+
 #### Dependent Downstream Services
-[Dependencies](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/762448353/Dependencies+on+EE+Team+s)
+Currently for this API ,there are no dependent services,For more information please check references.
+
 
 ## Support
 
-   #### Deployment status
-   [Deployment status](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/857768982/Component+Onboarding+and+Deployment+Status)
-   #### How to view Health statistics
-   [Health Checks](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/252937977/Application+Health+Checks)
-   #### How to view Logs
+   ### i . Deployment status
+   
+   Jenkins can be used to report the status of the deployment.
+   
+   Please check references for more information on how to check the deployment status.
+   
+   
+   ### ii. How to view Health statistics
+  Spring Boot Actuator module helps you monitor and manage your Spring Boot application by providing production-ready features like health check-up, auditing, metrics gathering,   HTTP tracing etc.
+   Please check references for more information on how to view Health Statistics of a Microservice.
+  
+  
+   ### iii. How to view Logs
    [Amazon S3 Logs](https://docs.datadoghq.com/integrations/amazon_s3/#enable-s3-access-logs)
    
-   #### Owned by which Team?
-   [Team Details](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/696322608/EE+Agile+Teams)
+   ### iv. Owned by which Team?
+ 
+   Engineering Team3
    
 ## References
 Includes documents which are linked with JIRA stories
 [Links](https://wawaappdev.atlassian.net/secure/RapidBoard.jspa?rapidView=280)
-#### Links to Detailed Design
-[Detailed Design]()
-#### Links to SBBs used
+[Event Publisher](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/593334289/Solution+Building+Block+-+Event+Publication)
+[Event Subscriber](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/579338621/Solution+Building+Block+-+Event+Subscriber)
+[Dependencies](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/762448353/Dependencies+on+EE+Team+s)
+[Check Deployment Status](https://www.namecheap.com/blog/visualize-your-deployment-status-with-jenkins/)
+[How to view Health statistics of a Microservice](https://www.callicoder.com/spring-boot-actuator/)
+### i. Links to Detailed Design
+Not Applicable
+### ii. Links to SBBs used
 [Link(s) to SBBs](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/586613993/P3%2B-%2BSolution%2BBuild%2BBlock%2BRegistry)
-#### Links to ABBs used
+### iii. Links to ABBs used
 [Link(s) to ABBs](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/508428401/Foundational+Architecture+Building+Blocks)
-#### Links to OAS on Developer Portal
+### iv. Links to OAS on Developer Portal
 [Link to OAS on Developer Portal](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/590742573/System+Developer+Portal+Design)
 #### Links to On-boarding document
 [Developer On-boarding](https://wawaappdev.atlassian.net/wiki/spaces/MEET/pages/131137606/Developer+onboarding)
