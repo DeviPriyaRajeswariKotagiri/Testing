@@ -8,10 +8,10 @@
 
 1. [Introduction](#Introduction)
 2. [Prerequisites](#prerequisites)
-   1. [Tools](#Tools)
+   1. [Tools/Software](#Tools/Software)
    2. [Infrastructure](#Infrastructure)
       1. [Local](#Local)
-       2. [Cloud](#Cloud)
+      2. [Cloud](#Cloud)
 2. [Build And Deployment](#Build-And-Deployment)
    1. [Local Machine](#Local-Machine)
 		1. Dependencies
@@ -63,7 +63,7 @@
 ## Introduction
 Anonymous Token Generator using Spring Security-To produce detailed design for creating, signing, validating and consuming JWT Tokens, so that Anonymous Customers can Order Online and/or Managing Orders, using web/mobile applications.
 ## Prerequisites
-### Tools (to be installed on developer’s machine)
+### Tools/Software
    #### Java
 
 Install Java8 (https://www.oracle.com/java/technologies/java8.html).
