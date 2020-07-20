@@ -104,7 +104,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 <details><summary>Local Machine:Build and Deployment</summary>
 <p>
 
-   #### a.**Dependencies** 
+   #### a. **Dependencies** 
    ```
 		<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -114,11 +114,15 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 		</parent>
 ```
 		
- - **Configuration**
-  #### Environment Variables
+ #### b. **Configuration**
+  - **Environment Variables**
    ##### [Local Machine Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
   
-  
+|   |   |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
 
  #### Data Source
  
