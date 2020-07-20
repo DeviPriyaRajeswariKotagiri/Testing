@@ -385,9 +385,9 @@ Currently for this API ,there are no dependent services,For more information ple
    Engineering Team3
    
 ## References
-Includes documents which are linked with JIRA stories
-[Links](https://wawaappdev.atlassian.net/secure/RapidBoard.jspa?rapidView=280)
-[Event Publisher](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/593334289/Solution+Building+Block+-+Event+Publication)
+Includes documents which are linked with JIRA stories.
+- [Links](https://wawaappdev.atlassian.net/secure/RapidBoard.jspa?rapidView=280)
+- [Event Publisher](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/593334289/Solution+Building+Block+-+Event+Publication)
 [Event Subscriber](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/579338621/Solution+Building+Block+-+Event+Subscriber)
 [Dependencies](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/762448353/Dependencies+on+EE+Team+s)
 [Check Deployment Status](https://www.namecheap.com/blog/visualize-your-deployment-status-with-jenkins/)
