@@ -106,17 +106,17 @@ e.g: STS/Eclipse/intellij etc.
 2. Kubernetes: Install Kubernetes for automating deployment, scaling, and management of containerized applications.[More 			
 Information](https://kubernetes.io/docs/setup/)
 
-3. Databases: Provide details of database used in the component design(SQL DB/No-SQL)
+3. Databases: Install required database for the component design (SQL DB/No-SQL)
 
 
 - **b. Cloud**
 
-If your application relies on cloud infrastructure , Provide information on
-	- Compute.
-	- Storage & Databases.
-	- Networking.
-	- Messaging.
-	- Logging and Monitoring.
+If your application relies on cloud infrastructure ,you will have to take care of installing and working with the below:
+1. Compute.
+2. Storage & Databases.
+3. Networking.
+4. Messaging.
+5. Logging and Monitoring.
 	
 
 ## Build And Deployment
@@ -407,8 +407,10 @@ Container deployment overview
 
 ### ii. Events Produced And Events Consumed
 
-If Applicable, Describe the Events being produced to other applications and being consumed from other applications. 
+Kafka is one of  the ways to achieve publish-subscribe based messaging system in Microservices.
 
+		```Describe the List of  Events being produced to other applications and being consumed from other applications.
+		```
 For more information on How to produce and consume events , please check references.
 
 ### iii. Dependent Downstream Services
@@ -445,8 +447,7 @@ Describe the dependent services in your application.
 ## References
 | Name |Link | Comments  | 
 |----:|----:|-----------:|
-|Event Publisher|https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/593334289/Solution+Building+Block+-+Event+Publication| |
-|Event Subscriber| https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/579338621/Solution+Building+Block+-+Event+Subscriber | |
+|Kafka Pub-Sub| https://github.com/Kunalk/spring-kafka-pubsub | |
 |Dependencies|https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/762448353/Dependencies+on+EE+Team+s | |
 |Check Deployment Status|https://www.namecheap.com/blog/visualize-your-deployment-status-with-jenkins/ |  |
 |How to view Health statistics of a Microservice |https://www.callicoder.com/spring-boot-actuator/ |  |
