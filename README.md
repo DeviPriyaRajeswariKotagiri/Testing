@@ -13,7 +13,7 @@
       1. Local
       2. Cloud
 3. [Build And Deployment](#Build-And-Deployment)
-  1. Local Machine
+    1. Local Machine
 		1. Dependencies
 		2. Configuration
 			- Environment Variables
