@@ -306,15 +306,15 @@ There are multiple unit test cases written to cover the different components of 
 
 1. Deploy Microservice
 
-		[Deploying a Microservice Via an automated CI/CD Pipeline](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/659751676/SBB+-+BE+Deploy+Microservice)
+	[Deploying a Microservice Via an automated CI/CD Pipeline](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/659751676/SBB+-+BE+Deploy+Microservice)
 
 2. Deploy UI Web App
 		
-		[Deploying UI Web App](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/660046657/SBB+-+FE+Deploy+UI+Web+App)
+	[Deploying UI Web App](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/660046657/SBB+-+FE+Deploy+UI+Web+App)
 
 3. Deploying a Microservice to Docker Container
 		
-		[Deploying a Microservice to Docker Container](https://www.javainuse.com/devOps/docker/docker-jar)
+	[Deploying a Microservice to Docker Container](https://www.javainuse.com/devOps/docker/docker-jar)
 
 </p>
 </details>
