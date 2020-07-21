@@ -31,16 +31,16 @@
       
    2. Local Integration Environment
        1. Dependencies
-	      1. Starter Dependencies
-	      2. Micro-service Dependencies
+	     1. Starter Dependencies
+	     2. Micro-service Dependencies
       2. Build Instructions
       3. Deployment Instructions
       4. Testing Instructions
       
    3. Integration Platform
        1. Dependencies
-	      1. Starter Dependencies
-	      2. Micro-service Dependencies
+	     1. Starter Dependencies
+	     2. Micro-service Dependencies
       2. Build Instructions
       3. Deployment Instructions
       4. Testing Instructions
@@ -55,7 +55,7 @@
    3. How to view Logs
    4. Owned by which Team?
 6. [References](#References)
-    Links to Detailed Design
+   1. Links to Detailed Design
 7. [License](#license)
 
 ## Introduction
@@ -244,11 +244,11 @@ There are multiple unit test cases written to cover the different components of 
 
 e.g: org.springframework.boot.spring-boot-starter-parent
 
-##### a. **Starter Dependencies**
+##### 1. **Starter Dependencies**
 
 [Details of Starters dependencies](https://google.com)
 
-##### b. **Micro-service Dependencies**
+##### 2. **Micro-service Dependencies**
 
 [Details of Micro-service depedencies](https://google.com)
   
@@ -304,11 +304,11 @@ All the individual components are combined and tested as a group.
 
 e.g: org.springframework.boot.spring-boot-starter-parent
 
-##### a. **Starter Dependencies**
+##### 1. **Starter Dependencies**
 
 [Details of Starters dependencies](https://google.com)
 
-##### b. **Micro-service Dependencies**
+##### 2. **Micro-service Dependencies**
 
 [Details of Micro-service depedencies](https://google.com)
   
