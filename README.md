@@ -10,19 +10,19 @@
 2. [Prerequisites](#Prerequisites)
    1. Tools/Software
    2. Infrastructure
-   1. Local
-   2. Cloud
+      1. Local
+      2. Cloud
 2. [Build And Deployment](#Build-And-Deployment)
    1. Local Machine
-		1. Dependencies
-		2. Configuration
-			- Environment Variables
-			- Data Source
-			- Logging
-			- Message Bus
-		3. Build Instructions
-		4. Testing Instructions
-		5. Deployment Instructions
+      1. Dependencies
+      2. Configuration
+       - Environment Variables
+       - Data Source
+       - Logging
+       - Message Bus
+      3. Build Instructions
+      4. Testing Instructions
+      5. Deployment Instructions
    2. Local Integration Environment
 		1. Dependencies
 		2. Configuration
