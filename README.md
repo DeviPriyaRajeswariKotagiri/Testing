@@ -131,13 +131,14 @@ If your application relies on cloud infrastructure, Provide information on Compu
 #### b. **Configuration**
 - **Environment Variables**
 ##### [Local Machine Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
+
   
-|     |	 Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose  | Comment(s)  |   
-|     |-- 		       	-  |---			   |--- 			  |---                           |---       |---	  |
-|     |  			   |  			   | 				  |  				 |          |             |
-|     |  			   |  			   | 				  |  				 |          |             |
-|     |  			   |  			   | 				  |  				 |          |             |
-|     |  			   |  			   | 				  |  				 |          |             |
+	|     |	 Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose  | Comment(s)  |   
+	|     | 		       	   |			   |				  |	                         |          |    	  |
+	|     |  			   |  			   | 				  |  				 |          |             |
+	|     |  			   |  			   | 				  |  				 |          |             |
+	|     |  			   |  			   | 				  |  				 |          |             |
+	|     |  			   |  			   | 				  |  				 |          |             |
 
 - **Data Source**
  
