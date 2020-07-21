@@ -101,12 +101,13 @@ e.g: STS/Eclipse/intellij etc.
 
 - **a. Local**
 
-1. Docker Container: Install Docker Container to create isolated environments through which you can build, maintain, ship and deploy your application.[More 			Information](https://docs.docker.com/docker-for-windows/)
-
-2. Kubernetes: Install Kubernetes for automating deployment, scaling, and management of containerized applications.[More 			
+1. GITHub
+2. CI/CD Platform
+3.Code Quantity Scanning (SonarQube)
+4. Docker Container: Install Docker Container to create isolated environments through which you can build, maintain, ship and deploy your application.[More 			Information](https://docs.docker.com/docker-for-windows/)
+5. Kubernetes: Install Kubernetes for automating deployment, scaling, and management of containerized applications.[More 			
 Information](https://kubernetes.io/docs/setup/)
-
-3. Databases: Install required database for the component design (SQL DB/No-SQL)
+6. Databases: Install required database for the component design (SQL DB/No-SQL)
 
 
 
@@ -292,8 +293,10 @@ e.g: org.springframework.boot.spring-boot-starter-parent
 			
 #### d. **Testing Instructions**
 
+All the individual components are combined and tested as a group.
 
-		```Test Instructions for Local Integration environment
+		```
+		Test Instructions for Local Integration 
 		```
 
 
@@ -385,6 +388,7 @@ e.g: org.springframework.boot.spring-boot-starter-parent
 
 #### d. **Testing Instructions**
 		
+All the individual components are combined and tested as a group.
 		```
 		 Testing Instructions for  Integration Environment
 			```
