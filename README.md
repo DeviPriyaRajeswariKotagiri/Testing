@@ -71,7 +71,12 @@ Provide Description of Component
 Install Java8(https://www.oracle.com/java/technologies/java8.html)
 If you want to build the master branch you will need a Java JDK of minimum version 8.
 
-[link]("https://github.com/showdownjs/showdown/issues/337"){:target=' '}
+<textarea id="src" cols="100" rows="2">
+[my link text](http://www.google.com){:target="_blank"}
+</textarea>
+<br/>
+<textarea id="trg1" cols="100" rows="2"></textarea>
+<div id="trg2"></div>
 
    #### b. Maven
 
