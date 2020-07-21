@@ -15,7 +15,7 @@
    2. Infrastructure
       1. Local
       2. Cloud
-3. [Dependencies on other software components](#Dependencies-on-other-software- components)
+3. [Dependencies on other software components]()
    1. Starters dependencies
    2. Micro-service dependecies
 4. [Configuration Build & Runtime for Local, LIE, IP Dev, IP Test, IP Prod](#Configuration-Build-&-Runtime-for-Local,-LIE,-IP Dev,-IP-Test,-IP Prod)
