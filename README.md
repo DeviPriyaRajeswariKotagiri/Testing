@@ -6,10 +6,10 @@
 
 ## Table of Contents
 
-1. [Introduction](#1.Introduction)
-2. [Prerequisites](#2. Prerequisites)
-   1. [Tools/Software](#i.Tools/Software)
-   2. [Infrastructure](#ii.Infrastructure)
+1. [Introduction](#Introduction)
+2. [Prerequisites](#Prerequisites)
+   1. [Tools/Software](#Tools/Software)
+   2. [Infrastructure](#Infrastructure)
       1. [Local](#Local)
       2. [Cloud](#Cloud)
 2. [Build And Deployment](#Build-And-Deployment)
@@ -65,7 +65,7 @@
 Provide Description of Component
 
 ## 2.Prerequisites
-### i.Tools/Software
+### i. Tools/Software
    #### Java
 
 Install Java8 (https://www.oracle.com/java/technologies/java8.html).
@@ -98,7 +98,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 Provide Integrated development environment used to build the application 
 e.g: STS/Eclipse/intellij etc.
 
-### ii.Infrastructure
+### ii. Infrastructure
  - **a. Local **
 
 		
@@ -114,7 +114,7 @@ If your application relies on cloud infrastructure, Provide information on Compu
 
 ## Build And Deployment
 
-### Local Machine
+### i. Local Machine
 
 <details><summary>Local Machine:Build and Deployment</summary>
 <p>
@@ -208,50 +208,51 @@ on useful Maven commands and build options.
 </details>
 
 
- ### Local Integration Environment
+### ii. Local Integration Environment
  
 <details><summary>Local Integration Environment:Build and Deployment</summary>
 <p>
 	
-  #### a. **Dependencies** 
+#### a. **Dependencies** 
 
-  Maven reads the parent POM from your local repository (or proxies like nexus) and creates an 'effective POM' by merging the information from parent and module POM.
    
-  Details of Parent POM:
-  org.springframework.boot.spring-boot-starter-parent
-  
-  
- #### b. **Configuration**
-  - **Environment Variables**
+Details of Parent POM:
 
-  
-  [Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
-  
+e.g: org.springframework.boot.spring-boot-starter-parent
   
   
-  
-- **Data Source**
+#### b. **Configuration**
  
-  ##### Maven Dependencies
+- **Environment Variables**
 
-   In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies are gathered in   the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
-     To find List of Dependencies,Please refer the POM.xml File
- 
-  ##### application.properties
   
-In Spring Boot, properties are kept in the application.properties file under the classpath.
-The application.properties file is located in the src/main/resources directory. 
-				
- ##### DataSource Bean
+[Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
+  
+  
  
-Supply a DataSource to the JDBC Template so it can configure itself to get database access.
-You can configure the DataSource in the XML file or in a Configuration class.
+ - **Data Source**
+ 
+	1. Maven Dependencies
+		
+		In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies   		 are gathered in    the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
+		To find List of Dependencies,Please refer the POM.xml File.
 
-				
-##### JNDI DataSource
-If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.
-We can do this using the spring.datasource.jndi-name property.
+	2. application.properties
+		
+		In Spring Boot, properties are kept in the application.properties file under the classpath.
+		The application.properties file is located in the src/main/resources directory. 
 
+	3. DataSource Bean
+
+		Supply a DataSource to the JDBC Template so it can configure itself to get database access.
+		You can configure the DataSource in the XML file or in a Configuration class.
+
+
+	4. JNDI DataSource
+		
+		If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					        Application Server’s built-in features and access it by using JNDI.
+		We can do this using the spring.datasource.jndi-name property.
+		
   - **Logging**
   Not Applicable
  
@@ -259,7 +260,7 @@ We can do this using the spring.datasource.jndi-name property.
   - **Message Bus**
   Not Applicable
 
- #### c. **Build Instructions**
+#### c. **Build Instructions**
 		
 		```Build Instructions for Local Integration environment
 			```
@@ -272,72 +273,75 @@ We can do this using the spring.datasource.jndi-name property.
 ##### Unit test cases
 There are multiple unit test cases written to cover the different components of the application. However there is a global application test suite file _**UnitTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
 
-````
-mvn clean test -Dtest=ApplicationUnitTests
-````
+		````
+		mvn clean test -Dtest=ApplicationUnitTests
+		````
 
 
 #### e. **Deployment Instructions**
 
-##### Deploy Microservice
+1. Deploy Microservice
 
-[Deploying a Microservice Via an automated CI/CD Pipeline](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/659751676/SBB+-+BE+Deploy+Microservice)
+		[Deploying a Microservice Via an automated CI/CD Pipeline](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/659751676/SBB+-+BE+Deploy+Microservice)
 
-##### Deploy UI Web App
-[Deploying UI Web App](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/660046657/SBB+-+FE+Deploy+UI+Web+App)
+2. Deploy UI Web App
+		
+		[Deploying UI Web App](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/660046657/SBB+-+FE+Deploy+UI+Web+App)
 
-##### Deploying a Microservice to Docker Container
-[Deploying a Microservice to Docker Container](https://www.javainuse.com/devOps/docker/docker-jar)
+3. Deploying a Microservice to Docker Container
+		
+		[Deploying a Microservice to Docker Container](https://www.javainuse.com/devOps/docker/docker-jar)
 
 </p>
 </details>
 
-### Integration Platform
+### iii. Integration Platform
 
 <details><summary>Integration Platform:Build and Deployment</summary>
 <p>
 	
-   #### a. **Dependencies** 
-    Maven reads the parent POM from your local repository (or proxies like nexus) and creates an 'effective POM' by merging the information from parent and module POM.
-   
-  Details of Parent POM:
-  org.springframework.boot.spring-boot-starter-parent
+#### a. **Dependencies** 
+
+Details of Parent POM:
+e.g: org.springframework.boot.spring-boot-starter-parent
 
 
 		
- #### b. **Configuration**
-  - **Environment Variables**
+#### b. **Configuration**
+- **Environment Variables**
 
   
-  [ Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
+[ Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-    Environmentvariables)
   
   
 - **Data Source**
  
-  ##### Maven Dependencies
-  In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies are gathered in   the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
-  
-  To find List of Dependencies,Please refer the POM.xml File
- 
-  ##### application.properties
-  
-In Spring Boot, properties are kept in the application.properties file under the classpath.
-The application.properties file is located in the src/main/resources directory. 
-				
- ##### DataSource Bean
- 
-Supply a DataSource to the JDBC Template so it can configure itself to get database access.
-You can configure the DataSource in the XML file or in a Configuration class.
+	1. Maven Dependencies
+		
+		In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies   		 are gathered in    the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
+		To find List of Dependencies,Please refer the POM.xml File.
 
-				
-##### JNDI DataSource
-If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					Application Server’s built-in features and access it by using JNDI.
-We can do this using the spring.datasource.jndi-name property.
+	2. application.properties
+		
+		In Spring Boot, properties are kept in the application.properties file under the classpath.
+		The application.properties file is located in the src/main/resources directory. 
 
-- **Logging**
-  Not Applicable
+	3. DataSource Bean
+
+		Supply a DataSource to the JDBC Template so it can configure itself to get database access.
+		You can configure the DataSource in the XML file or in a Configuration class.
+
+
+	4. JNDI DataSource
+		
+		If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					        Application Server’s built-in features and access it by using JNDI.
+		We can do this using the spring.datasource.jndi-name property.
+		
+ - **Logging**
+ Not Applicable
+ 
     
--	**Message Bus**
+ - **Message Bus**
   Not Applicable
  
 
@@ -360,7 +364,7 @@ To Deploy a Microservice to AWS Cloud ,Refer Below
 		
 [Deploying Microservice to AWS Cloud](https://aws.amazon.com/blogs/compute/deploying-java-microservices-on-amazon-ec2-container-service/)
 
-##### Container deployment overview
+Container deployment overview
 <img src="images/awsdeployment.JPG" width="400" height="400"/>
 
 </p>
