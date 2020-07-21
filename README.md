@@ -153,27 +153,27 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 	
 	
 **2. Data Source**
- 
-	1. Maven Dependencies
+
+ 1. Maven Dependencies
 		
-		In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies   		 are gathered in    the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
-		To find List of Dependencies,Please refer the POM.xml File.
+	In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies   		 are gathered in    the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
+	To find List of Dependencies,Please refer the POM.xml File.
 
-	2. application.properties
+2. application.properties
 		
-		In Spring Boot, properties are kept in the application.properties file under the classpath.
-		The application.properties file is located in the src/main/resources directory. 
+	In Spring Boot, properties are kept in the application.properties file under the classpath.
+	The application.properties file is located in the src/main/resources directory. 
 
-	3. DataSource Bean
+3. DataSource Bean
 
-		Supply a DataSource to the JDBC Template so it can configure itself to get database access.
-		You can configure the DataSource in the XML file or in a Configuration class.
+	Supply a DataSource to the JDBC Template so it can configure itself to get database access.
+	You can configure the DataSource in the XML file or in a Configuration class.
 
 
-	4. JNDI DataSource
-		
-		If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					        Application Server’s built-in features and access it by using JNDI.
-		We can do this using the spring.datasource.jndi-name property.
+4. JNDI DataSource
+
+	If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					        Application Server’s built-in features and access it by using JNDI.
+	We can do this using the spring.datasource.jndi-name property.
 
 			
 **3. Logging**
@@ -255,26 +255,26 @@ e.g: org.springframework.boot.spring-boot-starter-parent
 	
  **2. Data Source**
  
-	1. Maven Dependencies
+ 1. Maven Dependencies
 		
-		In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies   		 are gathered in    the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
-		To find List of Dependencies,Please refer the POM.xml File.
+	In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies   		 are gathered in    the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
+	To find List of Dependencies,Please refer the POM.xml File.
 
-	2. application.properties
+2. application.properties
 		
-		In Spring Boot, properties are kept in the application.properties file under the classpath.
-		The application.properties file is located in the src/main/resources directory. 
+	In Spring Boot, properties are kept in the application.properties file under the classpath.
+	The application.properties file is located in the src/main/resources directory. 
 
-	3. DataSource Bean
+3. DataSource Bean
 
-		Supply a DataSource to the JDBC Template so it can configure itself to get database access.
-		You can configure the DataSource in the XML file or in a Configuration class.
+	Supply a DataSource to the JDBC Template so it can configure itself to get database access.
+	You can configure the DataSource in the XML file or in a Configuration class.
 
 
-	4. JNDI DataSource
-		
-		If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					        Application Server’s built-in features and access it by using JNDI.
-		We can do this using the spring.datasource.jndi-name property.
+4. JNDI DataSource
+
+	If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					        Application Server’s built-in features and access it by using JNDI.
+	We can do this using the spring.datasource.jndi-name property.
 		
 **3. Logging**
   Spring Boot uses Apache Commons logging for all internal logging.
@@ -347,26 +347,27 @@ e.g: org.springframework.boot.spring-boot-starter-parent
   
 **2. Data Source**
  	
-	1. Maven Dependencies
+ 1. Maven Dependencies
 		
-		In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies   		 are gathered in    the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
-		To find List of Dependencies,Please refer the POM.xml File.
+	In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies   		 are gathered in    the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
+	To find List of Dependencies,Please refer the POM.xml File.
 
-	2. application.properties
+2. application.properties
 		
-		In Spring Boot, properties are kept in the application.properties file under the classpath.
-		The application.properties file is located in the src/main/resources directory. 
+	In Spring Boot, properties are kept in the application.properties file under the classpath.
+	The application.properties file is located in the src/main/resources directory. 
 
-	3. DataSource Bean
+3. DataSource Bean
 
-		Supply a DataSource to the JDBC Template so it can configure itself to get database access.
-		You can configure the DataSource in the XML file or in a Configuration class.
+	Supply a DataSource to the JDBC Template so it can configure itself to get database access.
+	You can configure the DataSource in the XML file or in a Configuration class.
 
 
-	4. JNDI DataSource
-		
-		If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					        Application Server’s built-in features and access it by using JNDI.
-		We can do this using the spring.datasource.jndi-name property.
+4. JNDI DataSource
+
+	If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					        Application Server’s built-in features and access it by using JNDI.
+	We can do this using the spring.datasource.jndi-name property.
+	
 		
 **3. Logging**
   Spring Boot uses Apache Commons logging for all internal logging.
