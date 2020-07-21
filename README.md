@@ -291,15 +291,11 @@ e.g: org.springframework.boot.spring-boot-starter-parent
 			
 #### d. **Testing Instructions**
 
-```Test Instructions for Local Integration environment```
 
-		
-##### Unit test cases
-There are multiple unit test cases written to cover the different components of the application. However there is a global application test suite file _**UnitTests.java**_ that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
+		```Test Instructions for Local Integration environment
+		```
 
-		````
-		mvn clean test -Dtest=ApplicationUnitTests
-		````
+
 
 
 #### e. **Deployment Instructions**
@@ -389,7 +385,7 @@ e.g: org.springframework.boot.spring-boot-starter-parent
 #### d. **Testing Instructions**
 		
 		```
-		LocaL Test Integration Steps
+		 Testing Instructions for  Integration Environment
 			```
 
 
