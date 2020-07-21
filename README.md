@@ -65,7 +65,7 @@
 Provide Description of Component
 
 ## Prerequisites
-### i.Tools/Software
+### i. Tools/Software
    #### Java
 
 Install Java8 (https://www.oracle.com/java/technologies/java8.html).
@@ -103,13 +103,22 @@ e.g: STS/Eclipse/intellij etc.
 
 		
 1. Docker Container: Install Docker Container to create isolated environments through which you can build, maintain, ship and deploy your application.[More 			Information](https://docs.docker.com/docker-for-windows/)
-2. Kubernetes: Install Kubernetes for automating deployment, scaling, and management of containerized applications.[More Information]				                 (https://kubernetes.io/docs/setup/)
-3.Databases: Provide details of database used in the component design(SQL DB/No-SQL)
+
+2. Kubernetes: Install Kubernetes for automating deployment, scaling, and management of containerized applications.[More 			
+Information](https://kubernetes.io/docs/setup/)
+
+3. Databases: Provide details of database used in the component design(SQL DB/No-SQL)
 		
       
 - **b. Cloud**
-Cloud Infrastructure :
-If your application relies on cloud infrastructure, Provide information on Compute,Storage & Databases,Networking,Messaging,Logging and Monitoring.
+
+
+If your application relies on cloud infrastructure , Provide information on
+	- Compute.
+	- Storage & Databases.
+	- Networking.
+	- Messaging.
+	- Logging and Monitoring.
 	
 
 ## Build And Deployment
@@ -166,11 +175,16 @@ If your application relies on cloud infrastructure, Provide information on Compu
 
 			
 - **Logging**
-  Not Applicable
+  Spring Boot uses Apache Commons logging for all internal logging.
+  You can use logging options available in Spring Boot like Java Util Logging, Log4j2, and Logback.
+  
    
 - **Message Bus**
-  Not Applicable
-  
+
+			 ```Information on messaging infrastructure in the application which allows
+			 different systems to communicate through a shared set of interfaces
+			 ```
+ 
 #### c. **Build Instructions**
 
 After you have taken care of the [Prerequisites](#prerequisites)
@@ -392,35 +406,51 @@ Container deployment overview
 
 ### ii. Events Produced And Events Consumed
 
-Currently there are no Events being Produced or Consumed,For more information please check references.
+If Applicable, Describe the Events being produced to other applications and being consumed from other applications. 
+
+For more information on How to produce and consume events , please check references.
 
 ### iii. Dependent Downstream Services
-Currently for this API ,there are no dependent services,For more information please check references.
+Describe the dependent services in your application.
+ 
+ 	```Currently for this component ,there are no dependent services.```
 
 
 ## Support
 
    ### i . Deployment status
    
+   One of the way to check Deployment status is via Jenkins.
    Jenkins can be used to report the status of the deployment.
    
    Please check references for more information on how to check the deployment status.
    
    
    ### ii. How to view Health statistics
-  Spring Boot Actuator module helps you monitor and manage your Spring Boot application by providing production-ready features like health check-up, auditing, metrics gathering,   HTTP tracing etc.
-   Please check references for more information on how to view Health Statistics of a Microservice.
+  One of the way to view Health Statistics of your application is by adding Spring Boot Actuator module ,it helps you monitor and manage your Spring Boot application by    	   providing production-ready features like health check-up, auditing, metrics gathering,   HTTP tracing etc.
+  Please check references for more information on how to view Health Statistics of a Microservice.
   
   
    ### iii. How to view Logs
-   [Amazon S3 Logs](https://docs.datadoghq.com/integrations/amazon_s3/#enable-s3-access-logs)
+   You can view logs for a Microservice using Kuberenetes,Amazon S3,Splunk,WinScp etc.
+   Please check references for more information on how to view logs.
+  
+
    
    ### iv. Owned by which Team?
  
    Engineering Team3
    
 ## References
-Includes Reference documents .
+| Name |Link | Comments  | 
+|----:|----:|-----------:|
+|Event Publisher|https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/593334289/Solution+Building+Block+-+Event+Publication| |
+|Event Subscriber| https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/579338621/Solution+Building+Block+-+Event+Subscriber | |
+|Dependencies| https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/762448353/Dependencies+on+EE+Team+s | |
+|Check Deployment Status| https://www.namecheap.com/blog/visualize-your-deployment-status-with-jenkins/ |  |
+|How to view Health statistics of a Microservice | https://www.callicoder.com/spring-boot-actuator/ |  |
+|View logs on Kubernetes | https://www.sumologic.com/blog/kubectl-logs/|  |
+| Amazon S3 Logs  |  https://docs.datadoghq.com/integrations/amazon_s3/#enable-s3-access-logs |  |
 
 ### i. Links to Detailed Design
 - [Links](https://wawaappdev.atlassian.net/secure/RapidBoard.jspa?rapidView=280)
@@ -429,6 +459,8 @@ Includes Reference documents .
 - [Dependencies](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/762448353/Dependencies+on+EE+Team+s)
 - [Check Deployment Status](https://www.namecheap.com/blog/visualize-your-deployment-status-with-jenkins/)
 - [How to view Health statistics of a Microservice](https://www.callicoder.com/spring-boot-actuator/)
+- [View logs on Kubernetes](https://www.sumologic.com/blog/kubectl-logs/)
+- [Amazon S3 Logs](https://docs.datadoghq.com/integrations/amazon_s3/#enable-s3-access-logs)
 ### ii. Links to SBBs used
 [Link(s) to SBBs](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/586613993/P3%2B-%2BSolution%2BBuild%2BBlock%2BRegistry)
 ### iii. Links to ABBs used
