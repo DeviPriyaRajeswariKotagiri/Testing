@@ -60,7 +60,7 @@
     5. [Links to On-boarding document](#Links-to-On-boarding-document)
 6. [License](#license)
 
-## 1.Introduction
+## 1. Introduction
 
 Provide Description of Component
 
