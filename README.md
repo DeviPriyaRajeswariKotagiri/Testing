@@ -453,14 +453,8 @@ Describe the dependent services in your application.
 | Amazon S3 Logs  |  https://docs.datadoghq.com/integrations/amazon_s3/#enable-s3-access-logs |  |
 
 ### i. Links to Detailed Design
-- [Links](https://wawaappdev.atlassian.net/secure/RapidBoard.jspa?rapidView=280)
-- [Event Publisher](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/593334289/Solution+Building+Block+-+Event+Publication)
-- [Event Subscriber](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/579338621/Solution+Building+Block+-+Event+Subscriber)
-- [Dependencies](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/762448353/Dependencies+on+EE+Team+s)
-- [Check Deployment Status](https://www.namecheap.com/blog/visualize-your-deployment-status-with-jenkins/)
-- [How to view Health statistics of a Microservice](https://www.callicoder.com/spring-boot-actuator/)
-- [View logs on Kubernetes](https://www.sumologic.com/blog/kubectl-logs/)
-- [Amazon S3 Logs](https://docs.datadoghq.com/integrations/amazon_s3/#enable-s3-access-logs)
+- [Links to Detail Design of the Application](https://wawaappdev.atlassian.net/secure/RapidBoard.jspa?rapidView=280)
+
 ### ii. Links to SBBs used
 [Link(s) to SBBs](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/586613993/P3%2B-%2BSolution%2BBuild%2BBlock%2BRegistry)
 ### iii. Links to ABBs used
