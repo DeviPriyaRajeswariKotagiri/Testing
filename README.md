@@ -103,7 +103,7 @@ e.g: STS/Eclipse/intellij etc.
 
 1. GITHub
 2. CI/CD Platform
-3.Code Quantity Scanning (SonarQube)
+3. Code Quantity Scanning (SonarQube)
 4. Docker Container: Install Docker Container to create isolated environments through which you can build, maintain, ship and deploy your application.[More 			Information](https://docs.docker.com/docker-for-windows/)
 5. Kubernetes: Install Kubernetes for automating deployment, scaling, and management of containerized applications.[More 			
 Information](https://kubernetes.io/docs/setup/)
@@ -395,11 +395,9 @@ All the individual components are combined and tested as a group.
 
 
 #### e. **Deployment Instructions**
-To Deploy a Microservice to AWS Cloud ,Refer Below
-		
-[Deploying Microservice to AWS Cloud](https://aws.amazon.com/blogs/compute/deploying-java-microservices-on-amazon-ec2-container-service/)
-
+You can To Deploy a Microservice to AWS Cloud ,Please check references for more information
 Container deployment overview
+
 <img src="images/awsdeployment.JPG" width="400" height="400"/>
 
 </p>
@@ -458,6 +456,7 @@ Describe the dependent services in your application.
 |How to view Health statistics of a Microservice |https://www.callicoder.com/spring-boot-actuator/ |  |
 |View logs on Kubernetes |https://www.sumologic.com/blog/kubectl-logs/|  |
 | Amazon S3 Logs  |https://docs.datadoghq.com/integrations/amazon_s3/#enable-s3-access-logs |  |
+|Deploying Microservice to AWS Cloud | https://aws.amazon.com/blogs/compute/deploying-java-microservices-on-amazon-ec2-container-service/  |   |
 
 ### ii. Links to SBBs used
 | Name |Link | Comments  | 
