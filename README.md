@@ -443,6 +443,8 @@ Describe the dependent services in your application.
    Engineering Team3
    
 ## References
+
+### i. Links to Detailed Design
 | Name |Link | Comments  | 
 |----:|----:|-----------:|
 |Kafka Pub-Sub| https://github.com/Kunalk/spring-kafka-pubsub | |
@@ -452,17 +454,26 @@ Describe the dependent services in your application.
 |View logs on Kubernetes |https://www.sumologic.com/blog/kubectl-logs/|  |
 | Amazon S3 Logs  |https://docs.datadoghq.com/integrations/amazon_s3/#enable-s3-access-logs |  |
 
-### i. Links to Detailed Design
-[Links to Detail Design ](https://wawaappdev.atlassian.net/secure/RapidBoard.jspa?rapidView=280)
-
 ### ii. Links to SBBs used
-[Link(s) to SBBs](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/586613993/P3%2B-%2BSolution%2BBuild%2BBlock%2BRegistry)
+| Name |Link | Comments  | 
+|----:|----:|-----------:|
+|Link(s) to SBBs| https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/586613993/P3%2B-%2BSolution%2BBuild%2BBlock%2BRegistry |   |
+
 ### iii. Links to ABBs used
-[Link(s) to ABBs](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/508428401/Foundational+Architecture+Building+Blocks)
+| Name |Link | Comments  | 
+|----:|----:|-----------:|
+|Link(s) to ABBs| https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/508428401/Foundational+Architecture+Building+Blocks |   |
+
 ### iv. Links to OAS on Developer Portal
-[Link to OAS on Developer Portal](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/590742573/System+Developer+Portal+Design)
+| Name |Link | Comments  | 
+|----:|----:|-----------:|
+|Link to OAS on Developer Portal| https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/590742573/System+Developer+Portal+Design |   |
+
 ### v. Links to On-boarding document
-[Developer On-boarding](https://wawaappdev.atlassian.net/wiki/spaces/MEET/pages/131137606/Developer+onboarding)
+| Name |Link | Comments  | 
+|----:|----:|-----------:|
+|Developer On-boarding| https://wawaappdev.atlassian.net/wiki/spaces/MEET/pages/131137606/Developer+onboarding  |   |
+
 
 ## License
 
