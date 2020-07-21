@@ -1,6 +1,6 @@
 <img src="images/wawa.jpg" width="100" height="100"/>
 
-<a href="https://www.w3schools.com" target="_blank">Visit W3Schools.com!</a> 
+<a href="http://www.foracure.org.au/#_b=1" target="_blank" style="width: 105px;"></a>
 
 [![Build Status](https://travis-ci.org/openmrs/openmrs-core.svg?branch=master)](https://google.com/) [![Coverage Status](https://coveralls.io/repos/github/openmrs/openmrs-core/badge.svg?branch=master)](https://google.com/) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a51303ee46c34775a7c31c8d6016da6b)](https://google.com/)
 
