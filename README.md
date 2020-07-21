@@ -15,14 +15,14 @@
    2. Infrastructure
       1. Local
       2. Cloud
-3. [Dependencies on other software components](#Dependencies-on-other-software- components))
+3. [Dependencies on other software components](#Dependencies-on-other-software- components)
    1. Starters dependencies
    2. Micro-service dependecies
-4. Configuration (Build & Runtime for Local, LIE, IP Dev, IP Test, IP Prod)
+4. [Configuration (Build & Runtime for Local, LIE, IP Dev, IP Test, IP Prod)](#Configuration-Build-&-Runtime-for-Local,-LIE,-IP Dev,-IP-Test,-IP Prod)
    a. Environment Variables 
-	      i. Data Source
-	     ii. Logging
-	    iii. Message Bus
+      i. Data Source
+     ii. Logging
+    iii. Message Bus
 5. [Build And Deployment](#Build-And-Deployment)
    a. Local Machine
 	     i. Build Instructions
