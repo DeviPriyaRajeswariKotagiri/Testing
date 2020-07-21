@@ -13,8 +13,8 @@
 2. [Prerequisites](#Prerequisites)
     a. Tools/Software
     b. Infrastructure
-      1. Local
-      2. Cloud
+	      1. Local
+	      2. Cloud
 3. [Dependencies(on other software components)]()
    a. Starters dependencies
    b. Micro-service dependecies
