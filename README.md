@@ -66,12 +66,11 @@ Provide Description of Component
 
 ## Prerequisites
 ### i. Tools/Software
-   #### Java
-
+   #### a. Java
 Install Java8 (https://www.oracle.com/java/technologies/java8.html).
 If you want to build the master branch you will need a Java JDK of minimum version 8.
 
-   #### Maven
+   #### b. Maven
 
 Install the build tool [Maven](https://maven.apache.org/).
 
@@ -85,7 +84,7 @@ mvn -version
 
 which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
 
-#### Git
+#### c. Git
 
 Install the version control tool [git](https://github.com/wawa/) and clone this repository with
 
@@ -94,7 +93,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 ```
 
 
-#### IDE
+#### d. IDE
 Provide Integrated development environment used to build the application 
 e.g: STS/Eclipse/intellij etc.
 
