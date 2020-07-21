@@ -20,28 +20,28 @@
    2. Micro-service dependecies
 4. [Configuration Build & Runtime for Local, LIE, IP Dev, IP Test, IP Prod]()
    1. Environment Variables 
-	1. Data Source
-	2. Logging
-	3. Message Bus
+      1. Data Source
+      2. Logging
+      3. Message Bus
 5. [Build And Deployment](#Build-And-Deployment)
-   a. Local Machine
-	     i. Build Instructions
-	    ii. Deployment Instructions
-	   iii. Testing Instructions
-   b. Local Integration Environment
-	   i. Dependencies
-	   	1. Starter Dependencies
-		2. Micro-service Dependencies
-	  ii. Build Instructions
-	  iii. Deployment Instructions
-	  iV. Testing Instructions
-  c. Integration Platform
-	   i. Dependencies
-	   	1. Starter Dependencies
-		2. Micro-service Dependencies
-	  ii. Build Instructions
-	  iii. Deployment Instructions
-	  iV. Testing Instructions
+   1. Local Machine
+      1. Build Instructions
+      2. Deployment Instructions
+      3. Testing Instructions
+   2. Local Integration Environment
+       1. Dependencies
+	      1. Starter Dependencies
+	      2. Micro-service Dependencies
+      2. Build Instructions
+      3. Deployment Instructions
+      4. Testing Instructions
+  3. Integration Platform
+      1. Dependencies
+	      1. Starter Dependencies
+	      2. Micro-service Dependencies
+      2. Build Instructions
+      3. Deployment Instructions
+      4. Testing Instructions
 4. [Design Details](#Design-Details)
 	1. UML Diagrams
 	2. Events Produced And Events Consumed
