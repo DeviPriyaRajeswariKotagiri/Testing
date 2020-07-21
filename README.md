@@ -7,9 +7,9 @@
 ## Table of Contents
 
 1. [Introduction](#1.Introduction)
-2. [Prerequisites](#prerequisites)
-   1. [Tools/Software](#Tools/Software)
-   2. [Infrastructure](#Infrastructure)
+2. [Prerequisites](#2.prerequisites)
+   1. [Tools/Software](#i.Tools/Software)
+   2. [Infrastructure](#ii.Infrastructure)
       1. [Local](#Local)
       2. [Cloud](#Cloud)
 2. [Build And Deployment](#Build-And-Deployment)
@@ -60,12 +60,12 @@
     5. [Links to On-boarding document](#Links-to-On-boarding-document)
 6. [License](#license)
 
-## 1. Introduction
+## 1.Introduction
 
 Provide Description of Component
 
-## 2. Prerequisites
-### i. Tools/Software
+## 2.Prerequisites
+### i.Tools/Software
    #### Java
 
 Install Java8 (https://www.oracle.com/java/technologies/java8.html).
@@ -98,7 +98,7 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 Provide Integrated development environment used to build the application 
 e.g: STS/Eclipse/intellij etc.
 
-### ii. Infrastructure
+### ii.Infrastructure
  - **a. Local **
 
 		
