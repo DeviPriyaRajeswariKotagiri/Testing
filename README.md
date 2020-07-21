@@ -7,7 +7,7 @@
 ## Table of Contents
 
 1. [Introduction](#1.Introduction)
-2. [Prerequisites](#2.prerequisites)
+2. [Prerequisites](#2. Prerequisites)
    1. [Tools/Software](#i.Tools/Software)
    2. [Infrastructure](#ii.Infrastructure)
       1. [Local](#Local)
