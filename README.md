@@ -140,12 +140,12 @@ If your application relies on cloud infrastructure, Provide information on Compu
 
 - **Data Source**
  
-	1.Maven Dependencies
+	1. Maven Dependencies
 		
 		In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies   		 are gathered in    the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
-		To find List of Dependencies,Please refer the POM.xml File
+		To find List of Dependencies,Please refer the POM.xml File.
 
-	2.application.properties
+	2. application.properties
 		
 		In Spring Boot, properties are kept in the application.properties file under the classpath.
 		The application.properties file is located in the src/main/resources directory. 
