@@ -8,12 +8,12 @@
 
 1. [Introduction](#Introduction)
 2. [Prerequisites](#Prerequisites)
-   1. [Tools/Software](#i.Tools/Software)
-   2. [Infrastructure](#Infrastructure)
-      1. [Local](#Local)
-      2. [Cloud](#Cloud)
+   1. Tools/Software
+   2. Infrastructure
+      1. Local
+      2. Cloud
 2. [Build And Deployment](#Build-And-Deployment)
-   1. [Local Machine](#Local-Machine)
+   1. Local Machine
 		1. Dependencies
 		2. Configuration
 			- Environment Variables
@@ -23,7 +23,7 @@
 		3. Build Instructions
 		4. Testing Instructions
 		5. Deployment Instructions
-	2. [Local Integration Environment](#Local-Integration-Environment)
+   2. Local Integration Environment
 		1. Dependencies
 		2. Configuration
 			- Environment Variables
@@ -33,7 +33,7 @@
 		3. Build Instructions
 		4. Testing Instructions
 		5. Deployment Instructions
-	3. [Integration Platform](#Integration-Platform)
+   3. Integration Platform
 		1. Dependencies
 		2. Configuration
 			- Environment Variables
@@ -44,20 +44,20 @@
 		4. Testing Instructions
 		5. Deployment Instructions
 3. [Design Details](#Design-Details)
-	1. [UML Diagrams](#UML-Diagrams)
-	2. [Events Produced And Events Consumed](#Events-Produced-And-Events-Consumed)
-	3. [Dependent Downstream Services](#Dependent-Downstream-Services)
+	1. UML Diagrams
+	2. Events Produced And Events Consumed
+	3. Dependent Downstream Services
 4. [Support](#Support)
-   1. [Deployment status](#Deployment-status)
-   2. [How to view Health statistics](#How-to-view-Health-statistics)
-   3. [How to view Logs](#How-to-view-Health-statistics)
-   4. [Owned by which Team?](#Owned-by-which-Team?)
+   1. Deployment status
+   2. How to view Health statistics
+   3. How to view Logs
+   4. Owned by which Team?
 5. [References](#References)
-    1. [Links to Detailed Design](#Links-to-Detailed-Design)
-    2. [Links to SBBs used](#Links-to-SBBs-used)
-    3. [Links to ABBs used](#Links-to-ABBs-used)
-    4. [Links to OAS on Developer Portal](#Links-to-OAS-on-Developer-Portal)
-    5. [Links to On-boarding document](#Links-to-On-boarding-document)
+    1. Links to Detailed Design
+    2. Links to SBBs used
+    3. Links to ABBs used
+    4. Links to OAS on Developer Portal
+    5. Links to On-boarding document
 6. [License](#license)
 
 ## Introduction
@@ -379,7 +379,7 @@ Container deployment overview
 
 Currently there are no Events being Produced or Consumed,For more information please check references.
 
-#### Dependent Downstream Services
+### iii. Dependent Downstream Services
 Currently for this API ,there are no dependent services,For more information please check references.
 
 
