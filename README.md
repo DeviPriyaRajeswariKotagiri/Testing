@@ -409,9 +409,6 @@ Container deployment overview
 ### ii. Events Produced And Events Consumed
 
 Kafka is one of  the ways to achieve publish-subscribe based messaging system in Microservices.
-
-		```Describe the List of  Events being produced to other applications and being consumed from other applications.
-		```
 For more information on How to produce and consume events , please check references.
 
 ### iii. Dependent Downstream Services
