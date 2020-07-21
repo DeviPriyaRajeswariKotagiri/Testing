@@ -19,10 +19,10 @@
    1. Starters dependencies
    2. Micro-service dependecies
 4. [Configuration Build & Runtime for Local, LIE, IP Dev, IP Test, IP Prod]()
-   a. Environment Variables 
-	i. Data Source
-	ii. Logging
-	iii. Message Bus
+   1. Environment Variables 
+	1. Data Source
+	2. Logging
+	3. Message Bus
 5. [Build And Deployment](#Build-And-Deployment)
    a. Local Machine
 	     i. Build Instructions
