@@ -1,6 +1,6 @@
 <img src="images/wawa.jpg" width="100" height="100"/>
 
-[adjustable](http://google.com?target="_blank")
+[adjustable](http://google.com?target="new")
 				
 
 
