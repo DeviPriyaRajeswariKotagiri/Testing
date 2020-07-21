@@ -11,41 +11,37 @@
 
 1. [Introduction](#Introduction)
 2. [Prerequisites](#Prerequisites)
-   1. Tools/Software
-   2. Infrastructure
+   a. Tools/Software
+   b. Infrastructure
       1. Local
       2. Cloud
-3. [Build And Deployment](#Build-And-Deployment)
-    1. Local Machine
-		1. Dependencies
-		2. Configuration
-			- Environment Variables
-			- Data Source
-			- Logging
-			- Message Bus
-		3. Build Instructions
-		4. Testing Instructions
-		5. Deployment Instructions
-   2. Local Integration Environment
-		1. Dependencies
-		2. Configuration
-			- Environment Variables
-			- Data Source
-			- Logging
-			- Message Bus
-		3. Build Instructions
-		4. Testing Instructions
-		5. Deployment Instructions
-   3. Integration Platform
-		1. Dependencies
-		2. Configuration
-			- Environment Variables
-			- Data Source
-			- Logging
-			- Message Bus
-		3. Build Instructions
-		4. Testing Instructions
-		5. Deployment Instructions
+3. [Dependencies(on other software components)]()
+   a. Starters dependencies
+   b. Micro-service dependecies
+4. Configuration (Build & Runtime for Local, LIE, IP Dev, IP Test, IP Prod)
+   a. Environment Variables 
+	      i. Data Source
+	     ii. Logging
+	    iii. Message Bus
+5. [Build And Deployment](#Build-And-Deployment)
+   a. Local Machine
+	     i. Build Instructions
+	    ii. Deployment Instructions
+	   iii. Testing Instructions
+   b. Local Integration Environment
+	   i. Dependencies
+	   	1. Starter Dependencies
+		2. Micro-service Dependencies
+	  ii. Build Instructions
+	  iii. Deployment Instructions
+	  iV. Testing Instructions
+  c. Integration Platform
+	   i. Dependencies
+	   	1. Starter Dependencies
+		2. Micro-service Dependencies
+	  ii. Build Instructions
+	  iii. Deployment Instructions
+	  iV. Testing Instructions
 4. [Design Details](#Design-Details)
 	1. UML Diagrams
 	2. Events Produced And Events Consumed
