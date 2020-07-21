@@ -31,8 +31,8 @@
       
    2. Local Integration Environment
        1. Dependencies
-	 	 1. Starter Dependencies
-	 	 2. Micro-service Dependencies
+	     1. Starter Dependencies
+	     2. Micro-service Dependencies
       2. Build Instructions
       3. Deployment Instructions
       4. Testing Instructions
@@ -41,9 +41,9 @@
        1. Dependencies
 	     1. Starter Dependencies
 	     2. Micro-service Dependencies
-      2. Build Instructions
-      3. Deployment Instructions
-      4. Testing Instructions
+       2. Build Instructions
+       3. Deployment Instructions
+       4. Testing Instructions
 
 6. [Design Details](#Design-Details)
 	1. UML Diagrams
