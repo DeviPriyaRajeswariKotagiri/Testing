@@ -1,6 +1,6 @@
 <img src="images/wawa.jpg" width="100" height="100"/>
 
-[![Build Status](https://travis-ci.org/openmrs/openmrs-core.svg?branch=master)](https://travis-ci.org/openmrs/openmrs-core) [![Coverage Status](https://coveralls.io/repos/github/openmrs/openmrs-core/badge.svg?branch=master)](https://coveralls.io/github/openmrs/openmrs-core?branch=master) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a51303ee46c34775a7c31c8d6016da6b)](https://www.codacy.com/app/openmrs/openmrs-core?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=openmrs/openmrs-core&amp;utm_campaign=Badge_Grade)
+[![Build Status](https://google.com/)](https://travis-ci.org/openmrs/openmrs-core) [![Coverage Status](https://google.com/)](https://google.com/) [![Codacy Badge](https://google.com/)](https://google.com/)
 
 # Name of the Component
 
@@ -275,12 +275,16 @@ e.g: org.springframework.boot.spring-boot-starter-parent
 		If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					        Application Server’s built-in features and access it by using JNDI.
 		We can do this using the spring.datasource.jndi-name property.
 		
-  - **Logging**
-  Not Applicable
- 
-    
-  - **Message Bus**
-  Not Applicable
+- **Logging**
+  Spring Boot uses Apache Commons logging for all internal logging.
+  You can use logging options available in Spring Boot like Java Util Logging, Log4j2, and Logback.
+  
+   
+- **Message Bus**
+
+			 ```Information on messaging infrastructure in the application which allows
+			 different systems to communicate through a shared set of interfaces
+			 ```
 
 #### c. **Build Instructions**
 		
@@ -366,14 +370,17 @@ e.g: org.springframework.boot.spring-boot-starter-parent
 		If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					        Application Server’s built-in features and access it by using JNDI.
 		We can do this using the spring.datasource.jndi-name property.
 		
- - **Logging**
- Not Applicable
- 
-    
- - **Message Bus**
-  Not Applicable
- 
+- **Logging**
+  Spring Boot uses Apache Commons logging for all internal logging.
+  You can use logging options available in Spring Boot like Java Util Logging, Log4j2, and Logback.
+  
+   
+- **Message Bus**
 
+			 ```Information on messaging infrastructure in the application which allows
+			 different systems to communicate through a shared set of interfaces
+			 ```
+			 
 #### c. **Build Instructions**
 		
 
@@ -413,7 +420,7 @@ For more information on How to produce and consume events , please check referen
 ### iii. Dependent Downstream Services
 Describe the dependent services in your application.
  
- 	```Currently for this component ,there are no dependent services.```
+
 
 
 ## Support
@@ -446,14 +453,14 @@ Describe the dependent services in your application.
 |----:|----:|-----------:|
 |Event Publisher|https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/593334289/Solution+Building+Block+-+Event+Publication| |
 |Event Subscriber| https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/579338621/Solution+Building+Block+-+Event+Subscriber | |
-|Dependencies| https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/762448353/Dependencies+on+EE+Team+s | |
-|Check Deployment Status| https://www.namecheap.com/blog/visualize-your-deployment-status-with-jenkins/ |  |
-|How to view Health statistics of a Microservice | https://www.callicoder.com/spring-boot-actuator/ |  |
-|View logs on Kubernetes | https://www.sumologic.com/blog/kubectl-logs/|  |
-| Amazon S3 Logs  |  https://docs.datadoghq.com/integrations/amazon_s3/#enable-s3-access-logs |  |
+|Dependencies|https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/762448353/Dependencies+on+EE+Team+s | |
+|Check Deployment Status|https://www.namecheap.com/blog/visualize-your-deployment-status-with-jenkins/ |  |
+|How to view Health statistics of a Microservice |https://www.callicoder.com/spring-boot-actuator/ |  |
+|View logs on Kubernetes |https://www.sumologic.com/blog/kubectl-logs/|  |
+| Amazon S3 Logs  |https://docs.datadoghq.com/integrations/amazon_s3/#enable-s3-access-logs |  |
 
 ### i. Links to Detailed Design
-- [Links to Detail Design of the Application](https://wawaappdev.atlassian.net/secure/RapidBoard.jspa?rapidView=280)
+[Links to Detail Design ](https://wawaappdev.atlassian.net/secure/RapidBoard.jspa?rapidView=280)
 
 ### ii. Links to SBBs used
 [Link(s) to SBBs](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/586613993/P3%2B-%2BSolution%2BBuild%2BBlock%2BRegistry)
