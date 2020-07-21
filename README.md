@@ -143,8 +143,8 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
  **1. Environment Variables**
 
   
-|     |	 Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose               | Comment(s)  |   
-	|----:|---------------------------:|----------------------:|-----------------------------:|-----------------------------:|---------:             |------------:|		
+|     |	 Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose | Comment(s)  |   
+|----:|---------------------------:|----------------------:|-----------------------------:|-----------------------------:|--------:|------------:|		
 	|     |  SERVICE_BASE_URL	   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  Scope of this variable changes 																	           at run time|
 	|     |  BUILD_NUMBER 		   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is pr_pull_number |        
 	|     |  BUILD_HASH	           |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is github hash    |  
