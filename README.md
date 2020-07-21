@@ -68,10 +68,10 @@ Provide Description of Component
 ## Prerequisites
 ### i. Tools/Software
    #### a. Java
-Install Java8(https://www.oracle.com/java/technologies/java8.html){target=blank}
+Install Java8(https://www.oracle.com/java/technologies/java8.html)
 If you want to build the master branch you will need a Java JDK of minimum version 8.
 
-<a href="http://example.com" target="blank">http://example.com</a>
+<a href="http://google.com" target="_blank">link</a>
 
    #### b. Maven
 
