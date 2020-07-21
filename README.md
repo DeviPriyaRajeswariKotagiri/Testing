@@ -109,9 +109,10 @@ Information](https://kubernetes.io/docs/setup/)
 3. Databases: Install required database for the component design (SQL DB/No-SQL)
 
 
+
 - **b. Cloud**
 
-If your application relies on cloud infrastructure ,you will have to take care of installing and working with the below:
+If your application relies on cloud infrastructure e.g. AWS ,you will have to take care of below services:
 1. Compute.
 2. Storage & Databases.
 3. Networking.
