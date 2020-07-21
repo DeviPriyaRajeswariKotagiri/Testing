@@ -60,7 +60,7 @@
     5. [Links to On-boarding document](#Links-to-On-boarding-document)
 6. [License](#license)
 
-## Introduction
+## 1. Introduction
 
 Provide Description of Component
 
@@ -99,8 +99,8 @@ Provide Integrated development environment used to build the application
 e.g: STS/Eclipse/intellij etc.
 
 ### Infrastructure
- - **Local**
- Local Infrastructure :
+ - **Local **
+
 		
 1. Docker Container: Install Docker Container to create isolated environments through which you can build, maintain, ship and deploy your application.[More 			Information](https://docs.docker.com/docker-for-windows/)
 2. Kubernetes: Install Kubernetes for automating deployment, scaling, and management of containerized applications.[More Information]				                 (https://kubernetes.io/docs/setup/)
