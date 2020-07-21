@@ -133,7 +133,7 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 #### a. **Dependencies** 
  
   
-  Details of Parent POM:
+  [Details of Parent POM](https://google.com)
  
    e.g: org.springframework.boot.spring-boot-starter-parent
   
@@ -243,16 +243,14 @@ e.g: org.springframework.boot.spring-boot-starter-parent
 #### b. **Configuration**
 **1. Environment Variables**
 
-  
-	|	 Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose               | Comment(s)  |   
-	|---------------------------:|----------------------:|-----------------------------:|-----------------------------:|---------:             |------------:|		
-	 |  SERVICE_BASE_URL	   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  Scope of this variable changes 																	           at run time|
-	  |  BUILD_NUMBER 		   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is pr_pull_number |        
-	 |  BUILD_HASH	           |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is github hash    |  
-	|  APP_VERSION		   |  	Env		   | 	Build & Runtime		  |  Application Developer	 |			 |  The app_version comes from 				the helm chart.             |
-	|	 GITHUB_TOKEN  		   |  	Env		   | 	Build 			  |  Integration Platform	 |This variable allows downloading npm packages published to the GitHub NPM Registry.	|  To be renamed to GIT_PACKAGE_MANAGER_TOKEN   |
-	|ENABLE_BUILD_DETAILS|Env| Build & Runtime|Application Developer|Control visibility of build and version number in UI application expected value:- true : to show details false : to hide details        |  Yet to be created. It will come from helm chart.|
-
+  |     |	 Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose | Comment(s)  |   
+|----:|---------------------------:|----------------------:|-----------------------------:|-----------------------------:|--------:|------------:|		
+|     |  SERVICE_BASE_URL	   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  Scope of this variable changes at run time|
+|     |  BUILD_NUMBER 		   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is pr_pull_number |        |     |  BUILD_HASH	           |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is github hash    |  
+|     |  APP_VERSION		   |  	Env		   | 	Build & Runtime		  |  Application Developer	 |			 |  The app_version comes from 				the helm chart.|
+|     |	 GITHUB_TOKEN  		   |  	Env		   | 	Build 			  |  Integration Platform	 |This variable allows downloading npm packages published to the GitHub NPM Registry.	|  To be renamed to GIT_PACKAGE_MANAGER_TOKEN   |
+|	|ENABLE_BUILD_DETAILS|Env| Build & Runtime|Application Developer|Control visibility of build and version number in UI application expected value:- true : to show details false : to hide details        |  Yet to be created. It will come from helm chart.|
+	
 	
 	
  **2. Data Source**
@@ -338,20 +336,17 @@ e.g: org.springframework.boot.spring-boot-starter-parent
 #### b. **Configuration**
 **1. Environment Variables**
 
-  
-	|	 Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose               | Comment(s)  |   
-	|---------------------------:|----------------------:|-----------------------------:|-----------------------------:|---------:             |------------:|		
-	 |  SERVICE_BASE_URL	   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  Scope of this variable changes 																	           at run time|
-	  |  BUILD_NUMBER 		   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is pr_pull_number |        
-	 |  BUILD_HASH	           |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is github hash    |  
-	|  APP_VERSION		   |  	Env		   | 	Build & Runtime		  |  Application Developer	 |			 |  The app_version comes from 				the helm chart.             |
-	|	 GITHUB_TOKEN  		   |  	Env		   | 	Build 			  |  Integration Platform	 |This variable allows downloading npm packages published to the GitHub NPM Registry.	|  To be renamed to GIT_PACKAGE_MANAGER_TOKEN   |
-	|ENABLE_BUILD_DETAILS|Env| Build & Runtime|Application Developer|Control visibility of build and version number in UI application expected value:- true : to show details false : to hide details        |  Yet to be created. It will come from helm chart.|
-
+ |     |	 Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose | Comment(s)  |   
+|----:|---------------------------:|----------------------:|-----------------------------:|-----------------------------:|--------:|------------:|		
+|     |  SERVICE_BASE_URL	   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  Scope of this variable changes at run time|
+|     |  BUILD_NUMBER 		   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is pr_pull_number |        |     |  BUILD_HASH	           |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is github hash    |  
+|     |  APP_VERSION		   |  	Env		   | 	Build & Runtime		  |  Application Developer	 |			 |  The app_version comes from 				the helm chart.|
+|     |	 GITHUB_TOKEN  		   |  	Env		   | 	Build 			  |  Integration Platform	 |This variable allows downloading npm packages published to the GitHub NPM Registry.	|  To be renamed to GIT_PACKAGE_MANAGER_TOKEN   |
+|	|ENABLE_BUILD_DETAILS|Env| Build & Runtime|Application Developer|Control visibility of build and version number in UI application expected value:- true : to show details false : to hide details        |  Yet to be created. It will come from helm chart.|
 	
   
 **2. Data Source**
- 
+ 	
 	1. Maven Dependencies
 		
 		In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies   		 are gathered in    the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
