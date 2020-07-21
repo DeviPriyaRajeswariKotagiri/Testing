@@ -98,19 +98,18 @@ Provide Integrated development environment used to build the application
 e.g: STS/Eclipse/intellij etc.
 
 ### ii. Infrastructure
- - **a. Local**
 
-		
+- **a. Local**
+
 1. Docker Container: Install Docker Container to create isolated environments through which you can build, maintain, ship and deploy your application.[More 			Information](https://docs.docker.com/docker-for-windows/)
 
 2. Kubernetes: Install Kubernetes for automating deployment, scaling, and management of containerized applications.[More 			
 Information](https://kubernetes.io/docs/setup/)
 
 3. Databases: Provide details of database used in the component design(SQL DB/No-SQL)
-		
-      
-- **b. Cloud**
 
+
+- **b. Cloud**
 
 If your application relies on cloud infrastructure , Provide information on
 	- Compute.
