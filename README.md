@@ -8,7 +8,7 @@
 
 1. [Introduction](#Introduction)
 2. [Prerequisites](#Prerequisites)
-   1. [Tools/Software](#Tools/Software)
+   1. [Tools/Software](#i.Tools/Software)
    2. [Infrastructure](#Infrastructure)
       1. [Local](#Local)
       2. [Cloud](#Cloud)
@@ -60,12 +60,12 @@
     5. [Links to On-boarding document](#Links-to-On-boarding-document)
 6. [License](#license)
 
-## 1. Introduction
+## Introduction
 
 Provide Description of Component
 
-## 2.Prerequisites
-### i. Tools/Software
+## Prerequisites
+### i.Tools/Software
    #### Java
 
 Install Java8 (https://www.oracle.com/java/technologies/java8.html).
@@ -420,7 +420,7 @@ Includes Reference documents .
 [Link(s) to ABBs](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/508428401/Foundational+Architecture+Building+Blocks)
 ### iv. Links to OAS on Developer Portal
 [Link to OAS on Developer Portal](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/590742573/System+Developer+Portal+Design)
-#### Links to On-boarding document
+### v. Links to On-boarding document
 [Developer On-boarding](https://wawaappdev.atlassian.net/wiki/spaces/MEET/pages/131137606/Developer+onboarding)
 
 ## License
