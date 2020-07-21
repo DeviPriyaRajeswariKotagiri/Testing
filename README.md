@@ -467,12 +467,12 @@ Describe the dependent services in your application.
 ### iv. Links to OAS on Developer Portal
 | Name |Link | Comments  | 
 |----:|----:|-----------:|
-|Link to OAS on Developer Portal| https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/590742573/System+Developer+Portal+Design. |   |
+|Link(s) to OAS on Developer Portal| https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/590742573/System+Developer+Portal+Design. |   |
 
 ### v. Links to On-boarding document
 | Name |Link | Comments  | 
 |----:|----:|-----------:|
-|Developer On-boarding| https://wawaappdev.atlassian.net/wiki/spaces/MEET/pages/131137606/Developer+onboarding.  |   |
+|Link(s) to Developer On-boarding| https://wawaappdev.atlassian.net/wiki/spaces/MEET/pages/131137606/Developer+onboarding.  |   |
 
 
 ## License
