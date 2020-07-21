@@ -239,11 +239,14 @@ There are multiple unit test cases written to cover the different components of 
 	
 #### a. **Dependencies** 
 
-   1. Starter Dependencies
+   
+   i. Starter Dependencies
 
-  [Details of Starters dependencies](https://google.com)
+ 		
+   [Details of Starters dependencies](https://google.com)
 
-   2. Micro-service Dependencies
+   ii. Micro-service Dependencies
+   
 
    [Details of Micro-service depedencies](https://google.com)
 
@@ -295,18 +298,16 @@ All the individual components are combined and tested as a group.
 #### a. **Dependencies** 
 
    
- [Details of Parent POM](https://google.com)
+   i. Starter Dependencies
 
-e.g: org.springframework.boot.spring-boot-starter-parent
+ 		
+   [Details of Starters dependencies](https://google.com)
 
-##### 1. **Starter Dependencies**
+   ii. Micro-service Dependencies
+   
 
-[Details of Starters dependencies](https://google.com)
-
-##### 2. **Micro-service Dependencies**
-
-[Details of Micro-service depedencies](https://google.com)
-  
+   [Details of Micro-service depedencies](https://google.com)
+   
   
 #### b. **Build Instructions**
 		
