@@ -132,8 +132,8 @@ If your application relies on cloud infrastructure, Provide information on Compu
 - **Environment Variables**
 ##### [Local Machine Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
   
-|   |   |   |   |   |
-|---|---|---|---|---|
+|---   |---   |---   |---   |---   |
+|      |   |---|---|---|
 |   |   |   |   |   |
 |   |   |   |   |   |
 |   |   |   |   |   |
