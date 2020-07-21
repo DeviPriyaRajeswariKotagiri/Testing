@@ -71,7 +71,7 @@ Provide Description of Component
 Install Java8(https://www.oracle.com/java/technologies/java8.html)
 If you want to build the master branch you will need a Java JDK of minimum version 8.
 
-<a href="http://google.com" target="_blank">link</a>
+<a href="http://google.com" target='_blank'>link</a>
 
    #### b. Maven
 
