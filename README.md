@@ -67,7 +67,7 @@ Provide Description of Component
 ## Prerequisites
 ### i. Tools/Software
    #### a. Java
-Install [Java8](https://www.oracle.com/java/technologies/java8.html){:target="_blank"}
+Install Java8(https://www.oracle.com/java/technologies/java8.html)
 If you want to build the master branch you will need a Java JDK of minimum version 8.
 
 
@@ -101,7 +101,7 @@ e.g: STS/Eclipse/intellij etc.
 
 ### ii. Infrastructure
 
-- **a. Local**
+  **a. Local**
 
 1. GITHub
 2. CI/CD Platform
@@ -113,7 +113,7 @@ Information](https://kubernetes.io/docs/setup/)
 
 
 
-- **b. Cloud**
+ **b. Cloud**
 
 If your application relies on cloud infrastructure e.g. AWS ,you will have to take care of below services:
 1. Compute.
@@ -140,19 +140,19 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
    
 		
 #### b. **Configuration**
-- **Environment Variables**
+ **1. Environment Variables**
 
   
-	|     |	 Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose               | Comment(s)  |   
-	|----:|---------------------------:|----------------------:|-----------------------------:|-----------------------------:|---------:             |------------:|		
-	|     |  SERVICE_BASE_URL	   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  Scope of this variable changes 																	           at run time|
-	|     |  BUILD_NUMBER 		   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is pr_pull_number |        
-	|     |  BUILD_HASH	           |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is github hash    |  
-	|     |  APP_VERSION		   |  	Env		   | 	Build & Runtime		  |  Application Developer	 |			 |  The app_version comes from 				the helm chart.             |
-	|     |	 GITHUB_TOKEN  		   |  	Env		   | 	Build 			  |  Integration Platform	 |This variable allows downloading npm packages published to the GitHub NPM Registry.	|  To be renamed to GIT_PACKAGE_MANAGER_TOKEN   |
-	||ENABLE_BUILD_DETAILS|Env| Build & Runtime|Application Developer|Control visibility of build and version number in UI application expected value:- true : to show details false : to hide details        |  Yet to be created. It will come from helm chart.|
+	|	 Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose               | Comment(s)  |   
+	|---------------------------:|----------------------:|-----------------------------:|-----------------------------:|---------:             |------------:|		
+	 |  SERVICE_BASE_URL	   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  Scope of this variable changes 																	           at run time|
+	  |  BUILD_NUMBER 		   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is pr_pull_number |        
+	 |  BUILD_HASH	           |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is github hash    |  
+	|  APP_VERSION		   |  	Env		   | 	Build & Runtime		  |  Application Developer	 |			 |  The app_version comes from 				the helm chart.             |
+	|	 GITHUB_TOKEN  		   |  	Env		   | 	Build 			  |  Integration Platform	 |This variable allows downloading npm packages published to the GitHub NPM Registry.	|  To be renamed to GIT_PACKAGE_MANAGER_TOKEN   |
+	|ENABLE_BUILD_DETAILS|Env| Build & Runtime|Application Developer|Control visibility of build and version number in UI application expected value:- true : to show details false : to hide details        |  Yet to be created. It will come from helm chart.|
 
-- **Data Source**
+**2. Data Source**
  
 	1. Maven Dependencies
 		
@@ -176,12 +176,12 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 		We can do this using the spring.datasource.jndi-name property.
 
 			
-- **Logging**
+**3. Logging**
   Spring Boot uses Apache Commons logging for all internal logging.
   You can use logging options available in Spring Boot like Java Util Logging, Log4j2, and Logback.
   
    
-- **Message Bus**
+**4. Message Bus**
 
 			 ```Information on messaging infrastructure in the application which allows
 			 different systems to communicate through a shared set of interfaces
@@ -241,20 +241,21 @@ e.g: org.springframework.boot.spring-boot-starter-parent
   
   
 #### b. **Configuration**
-- **Environment Variables**
+**1. Environment Variables**
 
   
-	|     |	 Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose               | Comment(s)  |   
-	|----:|---------------------------:|----------------------:|-----------------------------:|-----------------------------:|---------:             |------------:|		
-	|     |  SERVICE_BASE_URL	   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  Scope of this variable changes 																	           at run time|
-	|     |  BUILD_NUMBER 		   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is pr_pull_number |        
-	|     |  BUILD_HASH	           |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is github hash    |  
-	|     |  APP_VERSION		   |  	Env		   | 	Build & Runtime		  |  Application Developer	 |			 |  The app_version comes from 				the helm chart.             |
-	|     |	 GITHUB_TOKEN  		   |  	Env		   | 	Build 			  |  Integration Platform	 |This variable allows downloading npm packages published to the GitHub NPM Registry.	|  To be renamed to GIT_PACKAGE_MANAGER_TOKEN   |
-	||ENABLE_BUILD_DETAILS|Env| Build & Runtime|Application Developer|Control visibility of build and version number in UI application expected value:- true : to show details false : to hide details        |  Yet to be created. It will come from helm chart.|
+	|	 Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose               | Comment(s)  |   
+	|---------------------------:|----------------------:|-----------------------------:|-----------------------------:|---------:             |------------:|		
+	 |  SERVICE_BASE_URL	   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  Scope of this variable changes 																	           at run time|
+	  |  BUILD_NUMBER 		   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is pr_pull_number |        
+	 |  BUILD_HASH	           |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is github hash    |  
+	|  APP_VERSION		   |  	Env		   | 	Build & Runtime		  |  Application Developer	 |			 |  The app_version comes from 				the helm chart.             |
+	|	 GITHUB_TOKEN  		   |  	Env		   | 	Build 			  |  Integration Platform	 |This variable allows downloading npm packages published to the GitHub NPM Registry.	|  To be renamed to GIT_PACKAGE_MANAGER_TOKEN   |
+	|ENABLE_BUILD_DETAILS|Env| Build & Runtime|Application Developer|Control visibility of build and version number in UI application expected value:- true : to show details false : to hide details        |  Yet to be created. It will come from helm chart.|
+
 	
 	
- - **Data Source**
+ **2. Data Source**
  
 	1. Maven Dependencies
 		
@@ -277,12 +278,12 @@ e.g: org.springframework.boot.spring-boot-starter-parent
 		If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					        Application Server’s built-in features and access it by using JNDI.
 		We can do this using the spring.datasource.jndi-name property.
 		
-- **Logging**
+**3. Logging**
   Spring Boot uses Apache Commons logging for all internal logging.
   You can use logging options available in Spring Boot like Java Util Logging, Log4j2, and Logback.
   
    
-- **Message Bus**
+**4. Message Bus**
 
 			 ```Information on messaging infrastructure in the application which allows
 			 different systems to communicate through a shared set of interfaces
@@ -328,26 +329,28 @@ All the individual components are combined and tested as a group.
 	
 #### a. **Dependencies** 
 
-Details of Parent POM:
+[Details of Parent POM](http://google.com)
+
 e.g: org.springframework.boot.spring-boot-starter-parent
 
 
 		
 #### b. **Configuration**
-- **Environment Variables**
+**1. Environment Variables**
 
   
-	|     |	 Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose               | Comment(s)  |   
-	|----:|---------------------------:|----------------------:|-----------------------------:|-----------------------------:|---------:             |------------:|		
-	|     |  SERVICE_BASE_URL	   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  Scope of this variable changes 																	           at run time|
-	|     |  BUILD_NUMBER 		   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is pr_pull_number |        
-	|     |  BUILD_HASH	           |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is github hash    |  
-	|     |  APP_VERSION		   |  	Env		   | 	Build & Runtime		  |  Application Developer	 |			 |  The app_version comes from 				the helm chart.             |
-	|     |	 GITHUB_TOKEN  		   |  	Env		   | 	Build 			  |  Integration Platform	 |This variable allows downloading npm packages published to the GitHub NPM Registry.	|  To be renamed to GIT_PACKAGE_MANAGER_TOKEN   |
-	||ENABLE_BUILD_DETAILS|Env| Build & Runtime|Application Developer|Control visibility of build and version number in UI application expected value:- true : to show details false : to hide details        |  Yet to be created. It will come from helm chart.|
+	|	 Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose               | Comment(s)  |   
+	|---------------------------:|----------------------:|-----------------------------:|-----------------------------:|---------:             |------------:|		
+	 |  SERVICE_BASE_URL	   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  Scope of this variable changes 																	           at run time|
+	  |  BUILD_NUMBER 		   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is pr_pull_number |        
+	 |  BUILD_HASH	           |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is github hash    |  
+	|  APP_VERSION		   |  	Env		   | 	Build & Runtime		  |  Application Developer	 |			 |  The app_version comes from 				the helm chart.             |
+	|	 GITHUB_TOKEN  		   |  	Env		   | 	Build 			  |  Integration Platform	 |This variable allows downloading npm packages published to the GitHub NPM Registry.	|  To be renamed to GIT_PACKAGE_MANAGER_TOKEN   |
+	|ENABLE_BUILD_DETAILS|Env| Build & Runtime|Application Developer|Control visibility of build and version number in UI application expected value:- true : to show details false : to hide details        |  Yet to be created. It will come from helm chart.|
+
 	
   
-- **Data Source**
+**2. Data Source**
  
 	1. Maven Dependencies
 		
@@ -370,12 +373,12 @@ e.g: org.springframework.boot.spring-boot-starter-parent
 		If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					        Application Server’s built-in features and access it by using JNDI.
 		We can do this using the spring.datasource.jndi-name property.
 		
-- **Logging**
+**3. Logging**
   Spring Boot uses Apache Commons logging for all internal logging.
   You can use logging options available in Spring Boot like Java Util Logging, Log4j2, and Logback.
   
    
-- **Message Bus**
+**4. Message Bus**
 
 			 ```Information on messaging infrastructure in the application which allows
 			 different systems to communicate through a shared set of interfaces
@@ -451,7 +454,7 @@ Describe the dependent services in your application.
 
 ### i. Links to Detailed Design
 | Name |Link | Comments  | 
-|----:|----:|-----------:|
+|:----|:----|:-----------|
 |Kafka Pub-Sub| https://github.com/Kunalk/spring-kafka-pubsub | |
 |Dependencies|https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/762448353/Dependencies+on+EE+Team+s | |
 |Check Deployment Status|https://www.namecheap.com/blog/visualize-your-deployment-status-with-jenkins/ |  |
