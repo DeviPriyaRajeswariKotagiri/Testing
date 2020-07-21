@@ -12,7 +12,7 @@
    2. Infrastructure
       1. Local
       2. Cloud
-2. [Build And Deployment](#Build-And-Deployment)
+3. [Build And Deployment](#Build-And-Deployment)
   1. Local Machine
 		1. Dependencies
 		2. Configuration
@@ -43,22 +43,22 @@
 		3. Build Instructions
 		4. Testing Instructions
 		5. Deployment Instructions
-3. [Design Details](#Design-Details)
+4. [Design Details](#Design-Details)
 	1. UML Diagrams
 	2. Events Produced And Events Consumed
 	3. Dependent Downstream Services
-4. [Support](#Support)
+5. [Support](#Support)
    1. Deployment status
    2. How to view Health statistics
    3. How to view Logs
    4. Owned by which Team?
-5. [References](#References)
+6. [References](#References)
     1. Links to Detailed Design
     2. Links to SBBs used
     3. Links to ABBs used
     4. Links to OAS on Developer Portal
     5. Links to On-boarding document
-6. [License](#license)
+7. [License](#license)
 
 ## Introduction
 
