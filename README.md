@@ -15,19 +15,20 @@
    2. Infrastructure
       1. Local
       2. Cloud
-3. [Dependencies on other software components]()
+3. [Dependencies on other software components](#Dependencies-on-other-software-components)
    1. Starters dependencies
    2. Micro-service dependecies
 4. [Configuration Build & Runtime for Local, LIE, IP Dev, IP Test, IP Prod]()
    1. Environment Variables 
-      1. Data Source
-      2. Logging
-      3. Message Bus
+   2. Data Source
+   3. Logging
+   4. Message Bus
 5. [Build And Deployment](#Build-And-Deployment)
    1. Local Machine
       1. Build Instructions
       2. Deployment Instructions
       3. Testing Instructions
+      
    2. Local Integration Environment
        1. Dependencies
 	      1. Starter Dependencies
@@ -35,18 +36,20 @@
       2. Build Instructions
       3. Deployment Instructions
       4. Testing Instructions
-  3. Integration Platform
-      1. Dependencies
+      
+   3. Integration Platform
+       1. Dependencies
 	      1. Starter Dependencies
 	      2. Micro-service Dependencies
       2. Build Instructions
       3. Deployment Instructions
       4. Testing Instructions
-4. [Design Details](#Design-Details)
+
+6. [Design Details](#Design-Details)
 	1. UML Diagrams
 	2. Events Produced And Events Consumed
 	3. Dependent Downstream Services
-5. [Support](#Support)
+7. [Support](#Support)
    1. Deployment status
    2. How to view Health statistics
    3. How to view Logs
@@ -117,26 +120,24 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 4. Messaging.
 5. Logging and Monitoring.
 	
+## Dependencies on other software components
 
-## Build And Deployment
+### i. Starters dependencies
 
-### i. Local Machine
-
-<details><summary>Local Machine:Build and Deployment</summary>
-<p>
-
-#### a. **Dependencies** 
+  
+  [Details of Starters dependencies](https://google.com)
  
   
-  [Details of Parent POM](https://google.com)
- 
-   e.g: org.springframework.boot.spring-boot-starter-parent
   
-   
-		
-#### b. **Configuration**
- **1. Environment Variables**
 
+### ii.Micro-service dependecies
+
+[Details of Micro-service depedencies](https://google.com)
+
+
+## Configuration Build & Runtime for Local, LIE, IP Dev, IP Test, IP Prod
+
+### i.Environment Variables
   
 |Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose | Comment(s)  |   
 |:-------------------------|:----------------------|:-----------------------------|:-----------------------------|:--------|:------------|		
@@ -146,10 +147,9 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
  |	 GITHUB_TOKEN  		   |  	Env		   | 	Build 			  |  Integration Platform	 |This variable allows downloading npm packages published to the GitHub NPM Registry.	|  To be renamed to GIT_PACKAGE_MANAGER_TOKEN   |
 |ENABLE_BUILD_DETAILS|Env| Build & Runtime|Application Developer|Control visibility of build and version number in UI application expected value:- true : to show details false : to hide details        |  Yet to be created. It will come from helm chart.|
 	
-	
-**2. Data Source**
+### ii.Data Source
 
- 1. Maven Dependencies
+1. Maven Dependencies
 		
 	In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies   		 are gathered in    the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
 	To find List of Dependencies,Please refer the POM.xml File.
@@ -170,19 +170,27 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 	If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					        Application Server’s built-in features and access it by using JNDI.
 	We can do this using the spring.datasource.jndi-name property.
 
-			
-**3. Logging**
-  Spring Boot uses Apache Commons logging for all internal logging.
-  You can use logging options available in Spring Boot like Java Util Logging, Log4j2, and Logback.
-  
-   
-**4. Message Bus**
+### iii. Logging
 
-			 ```Information on messaging infrastructure in the application which allows
-			 different systems to communicate through a shared set of interfaces
-			 ```
+ Spring Boot uses Apache Commons logging for all internal logging.
+ You can use logging options available in Spring Boot like Java Util Logging, Log4j2, and Logback.
+
+
+### iv. Message Bus
+
+	 ```Information on messaging infrastructure in the application which allows
+				 different systems to communicate through a shared set of interfaces
+				 ```
  
-#### c. **Build Instructions**
+## Build And Deployment
+
+### i. Local Machine
+
+<details><summary>Local Machine:Build and Deployment</summary>
+<p>
+
+
+#### a. **Build Instructions**
 
 After you have taken care of the [Prerequisites](#prerequisites)
 Execute the following
@@ -192,17 +200,7 @@ Execute the following
 			mvn clean package
 			```
 
-#### d. **Testing Instructions**
-		
-##### Unit test cases
-There are multiple unit test cases written to cover the different components of the application. However there is a global application test suite file _**UnitTests.java**_     that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
-
-		````
-		mvn clean test -Dtest=ApplicationUnitTests
-		````
-
-
-#### e. **Deployment Instructions**
+#### b. **Deployment Instructions**
 
 Instructions to deploy a Microservice to  Application Server.
 
@@ -217,6 +215,18 @@ If all goes well (check the console output) you can access the OpenMRS applicati
 
 Refer to [Getting Started as a Developer - Maven](https://wiki.openmrs.org/display/docs/Maven) for some more information
 on useful Maven commands and build options.
+
+
+#### c. **Testing Instructions**
+		
+##### Unit test cases
+There are multiple unit test cases written to cover the different components of the application. However there is a global application test suite file _**UnitTests.java**_     that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
+
+		````
+		mvn clean test -Dtest=ApplicationUnitTests
+		````
+
+
 
 </p>
 </details>
@@ -233,74 +243,25 @@ on useful Maven commands and build options.
  [Details of Parent POM](https://google.com)
 
 e.g: org.springframework.boot.spring-boot-starter-parent
+
+##### a. **Starter Dependencies**
+
+[Details of Starters dependencies](https://google.com)
+
+##### b. **Micro-service Dependencies**
+
+[Details of Micro-service depedencies](https://google.com)
   
   
-#### b. **Configuration**
-**1. Environment Variables**
-
-  
-|Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose | Comment(s)  |   
-|:-------------------------|:----------------------|:-----------------------------|:-----------------------------|:--------|:------------|		
-|  SERVICE_BASE_URL	   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  Scope of this variable changes at run time|
- |  BUILD_NUMBER 		   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is pr_pull_number |         |  BUILD_HASH	           |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is github hash    |  
-  |  APP_VERSION		   |  	Env		   | 	Build & Runtime		  |  Application Developer	 |			 |  The app_version comes from 				the helm chart.|
- |	 GITHUB_TOKEN  		   |  	Env		   | 	Build 			  |  Integration Platform	 |This variable allows downloading npm packages published to the GitHub NPM Registry.	|  To be renamed to GIT_PACKAGE_MANAGER_TOKEN   |
-|ENABLE_BUILD_DETAILS|Env| Build & Runtime|Application Developer|Control visibility of build and version number in UI application expected value:- true : to show details false : to hide details        |  Yet to be created. It will come from helm chart.|
-	
-	
-	
-	
- **2. Data Source**
- 
- 1. Maven Dependencies
-		
-	In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies   		 are gathered in    the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
-	To find List of Dependencies,Please refer the POM.xml File.
-
-2. application.properties
-		
-	In Spring Boot, properties are kept in the application.properties file under the classpath.
-	The application.properties file is located in the src/main/resources directory. 
-
-3. DataSource Bean
-
-	Supply a DataSource to the JDBC Template so it can configure itself to get database access.
-	You can configure the DataSource in the XML file or in a Configuration class.
-
-
-4. JNDI DataSource
-
-	If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					        Application Server’s built-in features and access it by using JNDI.
-	We can do this using the spring.datasource.jndi-name property.
-		
-**3. Logging**
-  Spring Boot uses Apache Commons logging for all internal logging.
-  You can use logging options available in Spring Boot like Java Util Logging, Log4j2, and Logback.
-  
-   
-**4. Message Bus**
-
-			 ```Information on messaging infrastructure in the application which allows
-			 different systems to communicate through a shared set of interfaces
-			 ```
-
-#### c. **Build Instructions**
+#### b. **Build Instructions**
 		
 		```Build Instructions for Local Integration environment
+		
+		
 			```
 			
-#### d. **Testing Instructions**
-
-All the individual components are combined and tested as a group.
-
-		```
-		Test Instructions for Local Integration 
-		```
-
-
-
-
-#### e. **Deployment Instructions**
+			
+#### c. **Deployment Instructions**
 
 1. Deploy Microservice
 
@@ -313,6 +274,20 @@ All the individual components are combined and tested as a group.
 3. Deploying a Microservice to Docker Container
 		
 	[Deploying a Microservice to Docker Container](https://www.javainuse.com/devOps/docker/docker-jar)
+	
+	
+#### d. **Testing Instructions**
+
+All the individual components are combined and tested as a group.
+
+		```
+		Test Instructions for Local Integration 
+		```
+
+
+
+
+
 
 </p>
 </details>
@@ -324,67 +299,34 @@ All the individual components are combined and tested as a group.
 	
 #### a. **Dependencies** 
 
-[Details of Parent POM](http://google.com)
+   
+ [Details of Parent POM](https://google.com)
 
 e.g: org.springframework.boot.spring-boot-starter-parent
 
+##### a. **Starter Dependencies**
 
-		
-#### b. **Configuration**
-**1. Environment Variables**
+[Details of Starters dependencies](https://google.com)
 
+##### b. **Micro-service Dependencies**
+
+[Details of Micro-service depedencies](https://google.com)
   
-|Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose | Comment(s)  |   
-|:-------------------------|:----------------------|:-----------------------------|:-----------------------------|:--------|:------------|		
-|  SERVICE_BASE_URL	   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  Scope of this variable changes at run time|
- |  BUILD_NUMBER 		   |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is pr_pull_number |         |  BUILD_HASH	           |  	Env		   | 	Build & Runtime		  |  Integration Platform	 |			 |  It is github hash    |  
-  |  APP_VERSION		   |  	Env		   | 	Build & Runtime		  |  Application Developer	 |			 |  The app_version comes from 				the helm chart.|
- |	 GITHUB_TOKEN  		   |  	Env		   | 	Build 			  |  Integration Platform	 |This variable allows downloading npm packages published to the GitHub NPM Registry.	|  To be renamed to GIT_PACKAGE_MANAGER_TOKEN   |
-|ENABLE_BUILD_DETAILS|Env| Build & Runtime|Application Developer|Control visibility of build and version number in UI application expected value:- true : to show details false : to hide details        |  Yet to be created. It will come from helm chart.|
-	
-	
   
-**2. Data Source**
- 	
- 1. Maven Dependencies
-		
-	In Maven, dependency is another archive—JAR, ZIP, and so on—which your current project needs in order to compile, build, test, and/or to run. The dependencies   		 are gathered in    the pom. When you run a build or execute a maven goal, these dependencies are resolved, and are then loaded from the local repository.
-	To find List of Dependencies,Please refer the POM.xml File.
-
-2. application.properties
-		
-	In Spring Boot, properties are kept in the application.properties file under the classpath.
-	The application.properties file is located in the src/main/resources directory. 
-
-3. DataSource Bean
-
-	Supply a DataSource to the JDBC Template so it can configure itself to get database access.
-	You can configure the DataSource in the XML file or in a Configuration class.
-
-
-4. JNDI DataSource
-
-	If we deploy the Spring Boot application to an Application Server, we might want to configure and manage the DataSource by using the 					        Application Server’s built-in features and access it by using JNDI.
-	We can do this using the spring.datasource.jndi-name property.
-	
-		
-**3. Logging**
-  Spring Boot uses Apache Commons logging for all internal logging.
-  You can use logging options available in Spring Boot like Java Util Logging, Log4j2, and Logback.
-  
-   
-**4. Message Bus**
-
-			 ```Information on messaging infrastructure in the application which allows
-			 different systems to communicate through a shared set of interfaces
-			 ```
-			 
-#### c. **Build Instructions**
+#### b. **Build Instructions**
 		
 
 
 			```Build Instructions for  Integration environment
 			```
+
+#### c. **Deployment Instructions**
+You can To Deploy a Microservice to AWS Cloud ,Please check references for more information
+Container deployment overview
+
+<img src="images/awsdeployment.JPG" width="400" height="400"/>
+
+
 
 #### d. **Testing Instructions**
 		
@@ -394,11 +336,6 @@ All the individual components are combined and tested as a group.
 			```
 
 
-#### e. **Deployment Instructions**
-You can To Deploy a Microservice to AWS Cloud ,Please check references for more information
-Container deployment overview
-
-<img src="images/awsdeployment.JPG" width="400" height="400"/>
 
 </p>
 </details>
