@@ -99,7 +99,7 @@ Provide Integrated development environment used to build the application
 e.g: STS/Eclipse/intellij etc.
 
 ### ii. Infrastructure
- - **a. Local **
+ - **a. Local**
 
 		
 1. Docker Container: Install Docker Container to create isolated environments through which you can build, maintain, ship and deploy your application.[More 			Information](https://docs.docker.com/docker-for-windows/)
@@ -133,7 +133,7 @@ If your application relies on cloud infrastructure, Provide information on Compu
 ##### [Local Machine Environment Variables ](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328799449/Application+Configuration+Management#ApplicationConfigurationManagement-Environmentvariables)
 
 
-| Tables   |      Are      |  Cool |
+| Tables   |      Are      |  Cool |      
 |----------|:-------------:|------:|
 | col 1 is |  left-aligned | $1600 |
 | col 2 is |    centered   |   $12 |
@@ -141,13 +141,14 @@ If your application relies on cloud infrastructure, Provide information on Compu
 
 
   
-	|     |	 Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose  | Comment(s)  |   
-	|     | 		       	   |			   |				  |	                         |          |    	  |
-	|     |  			   |  			   | 				  |  				 |          |             |
-	|     |  			   |  			   | 				  |  				 |          |             |
-	|     |  			   |  			   | 				  |  				 |          |             |
-	|     |  			   |  			   | 				  |  				 |          |             |
-
+|     |	 Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose  | Comment(s)  |   
+|----:|---------------------------:|----------------------:|-----------------------------:|-----------------------------:|---------:|------------:|		
+|     |  			   |  			   | 				  |  				 |          |             |
+|     |  			   |  			   | 				  |  				 |          |             |
+|     |  			   |  			   | 				  |  				 |          |             |
+|     |  			   |  			   | 				  |  				 |          |             |
+|     |  			   |  			   | 				  |  				 |          |             |
+	
 - **Data Source**
  
 	1. Maven Dependencies
