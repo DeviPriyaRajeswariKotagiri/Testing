@@ -11,8 +11,8 @@
 
 1. [Introduction](#Introduction)
 2. [Prerequisites](#Prerequisites)
-   a. Tools/Software
-   b. Infrastructure
+   1. Tools/Software
+   2. Infrastructure
 	1. Local
 	2. Cloud
 3. [Dependencies(on other software components)]()
