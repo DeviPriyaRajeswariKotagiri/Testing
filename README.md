@@ -1,6 +1,7 @@
 <img src="images/wawa.jpg" width="100" height="100"/>
 
-<a href="http://www.google.com" target="_blank" rel="noopener noreferrer">check out this cool search engine</a>
+<p><a href="http://www.google.com" target="_blank" rel="noopener noreferrer">check out this cool search engine</a>
+	</p>
 
 [![Build Status](https://travis-ci.org/openmrs/openmrs-core.svg?branch=master)](https://google.com/) [![Coverage Status](https://coveralls.io/repos/github/openmrs/openmrs-core/badge.svg?branch=master)](https://google.com/) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a51303ee46c34775a7c31c8d6016da6b)](https://google.com/)
 
