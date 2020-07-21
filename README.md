@@ -403,6 +403,7 @@ Container deployment overview
 
 ## Design Details
 ### i. UML Diagrams
+UML Diagram for the Component
 
 <img src="images/umldiag.jpg" width="400" height="400"/>
 
