@@ -1,6 +1,6 @@
 <img src="images/wawa.jpg" width="100" height="100"/>
 
-[![Build Status](https://google.com/)](https://travis-ci.org/openmrs/openmrs-core) [![Coverage Status](https://google.com/)](https://google.com/) [![Codacy Badge](https://google.com/)](https://google.com/)
+[![Build Status](https://travis-ci.org/openmrs/openmrs-core.svg?branch=master)](https://travis-ci.org/openmrs/openmrs-core) [![Coverage Status](https://google.com/)](https://google.com/) [![Codacy Badge](https://google.com/)](https://google.com/)
 
 # Name of the Component
 
