@@ -31,8 +31,8 @@
       
    2. Local Integration Environment
        1. Dependencies
-	  1. Starter Dependencies
-	  2. Micro-service Dependencies
+	 	 i. Starter Dependencies
+	 	 ii. Micro-service Dependencies
       2. Build Instructions
       3. Deployment Instructions
       4. Testing Instructions
