@@ -6,7 +6,7 @@
 
 ## Table of Contents
 
-1. [Introduction](#Introduction)
+1. [Introduction](#1.Introduction)
 2. [Prerequisites](#prerequisites)
    1. [Tools/Software](#Tools/Software)
    2. [Infrastructure](#Infrastructure)
@@ -64,8 +64,8 @@
 
 Provide Description of Component
 
-## Prerequisites
-### Tools/Software
+## 2. Prerequisites
+### i. Tools/Software
    #### Java
 
 Install Java8 (https://www.oracle.com/java/technologies/java8.html).
@@ -98,8 +98,8 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 Provide Integrated development environment used to build the application 
 e.g: STS/Eclipse/intellij etc.
 
-### Infrastructure
- - **Local **
+### ii. Infrastructure
+ - **a. Local **
 
 		
 1. Docker Container: Install Docker Container to create isolated environments through which you can build, maintain, ship and deploy your application.[More 			Information](https://docs.docker.com/docker-for-windows/)
@@ -107,7 +107,7 @@ e.g: STS/Eclipse/intellij etc.
 3.Databases: Provide details of database used in the component design(SQL DB/No-SQL)
 		
       
-- **Cloud**
+- **b. Cloud**
 Cloud Infrastructure :
 If your application relies on cloud infrastructure, Provide information on Compute,Storage & Databases,Networking,Messaging,Logging and Monitoring.
 	
