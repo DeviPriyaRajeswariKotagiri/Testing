@@ -235,7 +235,7 @@ on useful Maven commands and build options.
 #### a. **Dependencies** 
 
    
-Details of Parent POM:
+ [Details of Parent POM](https://google.com)
 
 e.g: org.springframework.boot.spring-boot-starter-parent
   
