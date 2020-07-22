@@ -261,17 +261,11 @@ There are multiple unit test cases written to cover the different components of 
 			
 #### c. **Deployment Instructions**
 
-1. Deploy Microservice
+Some of the ways to deploy a microservice are as below:
+1. You can Deploy Microservice via an automated CI/CD Pipeline
+2. You can Deploy a Microservice to Docker Container
 
-	[Deploying a Microservice Via an automated CI/CD Pipeline](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/659751676/SBB+-+BE+Deploy+Microservice)
-
-2. Deploy UI Web App
-		
-	[Deploying UI Web App](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/660046657/SBB+-+FE+Deploy+UI+Web+App)
-
-3. Deploying a Microservice to Docker Container
-		
-	[Deploying a Microservice to Docker Container](https://www.javainuse.com/devOps/docker/docker-jar)
+Please Check References for more information.	
 	
 	
 #### d. **Testing Instructions**
@@ -396,6 +390,8 @@ Describe the dependent services in your application.
 |Link(s) to ABBs| https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/508428401/Foundational+Architecture+Building+Blocks. |   |
 |Link(s) to OAS on Developer Portal| https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/590742573/System+Developer+Portal+Design. |   |
 |Link(s) to Developer On-boarding| https://wawaappdev.atlassian.net/wiki/spaces/MEET/pages/131137606/Developer+onboarding.  |   |
+|Deploying a Microservice Via an automated CI/CD Pipeline| https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/659751676/SBB+-+BE+Deploy+Microservice |   |
+|Deploying a Microservice to Docker Container| https://www.javainuse.com/devOps/docker/docker-jar |   |
 
 
 
