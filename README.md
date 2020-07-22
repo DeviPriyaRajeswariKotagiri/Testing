@@ -18,7 +18,7 @@
 3. [Dependencies on other software components](#Dependencies-on-other-software-components)
    1. Starters dependencies
    2. Micro-service dependecies
-4. [Configuration Build And Runtime for LocalLIE,IPDev,IPTest,IPProd](#Configuration-Build-And-Runtime-for-LocalLIE,IPDev,IPTest,IPProd)
+4. [Configuration Build And Runtime for LocalLIE,IPDev,IPTest,IPProd](#Configuration Build And Runtime for LocalLIE,IPDev,IPTest,IPProd)
    1. Environment Variables 
    2. Data Source
    3. Logging
