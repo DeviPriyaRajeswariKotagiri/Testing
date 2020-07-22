@@ -135,7 +135,7 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 [Details of Micro-service depedencies](https://google.com)
 
 
-## Configuration Build & Runtime for Local, LIE, IP Dev, IP Test, IP Prod
+## Configuration-Build-&-Runtime-for-Local,-LIE,-IP-Dev,-IP-Test,-IP-Prod
 
 ### i.Environment Variables
   
