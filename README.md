@@ -18,7 +18,7 @@
 3. [Dependencies on other software components](#Dependencies-on-other-software-components)
    1. Starters dependencies
    2. Micro-service dependecies
-4. [Configuration Build And Runtime for LocalLIE,IPDev,IPTest,IPProd](#ConfigurationBuildAndRuntimeforLocalLIE,IPDev,IPTest,IPProd)
+4. [Configuration Build And Runtime for LocalLIE IPDev IPTest IPProd](#Configuration-Build-And-Runtime-for-LocalLIE-IPDev-IPTest-IPProd)
    1. Environment Variables 
    2. Data Source
    3. Logging
@@ -135,7 +135,7 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 [Details of Micro-service depedencies](https://google.com)
 
 
-## ConfigurationBuildAndRuntimeforLocalLIE,IPDev,IPTest,IPProd
+## Configuration Build And Runtime for LocalLIE IPDev IPTest IPProd
 
 ### i.Environment Variables
   
