@@ -19,11 +19,11 @@
       2. Infrastructure
       	1. Local
         2. Cloud
-  3. Integration Platform
-      1. Tools/Software
-      2. Infrastructure
-      	1. Local
-        2. Cloud
+   3. Integration Platform
+       1. Tools/Software
+       2. Infrastructure
+      	 1. Local
+         2. Cloud
    
 3. [Dependencies](#Dependencies)
    1. Local Machine
@@ -45,15 +45,11 @@
       1. Build Instructions
       2. Deployment Instructions
       3. Testing Instructions
-      
    2. Local Integration Environment
-      
        1. Build Instructions
        2. Deployment Instructions
        3. Testing Instructions
-      
    3. Integration Platform
-   
        1. Build Instructions
        2. Deployment Instructions
        3. Testing Instructions
@@ -68,7 +64,7 @@
    3. How to view Logs
    4. Owned by which Team?
 6. [References](#References)
-   1. Links to Detailed Design
+7. [FAQ's](#FAQ's)
 7. [License](#license)
 
 ## Introduction
@@ -80,38 +76,37 @@ Provide Description of Component
 ### i. Local Machine
 
 #### a. Tools/Software
-##### 1. Java
-Install [Java8](https://www.oracle.com/java/technologies/java8.html)
-If you want to build the master branch you will need a Java JDK of minimum version 8.
+ ##### 1. Java
+	
+ Install [Java8](https://www.oracle.com/java/technologies/java8.html)
+ If you want to build the master branch you will need a Java JDK of minimum version 8.
 
 
+  ##### 2. Maven
 
- ##### 2. Maven
+  Install the build tool [Maven](https://maven.apache.org/).
+  You need to ensure that Maven uses the Java JDK needed for the branch you want to build.
 
-Install the build tool [Maven](https://maven.apache.org/).
+  To do so execute
 
-You need to ensure that Maven uses the Java JDK needed for the branch you want to build.
+	```bash
+	mvn -version
+	```
 
-To do so execute
+	which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
 
-```bash
-mvn -version
-```
+   ##### 3. Git
 
-which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
+   Install the version control tool [git](https://github.com/wawa/) and clone this repository with
 
-##### 3. Git
-
-Install the version control tool [git](https://github.com/wawa/) and clone this repository with
-
-```bash
-git clone  https://github.com/wawa/admin-toolstack-config.git
-```
+	```bash
+	git clone  https://github.com/wawa/admin-toolstack-config.git
+	```
 
 
-##### 4. IDE
-Provide Integrated development environment used to build the application 
-e.g: STS/Eclipse/intellij etc.
+   ##### 4. IDE
+  Provide Integrated development environment used to build the application 
+  e.g: STS/Eclipse/intellij etc.
 
 #### b. Infrastructure
 
@@ -139,38 +134,37 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 ### ii. Local Integration Environment
 
 #### a. Tools/Software
-##### 1. Java
-Install [Java8](https://www.oracle.com/java/technologies/java8.html)
-If you want to build the master branch you will need a Java JDK of minimum version 8.
+ ##### 1. Java
+	
+ Install [Java8](https://www.oracle.com/java/technologies/java8.html)
+ If you want to build the master branch you will need a Java JDK of minimum version 8.
 
 
+  ##### 2. Maven
 
- ##### 2. Maven
+  Install the build tool [Maven](https://maven.apache.org/).
+  You need to ensure that Maven uses the Java JDK needed for the branch you want to build.
 
-Install the build tool [Maven](https://maven.apache.org/).
+  To do so execute
 
-You need to ensure that Maven uses the Java JDK needed for the branch you want to build.
+	```bash
+	mvn -version
+	```
 
-To do so execute
+	which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
 
-```bash
-mvn -version
-```
+   ##### 3. Git
 
-which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
+   Install the version control tool [git](https://github.com/wawa/) and clone this repository with
 
-##### 3. Git
-
-Install the version control tool [git](https://github.com/wawa/) and clone this repository with
-
-```bash
-git clone  https://github.com/wawa/admin-toolstack-config.git
-```
+	```bash
+	git clone  https://github.com/wawa/admin-toolstack-config.git
+	```
 
 
-##### 4. IDE
-Provide Integrated development environment used to build the application 
-e.g: STS/Eclipse/intellij etc.
+   ##### 4. IDE
+  Provide Integrated development environment used to build the application 
+  e.g: STS/Eclipse/intellij etc.
 
 #### b. Infrastructure
 
@@ -199,39 +193,38 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 
 ### iii. Integration Platform
 
-#### a. Tools/Software
-##### 1. Java
-Install [Java8](https://www.oracle.com/java/technologies/java8.html)
-If you want to build the master branch you will need a Java JDK of minimum version 8.
+ ##### 1. Java
+	
+ Install [Java8](https://www.oracle.com/java/technologies/java8.html)
+ If you want to build the master branch you will need a Java JDK of minimum version 8.
 
 
+  ##### 2. Maven
 
- ##### 2. Maven
+  Install the build tool [Maven](https://maven.apache.org/).
+  You need to ensure that Maven uses the Java JDK needed for the branch you want to build.
 
-Install the build tool [Maven](https://maven.apache.org/).
+  To do so execute
 
-You need to ensure that Maven uses the Java JDK needed for the branch you want to build.
+	```bash
+	mvn -version
+	```
 
-To do so execute
+	which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
 
-```bash
-mvn -version
-```
+   ##### 3. Git
 
-which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
+   Install the version control tool [git](https://github.com/wawa/) and clone this repository with
 
-##### 3. Git
-
-Install the version control tool [git](https://github.com/wawa/) and clone this repository with
-
-```bash
-git clone  https://github.com/wawa/admin-toolstack-config.git
-```
+	```bash
+	git clone  https://github.com/wawa/admin-toolstack-config.git
+	```
 
 
-##### 4. IDE
-Provide Integrated development environment used to build the application 
-e.g: STS/Eclipse/intellij etc.
+   ##### 4. IDE
+  Provide Integrated development environment used to build the application 
+  e.g: STS/Eclipse/intellij etc.
+
 
 #### b. Infrastructure
 
@@ -373,22 +366,9 @@ There are multiple unit test cases written to cover the different components of 
  
 <details><summary>Local Integration Environment:Build and Deployment</summary>
 <p>
-	
-#### a. **Dependencies** 
-
-   
-   i. Starter Dependencies
-
- 		
-   [Details of Starters dependencies](https://google.com)
-
-   ii. Micro-service Dependencies
-   
-
-   [Details of Micro-service depedencies](https://google.com)
 
   
-#### b. **Build Instructions**
+#### a. **Build Instructions**
 		
 		```Build Instructions for Local Integration environment
 		
@@ -396,26 +376,29 @@ There are multiple unit test cases written to cover the different components of 
 			```
 			
 			
-#### c. **Deployment Instructions**
+#### b. **Deployment Instructions**
 
-Some of the ways to deploy a microservice are as below:
-1. You can Deploy Microservice via an automated CI/CD Pipeline
-2. You can Deploy a Microservice to Docker Container
+Some of the ways to deploy a microservice in local integration environment are as below:
+1. You can make use of  Codefresh to deploy a Docker image to a Kubernetes cluster.
+   [More Information](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/)
 
-Please Check References for more information.	
+2. You can Deploy a Microservice to AWS Cloud.[More Information](https://aws.amazon.com/blogs/compute/deploying-java-microservices-on-amazon-ec2-container-service/)
+   
+
+Container deployment overview
+
+<img src="images/awsdeployment.JPG" width="400" height="400"/>
+
 	
 	
-#### d. **Testing Instructions**
+#### c. **Testing Instructions**
 
 All the individual components are combined and tested as a group.
+You can test them using Manual approach of testing individual components or via  Automation i.e., using Selenium or restassured.
 
 		```
-		Test Instructions for Local Integration 
-		```
-
-
-
-
+		 Testing Instructions for  Integration Environment
+			```
 
 
 </p>
@@ -426,38 +409,26 @@ All the individual components are combined and tested as a group.
 <details><summary>Integration Platform:Build and Deployment</summary>
 <p>
 	
-#### a. **Dependencies** 
 
-   
-   i. Starter Dependencies
-
- 		
-   [Details of Starters dependencies](https://google.com)
-
-   ii. Micro-service Dependencies
-   
-
-   [Details of Micro-service depedencies](https://google.com)
    
   
-#### b. **Build Instructions**
-		
-
+#### a. **Build Instructions**
+Follow the  instructions listed in the link  
+[Build instructions for Integration Platform](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/396787937/Building+an+Integration+Platform+Environment) to set up the build from scratch.
 
 			```Build Instructions for  Integration environment
 			```
 
-#### c. **Deployment Instructions**
-You can To Deploy a Microservice to AWS Cloud ,Please check references for more information
-Container deployment overview
-
-<img src="images/awsdeployment.JPG" width="400" height="400"/>
+#### b. **Deployment Instructions**
+You can make use of  Codefresh to deploy a Docker image to a Kubernetes cluster.
+[More Information](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/)
 
 
-
-#### d. **Testing Instructions**
+#### c. **Testing Instructions**
 		
 All the individual components are combined and tested as a group.
+You can test them using Manual approach of testing individual components or via  Automation i.e., using Selenium or restassured.
+
 		```
 		 Testing Instructions for  Integration Environment
 			```
@@ -492,7 +463,7 @@ Describe the dependent services in your application.
    You can use Codefresh to deploy docker images directly to the Kubernetes cluster
    You can watch the status of the deployment right from the Codefresh UI.
    
-   Please check references for more information on how to check the deployment status.[Deployment Status on  Codefresh](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/)
+   Please check references for more information on how to check the deployment status.[Deployment Status on  Codefresh](https://codefresh.io/docs/docs/getting-            started/deployment-to-kubernetes-quick-start-guide/)
    
    
    ### ii. How to view Health statistics
