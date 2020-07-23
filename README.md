@@ -252,17 +252,48 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 	
 ## Dependencies 
 
-### i. Starters 
+### i. Local Machine
+
+#### a. Starters 
 
   
   [Details of Starters dependencies](https://google.com)
  
   
-  
-
-### ii.Micro-service 
+#### b.Micro-service 
 
 [Details of Micro-service depedencies](https://google.com)
+
+
+### ii. Local Integration Environment
+
+
+#### a. Starters 
+
+  
+  [Details of Starters dependencies](https://google.com)
+ 
+  
+#### b.Micro-service 
+
+[Details of Micro-service depedencies](https://google.com)
+
+
+
+### iii. Integration Platform
+
+
+#### a. Starters 
+
+  
+  [Details of Starters dependencies](https://google.com)
+ 
+  
+#### b.Micro-service 
+
+[Details of Micro-service depedencies](https://google.com)
+
+
 
 
 ## Configuration Build And Runtime for Local,LIE,IPDev,IPTest,IPProd
