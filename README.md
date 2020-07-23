@@ -75,7 +75,7 @@ Provide Description of Component
 
 ### i. Local Machine
 
-#### <ins>a. Tools/Software</ins>
+#### a. <ins>Tools/Software</ins>
  ##### 1. Java
 	
  Install [Java8](https://www.oracle.com/java/technologies/java8.html)
@@ -108,7 +108,7 @@ Provide Description of Component
   Provide Integrated development environment used to build the application 
   e.g: STS/Eclipse/intellij etc.
 
-#### b. Infrastructure
+#### b. <ins>Infrastructure</ins>
 
   **1. Local**
 
@@ -133,7 +133,7 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 
 ### ii. Local Integration Environment
 
-#### a. Tools/Software
+#### a. <ins>Tools/Software</ins>
  
  ##### 1. Java
 	
@@ -167,7 +167,7 @@ which will tell you what version Maven is using. Refer to the [Maven docs](https
   Provide Integrated development environment used to build the application 
   e.g: STS/Eclipse/intellij etc.
 
-#### b. Infrastructure
+#### b. <ins>Infrastructure</ins>
 
   **1. Local**
 
@@ -194,7 +194,7 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 
 ### iii. Integration Platform
 
-#### a. Tools/Software
+#### a. <ins>Tools/Software</ins>
 
  ##### 1. Java
 	
@@ -229,7 +229,7 @@ which will tell you what version Maven is using. Refer to the [Maven docs](https
   e.g: STS/Eclipse/intellij etc.
 
 
-#### b. Infrastructure
+#### b. <ins>Infrastructure</ins>
 
   **1. Local**
 
@@ -257,13 +257,13 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 
 ### i. Local Machine
 
-#### a. Starters 
+#### a. <ins>Starters </ins>
 
   
   [Details of Starters dependencies](https://google.com)
  
   
-#### b.Micro-service 
+#### b. <ins>Micro-service </ins>
 
 [Details of Micro-service depedencies](https://google.com)
 
@@ -271,30 +271,30 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 ### ii. Local Integration Environment
 
 
-#### a. Starters 
-
-  
- [Details of Starters dependencies](https://google.com)
- 
-  
-#### b.Micro-service 
-
-[Details of Micro-service depedencies](https://google.com)
-
-
-
-### iii. Integration Platform
-
-
-#### a. Starters 
+#### a. <ins>Starters </ins>
 
   
   [Details of Starters dependencies](https://google.com)
  
   
-#### b.Micro-service 
+#### b. <ins>Micro-service </ins>
 
 [Details of Micro-service depedencies](https://google.com)
+
+
+### iii. Integration Platform
+
+
+#### a. <ins>Starters </ins>
+
+  
+  [Details of Starters dependencies](https://google.com)
+ 
+  
+#### b. <ins>Micro-service </ins>
+
+[Details of Micro-service depedencies](https://google.com)
+
 
 
 
@@ -352,7 +352,7 @@ We can use Kafka -a  highly scalable, fault-tolerant and distributed Publish/Sub
 <p>
 
 
-#### a. **Build Instructions**
+#### a. <ins>**Build Instructions**</ins>
 
 After you have taken care of the [Prerequisites](#prerequisites)
 Execute the following
