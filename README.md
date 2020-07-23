@@ -362,7 +362,7 @@ Execute the following
 			mvn clean package
 			```
 
-#### b. **Deployment Instructions**
+#### b. <ins>**Deployment Instructions**</ins>
 
 Instructions to deploy a Microservice to  Application Server.
 
@@ -379,7 +379,7 @@ Refer to [Getting Started as a Developer - Maven](https://wiki.openmrs.org/displ
 on useful Maven commands and build options.
 
 
-#### c. **Testing Instructions**
+#### c. <ins>**Testing Instructions**</ins>
 		
 ##### Unit test cases
 There are multiple unit test cases written to cover the different components of the application. However there is a global application test suite file _**UnitTests.java**_     that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
@@ -400,12 +400,12 @@ There are multiple unit test cases written to cover the different components of 
 <p>
 
   
-#### a. **Build Instructions**
+#### a. <ins>**Build Instructions**</ins>
 		
 Follow the  instructions listed in the link [Build instructions for Local Integration Environment](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/396787937/Building+an+Integration+Platform+Environment) to set up the build from scratch.
 			
 			
-#### b. **Deployment Instructions**
+#### b. <ins>**Deployment Instructions**</ins>
 
 Some of the ways to deploy a microservice in local integration environment are as below:
 1. You can make use of  Codefresh to deploy a Docker image to a Kubernetes cluster.
@@ -420,7 +420,7 @@ Container deployment overview
 
 	
 	
-#### c. **Testing Instructions**
+#### c. <ins>**Testing Instructions**</ins>
 
 All the individual components are combined and tested as a group.
 You can test them using Manual approach of testing individual components or via  Automation i.e., using Selenium or restassured.
@@ -438,16 +438,16 @@ You can test them using Manual approach of testing individual components or via 
 
    
   
-#### a. **Build Instructions**
+#### a. <ins>**Build Instructions**</ins>
 Follow the  instructions listed in the link [Build instructions for Integration Platform](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/396787937/Building+an+Integration+Platform+Environment) to set up the build from scratch.
 
 			
-#### b. **Deployment Instructions**
+#### b. <ins>**Deployment Instructions**</ins>
 You can make use of  Codefresh to deploy a Docker image to a Kubernetes cluster.
 [More Information](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/)
 
 
-#### c. **Testing Instructions**
+#### c. <ins>**Testing Instructions**</ins>
 		
 All the individual components are combined and tested as a group.
 You can test them using Manual approach of testing individual components or via  Automation i.e., using Selenium or restassured.
