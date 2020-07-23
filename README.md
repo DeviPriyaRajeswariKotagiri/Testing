@@ -342,7 +342,7 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 
 ### iv. Message Bus
 
-We can use Kafka -a  highly scalable, fault-tolerant and distributed Publish/Subscribe system for messaging between several services.
+We can use Kafka -a  highly scalable, fault-tolerant and distributed Publish/Subscribe system for messaging between several services.[More Information](https://www.cloudkarafka.com/blog/2016-11-30-part1-kafka-for-beginners-what-is-apache-kafka.html)
  
 ## Build And Deployment
 
@@ -363,12 +363,18 @@ Execute the following
 			```
 
 #### b. <ins>**Deployment Instructions**</ins>
+			
+				```
+				Deployment Diagram for the component
+			```
 
 Instructions to deploy a Microservice to  Application Server.
 
 For development purposes you can simply deploy the `* .war` into the application server
 
    [More Information](http://webhelp.esri.com/arcgisserver/9.2/java/manager/applications/deploying_to_websphere.htm)
+   
+    		
    
 
 <img src="images/deploymentlocalintegration.JPG" width="400" height="400"/>
@@ -407,6 +413,10 @@ Follow the  instructions listed in the link [Build instructions for Local Integr
 			
 #### b. <ins>**Deployment Instructions**</ins>
 
+		```
+				Deployment Diagram for the component
+			```
+
 Some of the ways to deploy a microservice in local integration environment are as below:
 1. You can make use of  Codefresh to deploy a Docker image to a Kubernetes cluster.
    [More Information](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/)
@@ -443,6 +453,11 @@ Follow the  instructions listed in the link [Build instructions for Integration 
 
 			
 #### b. <ins>**Deployment Instructions**</ins>
+	
+			```
+				Deployment Diagram for the component
+			```
+			
 You can make use of  Codefresh to deploy a Docker image to a Kubernetes cluster.
 [More Information](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/)
 
@@ -459,8 +474,9 @@ You can test them using Manual approach of testing individual components or via 
 </details>
 
 ## Design Details
-### i. UML Diagrams
-UML Diagram for the Component
+
+### i. State Machine Diagram
+
 
 <img src="images/state.png" width="400" height="400"/>
 
