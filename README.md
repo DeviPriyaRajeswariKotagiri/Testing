@@ -55,7 +55,7 @@
        3. Testing Instructions
 
 6. [Design Details](#Design-Details)
-	1. UML Diagrams
+	1. State Machine Diagram 
 	2. Events Produced And Events Consumed
 	3. Dependent Downstream Services
 7. [Support](#Support)
@@ -462,7 +462,7 @@ You can test them using Manual approach of testing individual components or via 
 ### i. UML Diagrams
 UML Diagram for the Component
 
-<img src="images/umldiag.jpg" width="400" height="400"/>
+<img src="images/state.png" width="400" height="400"/>
 
 ### ii. Events Produced And Events Consumed
 
@@ -483,7 +483,8 @@ Describe the dependent services in your application.
    You can use Codefresh to deploy docker images directly to the Kubernetes cluster
    You can watch the status of the deployment right from the Codefresh UI.
    
-   Please check references for more information on how to check the deployment status.[Deployment Status on  Codefresh](https://codefresh.io/docs/docs/getting-            started/deployment-to-kubernetes-quick-start-guide/)
+   Please check references for more information on how to check the deployment status.
+   [Deployment Status on  Codefresh](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/)
    
    
    ### ii. How to view Health statistics
