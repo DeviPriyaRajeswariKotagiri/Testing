@@ -308,9 +308,7 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 
 ### iv. Message Bus
 
-	 ```Information on messaging infrastructure in the application which allows
-				 different systems to communicate through a shared set of interfaces
-				 ```
+We can use Kafka -a  highly scalable, fault-tolerant and distributed Publish/Subscribe system for messaging between several services.
  
 ## Build And Deployment
 
@@ -370,10 +368,7 @@ There are multiple unit test cases written to cover the different components of 
   
 #### a. **Build Instructions**
 		
-		```Build Instructions for Local Integration environment
-		
-		
-			```
+Follow the  instructions listed in the link [Build instructions for Local Integration Environment](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/396787937/Building+an+Integration+Platform+Environment) to set up the build from scratch.
 			
 			
 #### b. **Deployment Instructions**
@@ -396,10 +391,7 @@ Container deployment overview
 All the individual components are combined and tested as a group.
 You can test them using Manual approach of testing individual components or via  Automation i.e., using Selenium or restassured.
 
-		```
-		 Testing Instructions for  Integration Environment
-			```
-
+	
 
 </p>
 </details>
@@ -413,12 +405,9 @@ You can test them using Manual approach of testing individual components or via 
    
   
 #### a. **Build Instructions**
-Follow the  instructions listed in the link  
-[Build instructions for Integration Platform](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/396787937/Building+an+Integration+Platform+Environment) to set up the build from scratch.
+Follow the  instructions listed in the link [Build instructions for Integration Platform](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/396787937/Building+an+Integration+Platform+Environment) to set up the build from scratch.
 
-			```Build Instructions for  Integration environment
-			```
-
+			
 #### b. **Deployment Instructions**
 You can make use of  Codefresh to deploy a Docker image to a Kubernetes cluster.
 [More Information](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/)
@@ -429,10 +418,7 @@ You can make use of  Codefresh to deploy a Docker image to a Kubernetes cluster.
 All the individual components are combined and tested as a group.
 You can test them using Manual approach of testing individual components or via  Automation i.e., using Selenium or restassured.
 
-		```
-		 Testing Instructions for  Integration Environment
-			```
-
+	
 
 
 </p>
