@@ -75,7 +75,7 @@ Provide Description of Component
 
 ### i. Local Machine
 
-#### a. Tools/Software
+#### <ins>a. Tools/Software</ins>
  ##### 1. Java
 	
  Install [Java8](https://www.oracle.com/java/technologies/java8.html)
@@ -93,7 +93,7 @@ Provide Description of Component
 	mvn -version
 	```
 
-	which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
+ which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
 
    ##### 3. Git
 
@@ -134,6 +134,7 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 ### ii. Local Integration Environment
 
 #### a. Tools/Software
+ 
  ##### 1. Java
 	
  Install [Java8](https://www.oracle.com/java/technologies/java8.html)
@@ -151,7 +152,7 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 	mvn -version
 	```
 
-	which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
+which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
 
    ##### 3. Git
 
@@ -193,6 +194,8 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 
 ### iii. Integration Platform
 
+#### a. Tools/Software
+
  ##### 1. Java
 	
  Install [Java8](https://www.oracle.com/java/technologies/java8.html)
@@ -210,7 +213,7 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 	mvn -version
 	```
 
-	which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
+which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
 
    ##### 3. Git
 
@@ -271,7 +274,7 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 #### a. Starters 
 
   
-  [Details of Starters dependencies](https://google.com)
+ [Details of Starters dependencies](https://google.com)
  
   
 #### b.Micro-service 
