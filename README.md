@@ -35,7 +35,7 @@
    3. Integration Platform
       1. Starters
       2. Micro-service
-4. [Configuration Build And Runtime for Local,LIE,IPDev,IPTest,IPProd](#Configuration-Build-And-Runtime-for-Local-LIE-IPDev-IPTest-IPProd)
+4. [Configuration Build And Runtime for Local, LIE, IPDev, IPTest, IPProd](#Configuration-Build-And-Runtime-for-Local-LIE-IPDev-IPTest-IPProd)
    1. Environment Variables 
    2. Data Source
    3. Logging
@@ -299,7 +299,7 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 
 
 
-## Configuration Build And Runtime for Local,LIE,IPDev,IPTest,IPProd
+## Configuration Build And Runtime for Local, LIE, IPDev, IPTest, IPProd
 
 ### i.Environment Variables
   
@@ -483,7 +483,7 @@ You can test them using Manual approach of testing individual components or via 
 ### ii. Events Produced And Events Consumed
 
 Kafka is one of  the ways to achieve publish-subscribe based messaging system in Microservices.
-For more information on How to produce and consume events , please check references.
+For more information on How to produce and consume events , please check references.[Events Produced And Events Consumed](https://github.com/Kunalk/spring-kafka-pubsub )
 
 ### iii. Dependent Downstream Services
 Describe the dependent services in your application.
@@ -505,12 +505,12 @@ Describe the dependent services in your application.
    
    ### ii. How to view Health statistics
   One of the way to view Health Statistics of your application is by adding Spring Boot Actuator module ,it helps you monitor and manage your Spring Boot application by    	   providing production-ready features like health check-up, auditing, metrics gathering,   HTTP tracing etc.
-  Please check references for more information on how to view Health Statistics of a Microservice.
+  Please check references for more information .[How to view Health statistics of a Microservice ](https://www.callicoder.com/spring-boot-actuator/)
   
   
    ### iii. How to view Logs
    You can view logs for a Microservice using Kuberenetes,Amazon S3,Splunk,WinScp etc.
-   Please check references for more information on how to view logs.
+   Please check references for more information .[View logs on Kubernetes](https://www.sumologic.com/blog/kubectl-logs/)
   
    ### iv. Owned by which Team?
  
@@ -526,7 +526,7 @@ Describe the dependent services in your application.
 
 | Name |Link | Comments   | 
 |:-----|:----|:-----------|
-|Kafka Pub-Sub| https://github.com/Kunalk/spring-kafka-pubsub | |
+|Events Produced And Events Consumed| https://github.com/Kunalk/spring-kafka-pubsub | |
 |Dependencies|https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/762448353/Dependencies+on+EE+Team+s | |
 |Check Deployment Status|https://www.namecheap.com/blog/visualize-your-deployment-status-with-jenkins/ |  |
 |How to view Health statistics of a Microservice |https://www.callicoder.com/spring-boot-actuator/ |  |
