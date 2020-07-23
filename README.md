@@ -364,11 +364,9 @@ Execute the following
 
 #### b. <ins>**Deployment Instructions**</ins>
 			
-				```
-				Deployment Diagram for the component
-			```
+<img src="images/deploymentdiag.png" width="400" height="400"/>
 
-Instructions to deploy a Microservice to  Application Server.
+Instructions to deploy a Microservice.
 
 For development purposes you can simply deploy the `* .war` into the application server
 
@@ -408,16 +406,15 @@ There are multiple unit test cases written to cover the different components of 
   
 #### a. <ins>**Build Instructions**</ins>
 		
-Follow the  instructions listed in the link [Build instructions for Local Integration Environment](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/396787937/Building+an+Integration+Platform+Environment) to set up the build from scratch.
+Build instructions for Local Integration Environment are listed in the link [Build instructions for Local Integration Environment](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/396787937/Building+an+Integration+Platform+Environment) to set up the build from scratch.
 			
 			
 #### b. <ins>**Deployment Instructions**</ins>
 
-		```
-				Deployment Diagram for the component
-			```
+<img src="images/deploymentdiag.png" width="400" height="400"/>
 
-Some of the ways to deploy a microservice in local integration environment are as below:
+Instructions to deploy a microservice in local integration environment are as below:
+
 1. You can make use of  Codefresh to deploy a Docker image to a Kubernetes cluster.
    [More Information](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/)
 
@@ -433,7 +430,7 @@ Container deployment overview
 #### c. <ins>**Testing Instructions**</ins>
 
 All the individual components are combined and tested as a group.
-You can test them using Manual approach of testing individual components or via  Automation i.e., using Selenium or restassured.
+You can test them using Manual approach of testing individual components or via  Automation i.e., using Selenium or restassured library.
 
 	
 
@@ -449,23 +446,23 @@ You can test them using Manual approach of testing individual components or via 
    
   
 #### a. <ins>**Build Instructions**</ins>
-Follow the  instructions listed in the link [Build instructions for Integration Platform](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/396787937/Building+an+Integration+Platform+Environment) to set up the build from scratch.
+Build instructions for Integration Platform are listed in the link [Build instructions for Integration Platform](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/396787937/Building+an+Integration+Platform+Environment) to set up the build from scratch.
 
 			
 #### b. <ins>**Deployment Instructions**</ins>
 	
-			```
-				Deployment Diagram for the component
-			```
+<img src="images/deploymentdiag.png" width="400" height="400"/>
 			
-You can make use of  Codefresh to deploy a Docker image to a Kubernetes cluster.
+Instructions to deploy a microservice in Integration Platform:
+Make use of Codefresh to deploy microservice instance as a  Docker image to a Kubernetes cluster.
+
 [More Information](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/)
 
 
 #### c. <ins>**Testing Instructions**</ins>
 		
 All the individual components are combined and tested as a group.
-You can test them using Manual approach of testing individual components or via  Automation i.e., using Selenium or restassured.
+You can test them using Manual approach of testing individual components or via  Automation i.e., using Selenium or restassured library.
 
 	
 
