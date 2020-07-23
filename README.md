@@ -11,14 +11,31 @@
 
 1. [Introduction](#Introduction)
 2. [Prerequisites](#Prerequisites)
-   1. Tools/Software
-   2. Infrastructure
-      1. Local
-      2. Cloud
-3. [Dependencies on other software components](#Dependencies-on-other-software-components)
-   1. Starters dependencies
-   2. Micro-service dependecies
-4. [Configuration Build And Runtime for Local LIE IPDev IPTest IPProd](#Configuration-Build-And-Runtime-for-Local-LIE-IPDev-IPTest-IPProd)
+   1. Local Machine
+      1. Tools/Software
+      2. Infrastructure
+   2. Local Integration Environment
+      1. Tools/Software
+      2. Infrastructure
+      	1. Local
+        2. Cloud
+   3. Integration Platform
+      1. Tools/Software
+      2. Infrastructure
+      	1. Local
+        2. Cloud
+   
+3. [Dependencies](#Dependencies)
+   1. Local Machine
+      1. Starters
+      2. Micro-service
+   2. Local Integration Environment
+      1. Starters
+      2. Micro-service
+   3. Integration Platform
+      1. Starters
+      2. Micro-service
+4. [Configuration Build And Runtime for Local,LIE,IPDev,IPTest,IPProd](#Configuration-Build-And-Runtime-for-Local-LIE-IPDev-IPTest-IPProd)
    1. Environment Variables 
    2. Data Source
    3. Logging
@@ -30,20 +47,16 @@
       3. Testing Instructions
       
    2. Local Integration Environment
-       1. Dependencies
-	     	1. Starter Dependencies
-	     	2. Micro-service Dependencies
-       2. Build Instructions
-       3. Deployment Instructions
-       4. Testing Instructions
+      
+       1. Build Instructions
+       2. Deployment Instructions
+       3. Testing Instructions
       
    3. Integration Platform
-       1. Dependencies
-	     	1. Starter Dependencies
-	     	2. Micro-service Dependencies
-       2. Build Instructions
-       3. Deployment Instructions
-       4. Testing Instructions
+   
+       1. Build Instructions
+       2. Deployment Instructions
+       3. Testing Instructions
 
 6. [Design Details](#Design-Details)
 	1. UML Diagrams
@@ -63,14 +76,17 @@
 Provide Description of Component
 
 ## Prerequisites
-### i. Tools/Software
-   #### a. Java
+
+### i. Local Machine
+
+#### a. Tools/Software
+##### 1. Java
 Install [Java8](https://www.oracle.com/java/technologies/java8.html)
 If you want to build the master branch you will need a Java JDK of minimum version 8.
 
 
 
-   #### b. Maven
+ ##### 2. Maven
 
 Install the build tool [Maven](https://maven.apache.org/).
 
@@ -84,7 +100,7 @@ mvn -version
 
 which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
 
-#### c. Git
+##### 3. Git
 
 Install the version control tool [git](https://github.com/wawa/) and clone this repository with
 
@@ -93,13 +109,13 @@ git clone  https://github.com/wawa/admin-toolstack-config.git
 ```
 
 
-#### d. IDE
+##### 4. IDE
 Provide Integrated development environment used to build the application 
 e.g: STS/Eclipse/intellij etc.
 
-### ii. Infrastructure
+#### b. Infrastructure
 
-  **a. Local**
+  **1. Local**
 
 1. GITHub
 2. CI/CD Platform
@@ -111,7 +127,7 @@ Information](https://kubernetes.io/docs/setup/)
 
 
 
- **b. Cloud**
+ **2. Cloud**
 
 If your application relies on cloud infrastructure e.g. AWS ,you will have to take care of below services:
 1. Compute.
@@ -119,10 +135,131 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 3. Networking.
 4. Messaging.
 5. Logging and Monitoring.
-	
-## Dependencies on other software components
 
-### i. Starters dependencies
+### ii. Local Integration Environment
+
+#### a. Tools/Software
+##### 1. Java
+Install [Java8](https://www.oracle.com/java/technologies/java8.html)
+If you want to build the master branch you will need a Java JDK of minimum version 8.
+
+
+
+ ##### 2. Maven
+
+Install the build tool [Maven](https://maven.apache.org/).
+
+You need to ensure that Maven uses the Java JDK needed for the branch you want to build.
+
+To do so execute
+
+```bash
+mvn -version
+```
+
+which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
+
+##### 3. Git
+
+Install the version control tool [git](https://github.com/wawa/) and clone this repository with
+
+```bash
+git clone  https://github.com/wawa/admin-toolstack-config.git
+```
+
+
+##### 4. IDE
+Provide Integrated development environment used to build the application 
+e.g: STS/Eclipse/intellij etc.
+
+#### b. Infrastructure
+
+  **1. Local**
+
+1. GITHub
+2. CI/CD Platform
+3. Code Quantity Scanning (SonarQube)
+4. Docker Container: Install Docker Container to create isolated environments through which you can build, maintain, ship and deploy your application.[More 			Information](https://docs.docker.com/docker-for-windows/)
+5. Kubernetes: Install Kubernetes for automating deployment, scaling, and management of containerized applications.[More 			
+Information](https://kubernetes.io/docs/setup/)
+6. Databases: Install required database for the component design (SQL DB/No-SQL)
+
+
+
+ **2. Cloud**
+
+If your application relies on cloud infrastructure e.g. AWS ,you will have to take care of below services:
+1. Compute.
+2. Storage & Databases.
+3. Networking.
+4. Messaging.
+5. Logging and Monitoring.
+
+
+
+### iii. Integration Platform
+
+#### a. Tools/Software
+##### 1. Java
+Install [Java8](https://www.oracle.com/java/technologies/java8.html)
+If you want to build the master branch you will need a Java JDK of minimum version 8.
+
+
+
+ ##### 2. Maven
+
+Install the build tool [Maven](https://maven.apache.org/).
+
+You need to ensure that Maven uses the Java JDK needed for the branch you want to build.
+
+To do so execute
+
+```bash
+mvn -version
+```
+
+which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
+
+##### 3. Git
+
+Install the version control tool [git](https://github.com/wawa/) and clone this repository with
+
+```bash
+git clone  https://github.com/wawa/admin-toolstack-config.git
+```
+
+
+##### 4. IDE
+Provide Integrated development environment used to build the application 
+e.g: STS/Eclipse/intellij etc.
+
+#### b. Infrastructure
+
+  **1. Local**
+
+1. GITHub
+2. CI/CD Platform
+3. Code Quantity Scanning (SonarQube)
+4. Docker Container: Install Docker Container to create isolated environments through which you can build, maintain, ship and deploy your application.[More 			Information](https://docs.docker.com/docker-for-windows/)
+5. Kubernetes: Install Kubernetes for automating deployment, scaling, and management of containerized applications.[More 			
+Information](https://kubernetes.io/docs/setup/)
+6. Databases: Install required database for the component design (SQL DB/No-SQL)
+
+
+
+ **2. Cloud**
+
+If your application relies on cloud infrastructure e.g. AWS ,you will have to take care of below services:
+1. Compute.
+2. Storage & Databases.
+3. Networking.
+4. Messaging.
+5. Logging and Monitoring.
+
+	
+## Dependencies 
+
+### i. Starters 
 
   
   [Details of Starters dependencies](https://google.com)
@@ -130,12 +267,12 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
   
   
 
-### ii.Micro-service dependecies
+### ii.Micro-service 
 
 [Details of Micro-service depedencies](https://google.com)
 
 
-## Configuration Build And Runtime for Local LIE IPDev IPTest IPProd
+## Configuration Build And Runtime for Local,LIE,IPDev,IPTest,IPProd
 
 ### i.Environment Variables
   
@@ -351,10 +488,11 @@ Describe the dependent services in your application.
 
    ### i . Deployment status
    
-   One of the way to check Deployment status is via Jenkins.
-   Jenkins can be used to report the status of the deployment.
+   One of the way to check Deployment status is via CodeFresh.
+   You can use Codefresh to deploy docker images directly to the Kubernetes cluster
+   You can watch the status of the deployment right from the Codefresh UI.
    
-   Please check references for more information on how to check the deployment status.
+   Please check references for more information on how to check the deployment status.[Deployment Status on  Codefresh](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/)
    
    
    ### ii. How to view Health statistics
@@ -366,15 +504,16 @@ Describe the dependent services in your application.
    You can view logs for a Microservice using Kuberenetes,Amazon S3,Splunk,WinScp etc.
    Please check references for more information on how to view logs.
   
-
-   
    ### iv. Owned by which Team?
  
    Engineering Team3
    
+## FAQ's
+
+[FAQ's]("https://google.com/)
+   
 ## References
 
-###  Links to Detailed Design
 
 
 | Name |Link | Comments   | 
@@ -392,6 +531,7 @@ Describe the dependent services in your application.
 |Link(s) to Developer On-boarding| https://wawaappdev.atlassian.net/wiki/spaces/MEET/pages/131137606/Developer+onboarding.  |   |
 |Deploying a Microservice Via an automated CI/CD Pipeline| https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/659751676/SBB+-+BE+Deploy+Microservice |   |
 |Deploying a Microservice to Docker Container| https://www.javainuse.com/devOps/docker/docker-jar |   |
+|Deployment Status on  Codefresh| https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/ |     |
 
 
 
