@@ -15,10 +15,12 @@
       1. Tools/Software
       2. Infrastructure
    2. Local Integration Environment
+   
       1. Tools/Software
       2. Infrastructure
-      	1. Local
-        2. Cloud
+      	 1. Local
+         2. Cloud
+	 
    3. Integration Platform
       1. Tools/Software
       2. Infrastructure
