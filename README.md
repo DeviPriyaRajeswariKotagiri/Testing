@@ -120,7 +120,7 @@ mvn clean test
 
 ### Entity State Machine Diagram
 
-![your-UML-diagram-name](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/spiegel-im-spiegel/plantuml-sample/master/class-diagram-01.puml)
+![your-UML-diagram-name](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/DeviPriyaRajeswariKotagiri/Testing/master/docs/statediagram.puml)
 
 ### Dependent Downstream Services
 Describe the dependent services in your application.
