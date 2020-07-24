@@ -87,9 +87,9 @@ Provide Description of Component
 
   To do so execute
 
-	```bash
+	
 	mvn -version
-	```
+	
 
  which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
 
@@ -97,9 +97,9 @@ Provide Description of Component
 
    Install the version control tool [git](https://github.com/wawa/) and clone this repository with
 
-	```bash
+	
 	git clone  https://github.com/wawa/admin-toolstack-config.git
-	```
+	
 
 
    ##### 4. IDE
