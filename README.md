@@ -132,13 +132,13 @@ Information](https://kubernetes.io/docs/setup/)
  ##### 2. Docker
  
  
-Install [Docker]((https://docs.docker.com/docker-for-windows/)  Container to create isolated environments through which you can build, 
+Install [Docker](https://docs.docker.com/docker-for-windows/)  Container to create isolated environments through which you can build, 
 maintain, ship and deploy your application.
 
 
  ##### 3. ISTIO
  
- ISTIO -To integrate and handle traffic between microservices.More Information(https://istio.io/latest/docs/examples/microservices-istio/)
+ ISTIO -To integrate and handle traffic between microservices.[More Information](https://istio.io/latest/docs/examples/microservices-istio/)
  
  
  ##### 4. DataDog
@@ -182,13 +182,13 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
  ##### 2. Docker
  
  
-Install [Docker]((https://docs.docker.com/docker-for-windows/)  Container to create isolated environments through which you can build, 
+Install [Docker](https://docs.docker.com/docker-for-windows/)  Container to create isolated environments through which you can build, 
 maintain, ship and deploy your application.
 
 
  ##### 3. ISTIO
  
- ISTIO -To integrate and handle traffic between microservices.More Information(https://istio.io/latest/docs/examples/microservices-istio/)
+ ISTIO -To integrate and handle traffic between microservices.[More Information](https://istio.io/latest/docs/examples/microservices-istio/)
  
  
  ##### 4. DataDog
@@ -331,19 +331,22 @@ Execute the following
 			```
 
 #### b. <ins>**Deployment Instructions**</ins>
-			
+
+Deployment Diagram:
+
 <img src="images/deplymentdiag.png" width="400" height="400"/>
 
-Instructions to deploy a Microservice.
+For Local  purposes you can simply deploy the `* .war` into the application server
 
-For development purposes you can simply deploy the `* .war` into the application server
 
-   [More Information](http://webhelp.esri.com/arcgisserver/9.2/java/manager/applications/deploying_to_websphere.htm)
+   [More Information](http://webhelp.esri.com/arcgisserver/9.2/java/manager/applications/deploying_to_websphere.htm
    
-    		
-   
+
+Deployment Instructions Diagram :
 
 <img src="images/deploymentlocalintegration.JPG" width="400" height="400"/>
+
+
 
 If all goes well (check the console output) you can access the OpenMRS application at `localhost:8080/openmrs`.
 
@@ -378,6 +381,10 @@ Build instructions for Local Integration Environment are listed in the link [Bui
 			
 			
 #### b. <ins>**Deployment Instructions**</ins>
+
+
+Deployment Diagram:
+
 
 <img src="images/deplymentdiag.png" width="400" height="400"/>
 
@@ -419,6 +426,10 @@ Build instructions for Integration Platform are listed in the link [Build instru
 			
 #### b. <ins>**Deployment Instructions**</ins>
 	
+	
+Deployment Diagram:
+
+
 <img src="images/deplymentdiag.png" width="400" height="400"/>
 			
 Instructions to deploy a microservice in Integration Platform:
