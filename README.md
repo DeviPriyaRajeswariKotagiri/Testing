@@ -364,7 +364,7 @@ Execute the following
 
 #### b. <ins>**Deployment Instructions**</ins>
 			
-<img src="images/deploymentdiag.png" width="400" height="400"/>
+<img src="images/deplymentdiag.png" width="400" height="400"/>
 
 Instructions to deploy a Microservice.
 
@@ -411,7 +411,7 @@ Build instructions for Local Integration Environment are listed in the link [Bui
 			
 #### b. <ins>**Deployment Instructions**</ins>
 
-<img src="images/deploymentdiag.png" width="400" height="400"/>
+<img src="images/deplymentdiag.png" width="400" height="400"/>
 
 Instructions to deploy a microservice in local integration environment are as below:
 
@@ -451,7 +451,7 @@ Build instructions for Integration Platform are listed in the link [Build instru
 			
 #### b. <ins>**Deployment Instructions**</ins>
 	
-<img src="images/deploymentdiag.png" width="400" height="400"/>
+<img src="images/deplymentdiag.png" width="400" height="400"/>
 			
 Instructions to deploy a microservice in Integration Platform:
 Make use of Codefresh to deploy microservice instance as a  Docker image to a Kubernetes cluster.
