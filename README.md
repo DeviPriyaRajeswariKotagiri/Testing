@@ -110,8 +110,6 @@ Provide Description of Component
 
 #### b. <ins>Infrastructure</ins>
 
-  **1. Local**
-
 1. GITHub
 2. CI/CD Platform
 3. Code Quantity Scanning (SonarQube)
@@ -121,51 +119,31 @@ Information](https://kubernetes.io/docs/setup/)
 6. Databases: Install required database for the component design (SQL DB/No-SQL)
 
 
-
- **2. Cloud**
-
-If your application relies on cloud infrastructure e.g. AWS ,you will have to take care of below services:
-1. Compute.
-2. Storage & Databases.
-3. Networking.
-4. Messaging.
-5. Logging and Monitoring.
-
 ### ii. Local Integration Environment
 
 #### a. <ins>Tools/Software</ins>
  
- ##### 1. Java
-	
- Install [Java8](https://www.oracle.com/java/technologies/java8.html)
- If you want to build the master branch you will need a Java JDK of minimum version 8.
+
+ ##### 1. Kubernetes
+ 
+ Install [Kubernetes](https://kubernetes.io/docs/setup/) for automating deployment, scaling, and management of containerized applications.
+ 
+ 
+ ##### 2. Docker
+ 
+ 
+Install [Docker]((https://docs.docker.com/docker-for-windows/)  Container to create isolated environments through which you can build, 
+maintain, ship and deploy your application.
 
 
-  ##### 2. Maven
-
-  Install the build tool [Maven](https://maven.apache.org/).
-  You need to ensure that Maven uses the Java JDK needed for the branch you want to build.
-
-  To do so execute
-
-	```bash
-	mvn -version
-	```
-
-which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
-
-   ##### 3. Git
-
-   Install the version control tool [git](https://github.com/wawa/) and clone this repository with
-
-	```bash
-	git clone  https://github.com/wawa/admin-toolstack-config.git
-	```
-
-
-   ##### 4. IDE
-  Provide Integrated development environment used to build the application 
-  e.g: STS/Eclipse/intellij etc.
+ ##### 3. ISTIO
+ 
+ ISTIO -To integrate and handle traffic between microservices.More Information(https://istio.io/latest/docs/examples/microservices-istio/)
+ 
+ 
+ ##### 4. DataDog
+ 
+ DataDog -Install DataDog to Monitor your Microservice.[More Information](https://www.datadoghq.com/microservices/)
 
 #### b. <ins>Infrastructure</ins>
 
@@ -196,38 +174,28 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 
 #### a. <ins>Tools/Software</ins>
 
- ##### 1. Java
-	
- Install [Java8](https://www.oracle.com/java/technologies/java8.html)
- If you want to build the master branch you will need a Java JDK of minimum version 8.
+ ##### 1. Kubernetes
+ 
+ Install [Kubernetes](https://kubernetes.io/docs/setup/) for automating deployment, scaling, and management of containerized applications.
+ 
+ 
+ ##### 2. Docker
+ 
+ 
+Install [Docker]((https://docs.docker.com/docker-for-windows/)  Container to create isolated environments through which you can build, 
+maintain, ship and deploy your application.
 
 
-  ##### 2. Maven
+ ##### 3. ISTIO
+ 
+ ISTIO -To integrate and handle traffic between microservices.More Information(https://istio.io/latest/docs/examples/microservices-istio/)
+ 
+ 
+ ##### 4. DataDog
+ 
+ DataDog -Install DataDog to Monitor your Microservice.[More Information](https://www.datadoghq.com/microservices/)
 
-  Install the build tool [Maven](https://maven.apache.org/).
-  You need to ensure that Maven uses the Java JDK needed for the branch you want to build.
-
-  To do so execute
-
-	```bash
-	mvn -version
-	```
-
-which will tell you what version Maven is using. Refer to the [Maven docs](https://maven.apache.org/configure.html) if you need to configure Maven.
-
-   ##### 3. Git
-
-   Install the version control tool [git](https://github.com/wawa/) and clone this repository with
-
-	```bash
-	git clone  https://github.com/wawa/admin-toolstack-config.git
-	```
-
-
-   ##### 4. IDE
-  Provide Integrated development environment used to build the application 
-  e.g: STS/Eclipse/intellij etc.
-
+ 
 
 #### b. <ins>Infrastructure</ins>
 
