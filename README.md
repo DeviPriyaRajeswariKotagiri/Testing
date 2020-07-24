@@ -157,7 +157,7 @@ Describe the dependent services in your application.
 ## References
 | Name |Link | Comments   | 
 |:-----|:----|:-----------|
-|Events Produced And Events Consumed| https://github.com/Kunalk/spring-kafka-pubsub | |
+|Events Produced And Events Consumed| https://spring.io/projects/spring-kafka | |
 |Dependencies|https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/762448353/Dependencies+on+EE+Team+s | |
 |Check Deployment Status|https://www.namecheap.com/blog/visualize-your-deployment-status-with-jenkins/ |  |
 |How to view Health statistics of a Microservice |https://www.callicoder.com/spring-boot-actuator/ |  |
