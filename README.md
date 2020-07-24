@@ -118,6 +118,8 @@ mvn clean test
 
 ![your-UML-diagram-name](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/spiegel-im-spiegel/plantuml-sample/master/class-diagram-01.puml)
 
+### Entity State Machine Diagram
+
 ![your-UML-diagram-name](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/spiegel-im-spiegel/plantuml-sample/master/class-diagram-01.puml)
 
 ### Dependent Downstream Services
