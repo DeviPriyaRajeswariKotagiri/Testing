@@ -116,7 +116,7 @@ mvn clean test
 ## Design Details
 ### Entity Relationship Diagram
 
-![your-UML-diagram-name](https://www.plantuml.com/plantuml/proxy?cache=no&src=docs/class-diagram-01.puml)
+![your-UML-diagram-name](https://www.plantuml.com/plantuml/proxy?cache=no&src=../docs/class-diagram-01.puml)
 
 ![your-UML-diagram-name](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/spiegel-im-spiegel/plantuml-sample/master/class-diagram-01.puml)
 
