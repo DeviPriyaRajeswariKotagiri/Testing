@@ -431,9 +431,7 @@ Deployment Diagram:
 <img src="images/deplymentdiag.png" width="400" height="400"/>
 			
 Instructions to deploy a microservice in Integration Platform:
-Make use of Codefresh to deploy microservice instance as a  Docker image to a Kubernetes cluster.
-
-[More Information](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/)
+Make use of Codefresh to deploy microservice instance as a  Docker image to a Kubernetes cluster.[More Information](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/)
 
 
 #### c. <ins>**Testing Instructions**</ins>
