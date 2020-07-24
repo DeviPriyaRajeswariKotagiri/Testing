@@ -302,8 +302,8 @@ If your application relies on cloud infrastructure e.g. AWS ,you will have to ta
 
 ### iii. Logging
 
- Spring Boot uses Apache Commons logging for all internal logging.
- You can use logging options available in Spring Boot like Java Util Logging, Log4j2, and Logback.
+ You can use logging options available in Spring Boot like Java Util Logging, Log4j2, and Logbackin Local.
+ You can use DataDog for logging in Local Integration Environment and Integration Platform.
 
 
 ### iv. Message Bus
