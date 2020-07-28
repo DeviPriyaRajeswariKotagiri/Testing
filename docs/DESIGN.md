@@ -22,9 +22,9 @@ Describe the dependent services in your application.
 
 ## 3. Understanding the Code
         
-        ```
+       
            Details about Application Configuration, Application Profiling and Code walk through  
-         ```
+         
          
 ## 4. References
 | Link | Description | 
