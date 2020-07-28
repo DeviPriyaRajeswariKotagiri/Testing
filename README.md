@@ -6,8 +6,8 @@
 
 ## Table of Contents
 
-1. [Introduction](#Introduction)
-2. [Prerequisites](#Prerequisites)
+1. [Introduction](#1-Introduction)
+2. [Prerequisites](#2-Prerequisites)
 3. [Environment Variables](#3-environment-variables)
 4. [Consumed Services](#4-consumed-services)
 5. [Event Produced & Consumed](#5-events-produced-and-events-consumed)
