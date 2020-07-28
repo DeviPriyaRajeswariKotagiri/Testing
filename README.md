@@ -6,16 +6,15 @@
 
 ## Table of Contents
 
-1. [Introduction](#Introduction)
-2. [Prerequisites](#Prerequisites)
-3. [Dependencies](#Dependencies)
-4. [Configuration](#Configuration-Build-And-Runtime-for-Local-LIE-IPDev-IPTest-IPProd)
-5. [Build And Deployment](#Build-And-Deployment)
-6. [Design Details](#Design-Details)
-7. [Support](#Support)
-8. [References](#References)
-9. [FAQ's](#FAQ's)
-10. [License](#license)
+1. [Introduction](#1-introduction)
+2. [Pre-requisites](#2-prerequisites)
+3. [Environment Variables](#3-environment-variables)
+4. [Consumed Services](#4-consumed-services)
+5. [Event Produced & Consumed](#5-events-produced-and-events-consumed)
+6. [Logging](#6-logging)
+7. [Health Checks](#7-health-checks)
+8. [Build & Deployment](#8-build-and-deployment)
+9. [Testing Instructions](#9-testing-instructions)
 
 ## Introduction
 
