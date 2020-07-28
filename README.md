@@ -25,7 +25,7 @@ Provide Description of Component
 * [Support Reference](docs/SUPPORT.md)
 
 ### Supporting Team(s)
-* <ins>Engineering Team 3</ins> is the owner of Creating this Standard README.md.
+* <ins>Engineering Team 3</ins> is the owner of Creating the Standard for README.md.
 
 ## Prerequisites
 ### <ins>Tools/Software</ins>
