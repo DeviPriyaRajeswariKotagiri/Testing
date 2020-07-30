@@ -116,5 +116,5 @@ There are multiple unit test cases written to cover the different components of 
 mvn clean test
 ```
 
-<img src="images/entitydiagram.PNG" width="500" height="400"/>
+<img src="docs/images/entitydiagram.PNG" width="500" height="400"/>
 
