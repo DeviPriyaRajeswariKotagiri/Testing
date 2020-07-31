@@ -28,7 +28,7 @@ Provide Description of Component
 * <ins>Engineering Team 3</ins> is the owner of Creating the Standard for README.md.
 
 ## 2. Prerequisites
-### <ins>Tools/Software</ins>
+### Tools/Software
 
 * [Java Build System](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/328830959/Java)
 * [Approved IDE](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/329352164/IDE)
