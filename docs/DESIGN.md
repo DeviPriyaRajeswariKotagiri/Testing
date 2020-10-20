@@ -18,15 +18,23 @@
 ![your-UML-diagram-name](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/DeviPriyaRajeswariKotagiri/Testing/master/docs/puml/state-diagram-01.puml)
 
 ## 2. Dependent Downstream Services
-Describe the dependent services in your application.
+* api-commerce-order - Uses the client of Sales Order service
+* api-catalog-sales-client - Uses the client of Sales Catalog service
+* core-apaas-app-starters - For starters defined for WAWA
 
 ## 3. Understanding the Code
         
+The microservice consists of the following modules:
 
-           Details about Application Configuration, Application Profiling and Code walk through  
+* api - This module contains the exposed end points for the orchestrator microservice.
+* app - Spring Boot uses this module to package everything as a deployable container.
+* client - This module provides the client for consumers of the orchestrator microservice.
+* postman - This module contains the postman collection which can be used to invoke the application flows.
+* saga - This module contains the main flow control logic along with compensating actions if required.
+           
          
          
 ## 4. References
 | Link | Description | 
 | :---- | :----------- |
-| [UML Component Design](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/586843021/ABB+-+Business+Service) |  Confluence page|
+| [SBB](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/1126793371/SBB+-+Static+Build+Instructions#5.3-Deployment-Diagram(s)) |  Confluence page|
