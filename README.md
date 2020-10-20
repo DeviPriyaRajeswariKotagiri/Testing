@@ -18,14 +18,16 @@
 
 ## 1. Introduction
 
-Provide Description of Component
+Document README for orch-build-instruction-service.
+It contains the build instruction orchestrator microservice which is responsible for orchestration functions related to build instruction.
+
 
 ### See Also
 * [Design Reference](docs/DESIGN.md)
 * [Support Reference](docs/SUPPORT.md)
 
 ### Supporting Team(s)
-* <ins>Engineering Team 3</ins> is the owner of Creating the Standard for README.md.
+* <ins>Feature Team5</ins> is the owner of Creating the Standard for README.md.
 
 ## 2. Prerequisites
 ### Tools/Software
@@ -34,19 +36,20 @@ Provide Description of Component
 * [Approved IDE](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/329352164/IDE)
 * [Local Integrated Environment](https://wawaappdev.atlassian.net/wiki/spaces/KM/pages/447155015/Local+Docker+Desktop+Kubernetes+Istio+Kafka+Mongo+Development)
     
-### <ins>Wawa Build Time Dependencies</ins>
+### Wawa Build Time Dependencies
 
 | Project Name         | Version       |  Project URL  |   
 |:---------------------|:--------------|:--------------------------------------------------------|      
-|  Starter XX          |    XX+        | [core-apaas-api-starter](https://github.com/wawa/core-apaas-app-starters/tree/master/core-apaas-api-starter) |
-|  Starter XX          |    XX+        | [core-apaas-json-starter](https://github.com/wawa/core-apaas-app-starters/tree/master/core-apaas-json-starter) |
+| api-commerce-order          |  0.0.1-SNAPSHOT      | [ api-commerce-order  ](https://github.com/wawa/api-commerce-order) |
+| api-catalog-sales-client       |  0.0.1-SNAPSHOT    | [api-catalog-sales-client](https://github.com/wawa/api-catalog-sales) |
+| core-apaas-app-starters       |  0.0.1-SNAPSHOT     | [core-apaas-app-starters](https://github.com/wawa/core-apaas-app-starters/tree/master/starters) |
 
-### <ins>Infrastructure</ins>
+### Infrastructure
 
 |Software              | Version       | Comment(s)  |   
 |:---------------------|:--------------|:--------------------------------------------------------|      
-|  Database XX         |    XX+        |    Database server |
-|  Message Bus XX      |    XX+        |    Message bus for inter service communication |
+| POSTGRESql       |    XX+        |    Database  |
+|  Apache Kafka      |    XX+        |   Inter service communication |
 
 ## 3. Environment Variables
 
@@ -74,16 +77,21 @@ Provide Description of Component
 
 ## 6. Logging
 
- This section should have critical logging messages that can be used to understand the health of this component or aid in the debugging of the component
+Logging is implemented using LOG4J Mechanism.
+Kubernetes Logs:
 
-*[Logging Standard](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337412190/ST9.1-+Logging+Standard)*
+```
+kubectl logs orch-build-instruction-service-97bccf6-hjsxj -n commerce -c orch-build-instruction-service -f
+```
 
 ## 7. Health Checks
 | Endpoint             | Path               |   Content     |
 |:--------------------|:--------------------|---------------|   
-|  Endpoint Path      |  /healthz           |   OK          |
+|  http://localhost:<port>/api/commerce/buildinstruction/actuator/health      |  /health         |   OK          |
+|  http://localhost:<port>/api/commerce/buildinstruction/actuator/info   |  /info          |   OK          |
 
-*Endpoints and the decoder for the current state of the service and any dependent components*
+
+
 
 ## 8. Build And Deployment
 ### Compilation
@@ -98,9 +106,33 @@ java -jar ./myapp.jar
 ```
 
 ### Build Container
-```bash
-docker build .
+Docker image creation:
+
+* Local Containerized Environment Creation:
 ```
+ docker build -t orch-build-instruction-service:v1 -f Dockerfile-local .
+```
+* Containerized Environment Creation:
+```
+docker build . -t orch-build-instruction-service:v1 -f Dockerfile
+```
+
+Install on K8S:
+```
+for Helm version 2.x
+-----------------
+helm install --name orch-build-instruction-service ./orch-build-instruction-service --values ./orch-build-instruction-service/values-local.yaml  --namespace commerce
+
+For Helm version 3.x
+-----------------
+helm install orch-build-instruction-service ./orch-build-instruction-service --values ./orch-build-instruction-service/values-local.yaml  --namespace commerce
+```
+
+Install on K8S Dev:
+```
+helm install --name orch-build-instruction-service ./orch-build-instruction-service --values ./orch-build-instruction-service/values-ip-app-dev-01-us-east-1.yaml --namespace commerce
+```
+
 
 ### Run In Local Kubernetes
 ```bash
@@ -110,11 +142,9 @@ helm upgrade $appname . --install --recreate-pods --namespace $namespace --versi
 
 ## 9. Testing Instructions 
 ### Unit test cases
-There are multiple unit test cases written to cover the different components of the application. However there is a global application test suite file _**UnitTests.java**_     that combines all the test cases in a logical manner to create a complete suite. It can be run from command prompt using the following command -
+There are multiple unit test cases written to cover the different components of the application.
 
 ```
 mvn clean test
 ```
-
-<img src="docs/images/entitydiagram.PNG" width="500" height="400"/>
 
