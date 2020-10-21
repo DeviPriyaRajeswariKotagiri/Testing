@@ -10,11 +10,10 @@
 2. [Prerequisites](#2-Prerequisites)
 3. [Environment Variables](#3-environment-variables)
 4. [Consumed Services](#4-consumed-services)
-5. [Event Produced & Consumed](#5-events-produced-and-events-consumed)
-6. [Logging](#6-logging)
-7. [Health Checks](#7-health-checks)
-8. [Build & Deployment](#8-build-and-deployment)
-9. [Testing Instructions](#9-testing-instructions)
+5. [Logging](#6-logging)
+6. [Health Checks](#7-health-checks)
+7. [Build & Deployment](#8-build-and-deployment)
+8. [Testing Instructions](#9-testing-instructions)
 
 ## 1. Introduction
 
@@ -44,12 +43,7 @@ It contains the build instruction orchestrator microservice which is responsible
 | api-catalog-sales-client       |  0.0.1-SNAPSHOT    | [api-catalog-sales-client](https://github.com/wawa/api-catalog-sales) |
 | core-apaas-app-starters       |  0.0.1-SNAPSHOT     | [core-apaas-app-starters](https://github.com/wawa/core-apaas-app-starters/tree/master/starters) |
 
-### Infrastructure
 
-|Software              | Version       | Comment(s)  |   
-|:---------------------|:--------------|:--------------------------------------------------------|      
-| POSTGRESql       |    XX+        |    Database  |
-|  Apache Kafka      |    XX+        |   Inter service communication |
 
 ## 3. Environment Variables
 
@@ -66,13 +60,9 @@ It contains the build instruction orchestrator microservice which is responsible
 
 *Discovery address is the name in the Istio service mesh that is used to access a downstream service*
 
-## 5. Events Produced And Events Consumed
-| Event               |  Event Schema          |  Description           |
-|:--------------------|------------------------|------------------------|
-|  Service XX         | [SchemaA](schemas/schema.avro)  | BLAH  |
-|  Service XX         | [SchemaA](schemas/schema.avro)  | BLAH  |
 
-## 6. Logging
+
+## 5. Logging
 
 Logging is implemented using LOG4J Mechanism.
 Kubernetes Logs:
@@ -81,7 +71,7 @@ Kubernetes Logs:
 kubectl logs orch-build-instruction-service-97bccf6-hjsxj -n commerce -c orch-build-instruction-service -f
 ```
 
-## 7. Health Checks
+## 6. Health Checks
 | Endpoint             | Path               |   Content     |
 |:--------------------|:--------------------|---------------|   
 |  http://localhost:<port>/api/commerce/buildinstruction/actuator/health      |  /health         |   OK          |
@@ -90,7 +80,7 @@ kubectl logs orch-build-instruction-service-97bccf6-hjsxj -n commerce -c orch-bu
 
 
 
-## 8. Build And Deployment
+## 7. Build And Deployment
 ### Compilation
 ```bash
 cd myapp
@@ -137,7 +127,7 @@ export $appname=myapp
 helm upgrade $appname . --install --recreate-pods --namespace $namespace --version $appversion --values $values
 ```
 
-## 9. Testing Instructions 
+## 8. Testing Instructions 
 ### Unit test cases
 There are multiple unit test cases written to cover the different components of the application.
 
