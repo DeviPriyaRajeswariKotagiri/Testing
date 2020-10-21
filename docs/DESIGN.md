@@ -11,11 +11,11 @@
 ## 1. UML Diagrams
 ### Entity Relationship Diagram
 
-![your-UML-diagram-name](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/DeviPriyaRajeswariKotagiri/Testing/master/docs/puml/class-diagram-01.puml)
+Not Applicable
 
 ### Entity State Machine Diagram
 
-![your-UML-diagram-name](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/DeviPriyaRajeswariKotagiri/Testing/master/docs/puml/state-diagram-01.puml)
+Not Applicable
 
 ## 2. Dependent Downstream Services
 * api-commerce-order - Uses the client of Sales Order service
