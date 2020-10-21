@@ -55,7 +55,7 @@ It contains the build instruction orchestrator microservice which is responsible
 
 |Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose | Comment(s)  |   
 |:-------------------------|:----------------------|:-----------------------------|:-----------------------------|:--------|:------------|      
-|  API_COMMERCE_ORDER_API_BASE_URL    |    Env        |    Build & Runtime       |  Integration Platform    |           |  Scope of this variable changes at run time|
+|  API_COMMERCE_ORDER_API_BASE_URL    |    Local        |    Build & Runtime       |  Integration Platform    |           |  Scope of this variable changes at run time|
 
 
 ## 4. Consumed Services
