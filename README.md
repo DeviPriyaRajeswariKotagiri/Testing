@@ -55,21 +55,18 @@ It contains the build instruction orchestrator microservice which is responsible
 ## 4. Consumed Services
 | Service             | Discovery Address       |   
 |:--------------------|:------------------------|   
-|  Service XX         |  \<Discovery Address>  |
-|  Service XX         |  \<Discovery Address>  |
+|  api-commerce-order           |  [api-commerce-order](https://github.com/wawa/api-commerce-order) |
+|  api-catalog-sales-client       | [api-catalog-sales-client](https://github.com/wawa/api-catalog-sales) |
 
 *Discovery address is the name in the Istio service mesh that is used to access a downstream service*
 
 
-
 ## 5. Logging
 
-Logging is implemented using LOG4J Mechanism.
-Kubernetes Logs:
+ This section should have critical logging messages that can be used to understand the health of this component or aid in the debugging of the component
 
-```
-kubectl logs orch-build-instruction-service-97bccf6-hjsxj -n commerce -c orch-build-instruction-service -f
-```
+*[Logging Standard](https://wawaappdev.atlassian.net/wiki/spaces/ENTERPRISE/pages/337412190/ST9.1-+Logging+Standard)*
+
 
 ## 6. Health Checks
 | Endpoint             | Path               |   Content     |
