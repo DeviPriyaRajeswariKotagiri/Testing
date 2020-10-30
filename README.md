@@ -82,20 +82,20 @@ It contains the build instruction orchestrator microservice which is responsible
 
 *Compile and build for IP env:*
 ```bash
-$ cd <path-to-app-dir>/orch-promotion-federation/
+$ cd <path-to-app-dir>/orch-build-instruction/
 $ mvn clean package
 ```
 
 
 *Compile and build for Local desktop:*
 ```
-> cd <path-to-app-dir>/orch-promotion-federation/
+> cd <path-to-app-dir>/orch-build-instruction/
 > mvn clean install
 ```
 
 ### Run As Application
 ```bash
-java -jar ./orch-promotion-federation-app-0.0.1-SNAPSHOT.jar
+java -jar ./orch-build-instruction-app-0.0.1-SNAPSHOT.jar
 ```
 
 ### Build Container
@@ -103,13 +103,13 @@ java -jar ./orch-promotion-federation-app-0.0.1-SNAPSHOT.jar
 *App's Local environment Docker Creation:*
 
 ```bash
- docker build -t orch-promotion-federation:v1 -f Dockerfile-local .
+ docker build -t orch-build-instruction:v1 -f Dockerfile-local .
 ```
 
 *App's IP environment Docker Creation:*
 
 ```bash
- docker build . -t orch-promotion-federation:v1 -f Dockerfile
+ docker build . -t orch-build-instruction:v1 -f Dockerfile
 ```
 
 ### Deploy and run on Kubernetes
@@ -122,13 +122,13 @@ helm upgrade $appname . --install --recreate-pods --namespace $namespace --versi
 *on Local K8S:*
 ```bash
 example:
-> helm install orch-promotion-federation ./orch-promotion-federation --values ./orch-promotion-federation/values-local.yaml  --namespace commerce
+> helm install orch-build-instruction ./orch-build-instruction --values ./orch-build-instruction/values-local.yaml  --namespace commerce
 ```
 
 *on IP K8S:*
 ```bash
 example:
-$ helm install --name orch-promotion-federation ./orch-promotion-federation --values ./orch-promotion-federation/values-ip-app-dev-01-us-east-1.yaml --namespace commerce
+$ helm install --name orch-build-instruction ./orch-build-instruction --values ./orch-build-instruction/values-ip-app-dev-01-us-east-1.yaml --namespace commerce
 ```
 
 ## 8. Testing Instructions 
