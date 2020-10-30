@@ -50,7 +50,7 @@ It contains the build instruction orchestrator microservice which is responsible
 |Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose | Comment(s)  |   
 |:-------------------------|:----------------------|:-----------------------------|:-----------------------------|:--------|:------------|      
 |  API_COMMERCE_ORDER_API_BASE_URL    |    Local        |    Build & Runtime       |  Integration Platform    |           |  Scope of this variable changes at run time|
-|SALESCATALOG_BASE_URL| Dev| Build & Runtime | Application Developer|   | sales catalog base url http://api-catalog-sales.commerce.svc.cluster.local:<port>/api| 
+|SALESCATALOG_BASE_URL| Dev| Build & Runtime | Application Developer|   | sales catalog base url "http://api-catalog-sales.commerce.svc.cluster.local:<port>/api" | 
 
 ## 4. Consumed Services
 | Service             | Discovery Address       |   
