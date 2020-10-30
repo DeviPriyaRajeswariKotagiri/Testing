@@ -71,8 +71,8 @@ It contains the build instruction orchestrator microservice which is responsible
 ## 6. Health Checks
 | Endpoint             | Path               |   Content     |
 |:--------------------|:--------------------|---------------|   
-|  http://localhost:<port>/api/commerce/buildinstruction/actuator/health      |  /health         |   OK          |
-|  http://localhost:<port>/api/commerce/buildinstruction/actuator/info   |  /info          |   OK          |
+|  http://localhost:port/api/commerce/buildinstruction/actuator/health      |  /health         |   OK          |
+|  http://localhost:port/api/commerce/buildinstruction/actuator/info   |  /info          |   OK          |
 
 
 
