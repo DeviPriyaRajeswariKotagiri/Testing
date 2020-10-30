@@ -13,7 +13,7 @@
 5. [Logging](#6-logging)
 6. [Health Checks](#7-Health-Checks)
 7. [Build And Deployment](#8-Build-And-Deployment)
-8. [TestingInstructions](#9-TestingInstructions)
+8. [Testing Instructions](#9-Testing-Instructions)
 
 ## 1. Introduction
 
@@ -131,7 +131,8 @@ example:
 $ helm install --name orch-build-instruction ./orch-build-instruction --values ./orch-build-instruction/values-ip-app-dev-01-us-east-1.yaml --namespace commerce
 ```
 
-## 8. TestingInstructions 
+## 8. Testing Instructions 
+
 ### Unit test cases
 There are multiple unit test cases written to cover the different components of the application.
 
