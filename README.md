@@ -12,7 +12,7 @@
 4. [Consumed Services](#4-consumed-services)
 5. [Logging](#6-logging)
 6. [Health Checks](#7-health-checks)
-7. [Build & Deployment](#8-build-and-deployment)
+7. [Build and Deployment](#8-build-and-deployment)
 8. [Testing Instructions](#9-testing-instructions)
 
 ## 1. Introduction
