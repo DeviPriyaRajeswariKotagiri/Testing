@@ -8,12 +8,12 @@
 
 1. [Introduction](#1-Introduction)
 2. [Prerequisites](#2-Prerequisites)
-3. [Environment Variables](#3-environment-variables)
+3. [Environment Variables](#3-Environment-Variables)
 4. [Consumed Services](#4-consumed-services)
 5. [Logging](#6-logging)
-6. [Health Checks](#7-health-checks)
-7. [Build and Deployment](#8-build-and-deployment)
-8. [Testing Instructions](#9-testing-instructions)
+6. [Health Checks](#7-Health-Checks)
+7. [Build And Deployment](#8-Build-And-Deployment)
+8. [Testing Instructions](#9-Testing-Instructions)
 
 ## 1. Introduction
 
