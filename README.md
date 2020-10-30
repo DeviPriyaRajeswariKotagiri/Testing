@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/openmrs/openmrs-core.svg?branch=master)](https://google.com/) [![Coverage Status](https://coveralls.io/repos/github/openmrs/openmrs-core/badge.svg?branch=master)](https://google.com/) [![SonarQube Badge](https://api.codacy.com/project/badge/Grade/a51303ee46c34775a7c31c8d6016da6b)](https://codefresh.io/steps/)
 
-# Name of the Component
+# orch-build-instruction
 
 ## Table of Contents
 
@@ -50,7 +50,7 @@ It contains the build instruction orchestrator microservice which is responsible
 |Environment Variable Name | Type (Env or Secret)  |  Scope (Build or Runtime)    | Responsible Party for value  | Purpose | Comment(s)  |   
 |:-------------------------|:----------------------|:-----------------------------|:-----------------------------|:--------|:------------|      
 |  API_COMMERCE_ORDER_API_BASE_URL    |    Local        |    Build & Runtime       |  Integration Platform    |           |  Scope of this variable changes at run time|
-
+|SALESCATALOG_BASE_URL| Dev| Build & Runtime | Application Developer|   | sales catalog base url http://api-catalog-sales.commerce.svc.cluster.local:<port>/api| 
 
 ## 4. Consumed Services
 | Service             | Discovery Address       |   
@@ -78,50 +78,57 @@ It contains the build instruction orchestrator microservice which is responsible
 
 
 ## 7. Build And Deployment
-### Compilation
+### Compilation and Build
+
+*Compile and build for IP env:*
 ```bash
-cd myapp
-mvn clean package
+$ cd <path-to-app-dir>/orch-promotion-federation/
+$ mvn clean package
+```
+
+
+*Compile and build for Local desktop:*
+```
+> cd <path-to-app-dir>/orch-promotion-federation/
+> mvn clean install
 ```
 
 ### Run As Application
 ```bash
-java -jar ./myapp.jar
+java -jar ./orch-promotion-federation-app-0.0.1-SNAPSHOT.jar
 ```
 
 ### Build Container
-Docker image creation:
 
-* Local Containerized Environment Creation:
-```
- docker build -t orch-build-instruction-service:v1 -f Dockerfile-local .
-```
-* Containerized Environment Creation:
-```
-docker build . -t orch-build-instruction-service:v1 -f Dockerfile
+*App's Local environment Docker Creation:*
+
+```bash
+ docker build -t orch-promotion-federation:v1 -f Dockerfile-local .
 ```
 
-Install on K8S:
-```
-for Helm version 2.x
------------------
-helm install --name orch-build-instruction-service ./orch-build-instruction-service --values ./orch-build-instruction-service/values-local.yaml  --namespace commerce
+*App's IP environment Docker Creation:*
 
-For Helm version 3.x
------------------
-helm install orch-build-instruction-service ./orch-build-instruction-service --values ./orch-build-instruction-service/values-local.yaml  --namespace commerce
+```bash
+ docker build . -t orch-promotion-federation:v1 -f Dockerfile
 ```
 
-Install on K8S Dev:
-```
-helm install --name orch-build-instruction-service ./orch-build-instruction-service --values ./orch-build-instruction-service/values-ip-app-dev-01-us-east-1.yaml --namespace commerce
-```
+### Deploy and run on Kubernetes
 
-
-### Run In Local Kubernetes
 ```bash
 export $appname=myapp
 helm upgrade $appname . --install --recreate-pods --namespace $namespace --version $appversion --values $values
+```
+
+*on Local K8S:*
+```bash
+example:
+> helm install orch-promotion-federation ./orch-promotion-federation --values ./orch-promotion-federation/values-local.yaml  --namespace commerce
+```
+
+*on IP K8S:*
+```bash
+example:
+$ helm install --name orch-promotion-federation ./orch-promotion-federation --values ./orch-promotion-federation/values-ip-app-dev-01-us-east-1.yaml --namespace commerce
 ```
 
 ## 8. Testing Instructions 
