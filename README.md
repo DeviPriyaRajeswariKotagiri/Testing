@@ -23,9 +23,8 @@ There are [three different types of microservices defined for Wawa](https://wawa
 This implementation considers Build InstructionId as an entity which could be replaced by the business entity intended for development. For example, there could be a order service which will act as a business service for order entity.
 
 The domain service currently performs the following tasks:
-1. Perform CRUD operations for the business entity using MongoDB or Postgres.
-2. Publish events for CRUD operations of the entity using Spring Cloud Stream.
-3. Provides a client for the exposed API end points of the domain service using Rest Template.
+1. Publish events for CRUD operations of the entity using Spring Cloud Stream.
+2. Provides a client for the exposed API end points of the domain service using Rest Template.
 
 The microservice consists of the following modules:
 * api - This module contains the exposed end points for the microservice.
@@ -47,7 +46,7 @@ com.wawa.fulfillment.api.FulfillmentApiAutoConfiguration
 * [Support Reference](docs/SUPPORT.md)
 
 ### Supporting Team(s)
-* <ins>Engineering Team 2</ins> is the owner of this Reference Implementation.
+* <ins>Feature Team 5</ins> is the owner of this Reference Implementation.
 
 ### Outstanding work to be done
 * Add unit tests
@@ -77,13 +76,10 @@ com.wawa.fulfillment.api.FulfillmentApiAutoConfiguration
 |  fulfillment-domain  |   0.0.1-SNAPSHOT     |   [fulfillment-domain](https://github.com/wawa/api-fulfillment-build/blob/master/pom.xml)  | 
 |  fulfillment-exception |    0.0.1-SNAPSHOT      |   [fulfillment-exception](https://github.com/wawa/api-fulfillment-build/blob/master/pom.xml)  |
 | avro-maven-plugin  |  1.9.2 |   [avro-maven-plugin](https://github.com/wawa/api-fulfillment-build/blob/master/pom.xml)  |
-|  Embedded postgresql|  2.10   |  [Embedded postgresql](https://github.com/wawa/api-fulfillment-build/blob/master/pom.xml) |
-| mongodb-driver-core| 3.11.2 | [mongodb-driver-core](https://github.com/wawa/api-fulfillment-build/blob/master/db/pom.xml)|
 | Core APAAS API Starter |  0.0.1-SNAPSHOT |[ Core APAAS API Starter](https://github.com/wawa/core-apaas-app-starters/tree/master/core-apaas-api-starter)|
 | Core APAAS Event Publisher Starter|  0.0.1-SNAPSHOT  |[Core APAAS Event Publisher Starter](https://github.com/wawa/core-apaas-app-starters/tree/master/core-apaas-event-publisher-starter)|
 | Core APAAS Event Subscriber Starter |  0.0.1-SNAPSHOT  | [Core APAAS Event Subscriber Starter](https://github.com/wawa/core-apaas-app-starters/tree/master/core-apaas-event-subscriber-starter) |
-|spring-boot-starter-data-mongodb |2.2.2.RELEASE |[spring-boot-starter-data-mongodb](https://github.com/wawa/api-fulfillment-build/blob/master/db/pom.xml)|
-| postgresql|42.2.8|[PostgreSQL JDBC Driver ](https://github.com/wawa/api-fulfillment-build/blob/master/db/pom.xml)|
+
 
 
 
@@ -92,8 +88,6 @@ com.wawa.fulfillment.api.FulfillmentApiAutoConfiguration
 
 |Software              | Version       | Comment(s)  |   
 |:---------------------|:--------------|:--------------------------------------------------------|      
-|  Mongodb          |  4.2.8    |    NoSQL Database  |
-|  PostgreSQL       |  12.3  |   Relational database management system  |
 | Docker Desktop | 2.2.0.0| Docker Desktop and enable Kubernetes|
 
 
