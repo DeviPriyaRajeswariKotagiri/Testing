@@ -46,7 +46,7 @@ com.wawa.fulfillment.api.FulfillmentApiAutoConfiguration
 * [Support Reference](docs/SUPPORT.md)
 
 ### Supporting Team(s)
-* <ins>Feature Team 5</ins> is the owner of this Reference Implementation.
+* <ins>Feature Team 5</ins> is the owner of this Implementation.
 
 ### Outstanding work to be done
 * Add unit tests
