@@ -9,11 +9,11 @@
 ## 1. UML Diagrams
 ### Entity Relationship Diagram
 
-<img src="images/domain.PNG" width="500" height="400"/>
+Not Applicable
 
 ### Entity State Machine Diagram
 
-<img src="images/statediagram.PNG" width="350" height="350"/>
+Not Applicable
 
 ## 2. Dependent Downstream Services
 Describe the dependent services in your application.
@@ -22,7 +22,6 @@ Describe the dependent services in your application.
 ### Application contains 4 configuration files in reference-domain module
 
 * JpaConfiguration - For managing the JPA configuration
-* MongoConfiguration - For managing the MongoDB configuration
 * ReferenceDomainAutoConfiguration - For managing the common application configuration
 * SecretsConfiguration - For managing the secrets configuration. Developer must create blank “secrets.properties” file in “c:\\Temp” folder.
 
@@ -127,8 +126,8 @@ These files generate class files at compile time using the following plugin:
 
 
 [Please refer SBB for more details on JPA reference implementation as follow:](https://wawaappdev.atlassian.net/wiki/spaces/EE/pages/804096109/SBB+-+JPA+reference+implementation+for+Postgres)
-1. Run Application on IDE or local docker kubernetes or IP environments.
-2. How to work Application with mongodb or PostgreSQL.
+Run Application on IDE or local docker kubernetes or IP environments.
+
 
 ## 4. References
 | Link | Description | 
