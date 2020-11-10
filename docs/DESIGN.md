@@ -1,4 +1,4 @@
-# Domain Service - Detailed Design
+# Fulfillment Domain Service - Detailed Design
 
 ## Table of Contents
 1. [UML Diagrams](#1-uml-diagrams)
@@ -27,7 +27,7 @@ Describe the dependent services in your application.
 
 ###  Application Profiling
 
-Application Environment property to specify which profiles are active. You can specify the property in any of the usual ways, for example you could include it in your application.properties. Here you can use mongodb or jpa. To run application with MongoDB, we need to put active profiles as "mongodb" in the reference-app-> application.properties file. If we need to work with Postgres DB then we need need to put active profiles as "jpa" in the "reference-app > application.properties" file.
+Application Environment property to specify which profiles are active. You can specify the property in any of the usual ways, for example you could include it in your application.properties.
 
 ###  Code walk through
 
