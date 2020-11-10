@@ -46,8 +46,34 @@ kubectl logs fulfillment-domain-service-c5f5b7cfc-lwrmf -c fulfillment-domain-se
 
 ## 4. FAQ
 
-### Question 1
-Answer to question 1
 
-### Question 2
-Answer to question 2
+### Question 1: How to check the istio gateway?
+
+
+#### Answer to question 1:
+
+
+```
+kubectl -n istio-system get -l app=istio-ingressgateway --no-headers pods -o custom-columns=:metadata.name
+```
+
+
+### Question 2: How to expose the container port in local? 
+
+
+#### Answer to question 2:
+
+```
+kubectl -n istio-system port-forward istio-ingressgateway-75d5967d8c-j4j9f 9080:80
+```
+
+
+### Question 3: How to find out the istio-ingressgateway container port, where it run the app in local? 
+
+
+#### Answer to question 3:
+
+
+```
+export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="http2")].nodePort}') && echo $INGRESS_PORT
+```
