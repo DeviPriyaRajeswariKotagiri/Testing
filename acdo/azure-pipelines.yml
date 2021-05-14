@@ -1,0 +1,42 @@
+parameters:
+  - name: image_tag
+    displayName: Provide the image tag for docker image (for ex 2021.05.01.1)
+    type: string
+    default: latest
+
+
+#azure-pipelines.yml
+#Clone the common devops repos ymal
+resources:
+  repositories:
+    - repository: common-devops
+      type: git
+      name: common-devops
+      ref: refs/heads/master
+
+# trigger for this pipeline
+trigger:
+  - develop
+
+# pool used in pipeline
+pool:
+  name: 'DEVOPS-OPENSHIFT-POOL'
+
+# Stages and parameters
+stages:
+  - template: Pipelines/Backend/backend.yml@common-devops
+    parameters:
+        aro_build: '$(Build.BuildId)'
+        aro_service: '$(service-name)'
+        aro_deploy_namespace: '$(namespace-name)'
+        aro_env: '$(env-name)'
+        aro_base_image: '$(baseImage-name)'
+        aro_project: '$(project-name)'
+        fortify_version: '$(fop-version)'
+        fortify_app_UAID: '$(fop-appuid)'
+        sonatype_appuid: '$(sonatype-appuid)'
+        image_tag: '${{parameters.image_tag}}'
+
+        
+
+

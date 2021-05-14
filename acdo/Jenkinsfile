@@ -1,0 +1,58 @@
+pipeline {
+    agent any
+
+     environment {
+        SONAR_URL      =  credentials('sonar_url')
+        GITHUBAPI_URL  =  credentials('githubapi_url')
+    }
+
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '5'))
+    }
+
+    stages {
+        stage('scm checkout'){
+            steps{
+                cleanWs() 
+                checkout scm
+            }		
+        }        
+        stage('Builds develop Branch'){ 
+            when{ branch 'develop' }
+                stages {
+                    stage('SonarQube Analysis') {
+                        steps {
+                            script {
+                                def scannerHome = tool 'sonar-scanner';
+                                def mavenHome = tool name:"Maven-3.5.4",type: "maven"
+                                def mavenCMD ="${mavenHome}/bin/mvn"
+
+                                    script {
+                                        jobNameSplit = env.JOB_NAME.split("/");
+                                        env.ORG_NAME = jobNameSplit[0];
+                                        env.PROJECT_NAME = jobNameSplit[1];                        
+                                    }
+
+                                    withSonarQubeEnv('sonar') {
+                                        sh "${mavenCMD} clean install"                      
+                                        sh "${mavenCMD} clean test"
+
+                                        sh 'printenv'
+                                        sh 'echo ${CHANGE_ID}'                            
+                                        sh 'echo ${PROJECT_NAME}'
+                                        sh "${mavenCMD} sonar:sonar -Dsonar.host.url=${env:SONAR_URL} -Dsonar.branch.name=${BRANCH_NAME} -Dsonar.projectKey=${PROJECT_NAME} -Dsonar.projectName=${PROJECT_NAME} -Dsonar.sourceEncoding=UTF-8 -Dsonar.verbose=true -Dsonar.projectBaseDir=${WORKSPACE}/"
+                                    }
+                            }
+                        }
+                    }                         
+                }
+        }
+
+           
+    }
+    post { 
+        always {
+    emailext body:"""Hi,<br><br><b>Job Status:</b> ${currentBuild.currentResult}<br><b>Job Name:</b> ${env.JOB_NAME}<br><b>Build No:</b> ${env.BUILD_NUMBER}<br><b>URL:</b> ${env.BUILD_URL}console<br><br><b>Regards,</b><br><b>Jenkins_Pipeline</b>""", from: '', subject: "UI_JOB_STATUS || ${currentBuild.currentResult}: Job ${env.JOB_NAME}", to: "amruta.kawade@globant.com"        
+		} 
+	}
+}
